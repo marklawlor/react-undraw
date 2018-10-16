@@ -4,7 +4,6 @@ import React, { Component } from 'react';
 import mappings from '../common/mappings';
 
 export default class Undraw extends Component {
-
   /**
    * Prop default values.
    */
@@ -17,6 +16,7 @@ export default class Undraw extends Component {
    * Prop types.
    */
   static propTypes = {
+    name: PropTypes.string.isRequired,
     height: PropTypes.string,
     primaryColor: PropTypes.string
   };

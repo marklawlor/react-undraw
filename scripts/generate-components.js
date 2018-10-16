@@ -1,3 +1,4 @@
+const EOL = require('os').EOL;
 const fs = require('fs-extra');
 const ora = require('ora');
 const pascalCase = require('pascal-case');
@@ -35,6 +36,13 @@ function generate() {
     promises.push(
       svgr(srcCode, { icon: true, replaceAttrValues, svgProps }, { componentName })
         .then(js => fixAttrs(js))
+        .then(js => {
+          let banner = '';
+          banner += '/* eslint-disable */ ';
+          banner += EOL;
+          banner += EOL;
+          return banner + js;
+        })
         .then(js => fs.outputFile(destPath, js))
     );
   });

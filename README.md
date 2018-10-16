@@ -12,7 +12,7 @@ npm install react-undraw --save
 ```
 
 # Usage
-```js
+```jsx
 import Undraw from 'react-undraw';
 
 <Undraw name="coding" />
@@ -26,8 +26,15 @@ Props:
 | `primaryColor` | `string` | Illustration primary color.    | `#6c63ff` |
 | `height`       | `string` | Illustration height.           | `250px`   |
 
+See [./src/illustrations/README.md](./src/illustrations/README.md) for a full list of supported illustration names.
+
 # Development
 ```
 npm install
 npm run build
 ```
+
+To refresh the generated components:
+
+- Update `./scripts/illustrations.json` with any new illustrations.
+- Run `npm run refresh` (from root) to generate files.

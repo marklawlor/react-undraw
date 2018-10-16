@@ -1,3 +1,5 @@
+/* eslint-disable */ 
+
 import UndrawADayAtThePark from '../illustrations/UndrawADayAtThePark';
 import UndrawAboutUsPage from '../illustrations/UndrawAboutUsPage';
 import UndrawAcceptTerms from '../illustrations/UndrawAcceptTerms';

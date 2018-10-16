@@ -32,16 +32,14 @@ export default class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <nav class="navbar navbar-dark bg-dark">
-          <span class="navbar-brand mb-0 h1">React unDraw</span>
+        <nav className="navbar navbar-dark bg-dark">
+          <span className="navbar-brand mb-0 h1">React unDraw</span>
         </nav>
         <div className="container my-4">
           <div className="row">
             <div className="col-10">
               <select name="illustration" className="form-control" onChange={this.onChange} value={this.state.illustration}>
-                {Object.keys(mappings).map(key =>
-                  <option key={key} value={key}>{key}</option>
-                )}
+                {Object.keys(mappings).map(key => <option key={key} value={key}>{key}</option>)}
               </select>
             </div>
             <div className="col-2">

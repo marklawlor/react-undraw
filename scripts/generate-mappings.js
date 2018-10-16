@@ -11,13 +11,17 @@ const illustrations = require('./illustrations.json');
 generate();
 
 /**
- * Generate mapping files.
+ * Generate mapping file.
  */
 function generate() {
   const spinner = ora('Generating mappings ...').start();
   const dest = path.join('./src/common', 'mappings.js');
   const prefix = 'Undraw';
   let content = '';
+
+  content += '/* eslint-disable */ ';
+  content += EOL;
+  content += EOL;
 
   illustrations.forEach(item => {
     const component = prefix + pascalCase(item.name);
