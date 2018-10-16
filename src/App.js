@@ -1,9 +1,14 @@
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faGithub, faNpm } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { Component } from 'react';
 
 import mappings from './common/mappings';
 import Undraw from './undraw/Undraw';
+
+library.add(faGithub, faNpm);
 
 export default class App extends Component {
   constructor(props) {
@@ -34,6 +39,18 @@ export default class App extends Component {
       <React.Fragment>
         <nav className="navbar navbar-dark bg-dark">
           <span className="navbar-brand mb-0 h1">React unDraw</span>
+          <ul className="navbar-nav d-flex flex-row ml-auto">
+            <li className="nav-item">
+              <a className="nav-link px-2" href="https://www.npmjs.com/package/react-undraw" title="NPM">
+                <FontAwesomeIcon icon={['fab', 'npm']} />
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link px-2" href="https://github.com/justinlettau/react-undraw" title="GitHub">
+                <FontAwesomeIcon icon={['fab', 'github']} />
+              </a>
+            </li>
+          </ul>
         </nav>
         <div className="container my-4">
           <div className="row">
@@ -43,7 +60,12 @@ export default class App extends Component {
               </select>
             </div>
             <div className="col-2">
-              <input type="color" className="form-control" name="primaryColor" onChange={this.onChange} value={this.state.primaryColor} />
+              <input
+                type="color"
+                className="form-control"
+                name="primaryColor"
+                onChange={this.onChange}
+                value={this.state.primaryColor} />
             </div>
           </div>
           <hr className="my-4" />
