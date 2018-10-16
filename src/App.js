@@ -65,7 +65,8 @@ export default class App extends Component {
                 className="form-control"
                 name="primaryColor"
                 onChange={this.onChange}
-                value={this.state.primaryColor} />
+                value={this.state.primaryColor}
+              />
             </div>
           </div>
           <hr className="my-4" />

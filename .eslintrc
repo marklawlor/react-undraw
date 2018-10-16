@@ -11,6 +11,10 @@
       "error",
       "never"
     ],
+    "react/destructuring-assignment": [
+      1,
+      "never"
+    ],
     "react/jsx-filename-extension": [
       1,
       {
@@ -19,6 +23,7 @@
           ".jsx"
         ]
       }
-    ]
+    ],
+    "react/prefer-stateless-function": [0]
   }
 }

@@ -28,7 +28,6 @@ export default class Undraw extends Component {
     const Illustration = mappings[this.props.name];
 
     if (!Illustration) {
-      console.warn(`Could not find unDraw illustration by name "${this.props.name}"!`);
       return null;
     }
 
