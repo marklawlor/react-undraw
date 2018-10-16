@@ -7,7 +7,7 @@
 React component for [unDraw illustrations](https://undraw.co/).
 
 # Demo
-[https://justinlettau.github.io/react-undraw](https://justinlettau.github.io/react-undraw).
+[https://justinlettau.github.io/react-undraw](https://justinlettau.github.io/react-undraw)
 
 # Installation
 ```bash
