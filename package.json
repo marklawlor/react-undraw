@@ -1,7 +1,7 @@
 {
   "name": "react-undraw",
   "description": "React component for unDraw illustrations.",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "keywords": [
     "undraw",
     "illustrations",
@@ -37,21 +37,35 @@
     "generate:mappings": "node ./scripts/generate-mappings.js",
     "generate:readme": "node ./scripts/generate-readme.js",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "prepublishOnly": "npm run lib:build",
+    "lib": "npm run lib:clean && npm run lib:build",
+    "lib:clean": "rimraf dist",
+    "lib:build": "cross-env NODE_ENV=production babel src/lib --out-dir dist --copy-files"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
   },
   "dependencies": {
+    "prop-types": "^15.5.7"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.6",
     "@fortawesome/free-brands-svg-icons": "^5.4.1",
     "@fortawesome/react-fontawesome": "^0.1.3",
-    "prop-types": "^15.6.2",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
-    "react-scripts": "^2.0.5"
-  },
-  "devDependencies": {
     "@svgr/core": "^3.1.0",
     "axios": "^0.18.0",
     "bootstrap": "^4.1.3",
+    "cross-env": "^5.2.0",
     "dashify": "^1.0.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",
@@ -62,6 +76,10 @@
     "markdown-table": "^1.1.2",
     "ora": "^3.0.0",
     "pascal-case": "^2.0.1",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-scripts": "^2.0.5",
+    "rimraf": "^2.6.2",
     "standard-version": "^4.4.0"
   },
   "eslintConfig": {

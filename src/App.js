@@ -5,8 +5,8 @@ import { faGithub, faNpm } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { Component } from 'react';
 
-import mappings from './common/mappings';
-import Undraw from './undraw/Undraw';
+import Undraw from './lib';
+import mappings from './lib/common/mappings';
 
 library.add(faGithub, faNpm);
 
