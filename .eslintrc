@@ -6,11 +6,12 @@
     "jest": true
   },
   "rules": {
-    "linebreak-style": 0,
     "comma-dangle": [
       "error",
       "never"
     ],
+    "import/no-extraneous-dependencies": 0,
+    "linebreak-style": 0,
     "react/destructuring-assignment": [
       1,
       "never"
