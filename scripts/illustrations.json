@@ -112,6 +112,10 @@
     "svg": "balloons_vxx5.svg"
   },
   {
+    "name": "Barber",
+    "svg": "barber_3uel.svg"
+  },
+  {
     "name": "Basketball",
     "svg": "basketball_agx4.svg"
   },
@@ -440,6 +444,10 @@
     "svg": "destanation1_h3vq.svg"
   },
   {
+    "name": "Developer activity",
+    "svg": "developer_activity_bv83.svg"
+  },
+  {
     "name": "Development",
     "svg": "development_ouy3.svg"
   },
@@ -756,6 +764,10 @@
     "svg": "invite_i6u7.svg"
   },
   {
+    "name": "Jason mask",
+    "svg": "jason_mask_t07o.svg"
+  },
+  {
     "name": "JavaScript frameworks",
     "svg": "JavaScript_Frameworks_x21l.svg"
   },
@@ -836,6 +848,10 @@
     "svg": "may_the_force_bgdm.svg"
   },
   {
+    "name": "Medicine",
+    "svg": "medicine_b1ol.svg"
+  },
+  {
     "name": "Meditation",
     "svg": "Meditation_o89g.svg"
   },
@@ -886,6 +902,10 @@
   {
     "name": "Mobile payments",
     "svg": "mobile_payments_edgf.svg"
+  },
+  {
+    "name": "Mobile testing",
+    "svg": "mobile_testing_reah.svg"
   },
   {
     "name": "Modern woman",
@@ -1028,6 +1048,10 @@
     "svg": "people_search_wctu.svg"
   },
   {
+    "name": "Personal trainer",
+    "svg": "personal_trainer_ote3.svg"
+  },
+  {
     "name": "Personalization",
     "svg": "personalization_triu.svg"
   },
@@ -1168,12 +1192,20 @@
     "svg": "resume_folder_2_arse.svg"
   },
   {
+    "name": "Revenue",
+    "svg": "revenue_3osh.svg"
+  },
+  {
     "name": "Ride a bicycle",
     "svg": "Ride_a_bicycle_2yok.svg"
   },
   {
     "name": "Rising",
     "svg": "rising_8svm.svg"
+  },
+  {
+    "name": "Robotics",
+    "svg": "robotics_kep0.svg"
   },
   {
     "name": "Romantic getaway",
@@ -1194,6 +1226,14 @@
   {
     "name": "Science",
     "svg": "science_fqhl.svg"
+  },
+  {
+    "name": "Scooter",
+    "svg": "scooter_aia8.svg"
+  },
+  {
+    "name": "Scrum board",
+    "svg": "scrum_board_cesn.svg"
   },
   {
     "name": "Search",
@@ -1276,6 +1316,10 @@
     "svg": "snowman_1_a2ch.svg"
   },
   {
+    "name": "Social dashboard",
+    "svg": "social_dashboard_k3pt.svg"
+  },
+  {
     "name": "Social growth",
     "svg": "social_growth_d0y3.svg"
   },
@@ -1326,6 +1370,10 @@
   {
     "name": "Statistics",
     "svg": "statistics_ctoq.svg"
+  },
+  {
+    "name": "Status update",
+    "svg": "status_update_jjgk.svg"
   },
   {
     "name": "Staying in",
@@ -1448,8 +1496,16 @@
     "svg": "upvote_96dp.svg"
   },
   {
+    "name": "Usability testing",
+    "svg": "usability_testing_2xs4.svg"
+  },
+  {
     "name": "Vault",
     "svg": "vault_9cmw.svg"
+  },
+  {
+    "name": "Version control",
+    "svg": "version_control_9bpv.svg"
   },
   {
     "name": "Videographer",
@@ -1476,6 +1532,14 @@
     "svg": "wall_post_83ul.svg"
   },
   {
+    "name": "Wallet",
+    "svg": "wallet_aym5.svg"
+  },
+  {
+    "name": "Warning",
+    "svg": "warning_cyit.svg"
+  },
+  {
     "name": "Weather",
     "svg": "weather_d9t2.svg"
   },
@@ -1488,8 +1552,16 @@
     "svg": "website_setup_5hr2.svg"
   },
   {
+    "name": "Wedding",
+    "svg": "wedding_t1yl.svg"
+  },
+  {
     "name": "Welcome",
     "svg": "welcome_3gvl.svg"
+  },
+  {
+    "name": "Wind turbine",
+    "svg": "wind_turbine_x2k4.svg"
   },
   {
     "name": "Window shopping",
@@ -1498,6 +1570,10 @@
   {
     "name": "Windows",
     "svg": "windows_q9m0.svg"
+  },
+  {
+    "name": "Winners",
+    "svg": "winners_2yls.svg"
   },
   {
     "name": "Winter designer",
@@ -1514,6 +1590,10 @@
   {
     "name": "Wishes",
     "svg": "wishes_icyp.svg"
+  },
+  {
+    "name": "Witch",
+    "svg": "witch_7uk7.svg"
   },
   {
     "name": "Woman",

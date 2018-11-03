@@ -23,7 +23,7 @@ generate();
 function generate() {
   const spinner = ora('Generating components ...').start();
   const src = './svg';
-  const dest = './src/illustrations';
+  const dest = './src/lib/illustrations';
   const prefix = 'Undraw';
   let promises = [];
 

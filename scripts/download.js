@@ -28,6 +28,6 @@ function download() {
   });
 
   Promise.all(promises)
-    .then(() => spinner.succeed(`Sucessfully downloaded ${illustrations.length} files!`))
+    .then(() => spinner.succeed(`Successfully downloaded ${illustrations.length} files!`))
     .catch(error => spinner.fail(error));
 }

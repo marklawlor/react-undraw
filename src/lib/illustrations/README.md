@@ -1,5 +1,5 @@
 # Illustrations
-389 illustrations available.
+409 illustrations available.
 
 | Illustration              | Name                        | Component                          |
 | ------------------------- | --------------------------- | ---------------------------------- |
@@ -31,6 +31,7 @@
 | Back in the day           | `back-in-the-day`           | `<UndrawBackInTheDay />`           |
 | Back to school            | `back-to-school`            | `<UndrawBackToSchool />`           |
 | Balloons                  | `balloons`                  | `<UndrawBalloons />`               |
+| Barber                    | `barber`                    | `<UndrawBarber />`                 |
 | Basketball                | `basketball`                | `<UndrawBasketball />`             |
 | Be the hero               | `be-the-hero`               | `<UndrawBeTheHero />`              |
 | Beach                     | `beach`                     | `<UndrawBeach />`                  |
@@ -113,6 +114,7 @@
 | Designer girl             | `designer-girl`             | `<UndrawDesignerGirl />`           |
 | Designer life             | `designer-life`             | `<UndrawDesignerLife />`           |
 | Destination               | `destination`               | `<UndrawDestination />`            |
+| Developer activity        | `developer-activity`        | `<UndrawDeveloperActivity />`      |
 | Development               | `development`               | `<UndrawDevelopment />`            |
 | Devices                   | `devices`                   | `<UndrawDevices />`                |
 | Digital nomad             | `digital-nomad`             | `<UndrawDigitalNomad />`           |
@@ -192,6 +194,7 @@
 | Internet on the go        | `internet-on-the-go`        | `<UndrawInternetOnTheGo />`        |
 | Interview                 | `interview`                 | `<UndrawInterview />`              |
 | Invite                    | `invite`                    | `<UndrawInvite />`                 |
+| Jason mask                | `jason-mask`                | `<UndrawJasonMask />`              |
 | JavaScript frameworks     | `java-script-frameworks`    | `<UndrawJavaScriptFrameworks />`   |
 | Job hunt                  | `job-hunt`                  | `<UndrawJobHunt />`                |
 | Jogging                   | `jogging`                   | `<UndrawJogging />`                |
@@ -212,6 +215,7 @@
 | Map light                 | `map-light`                 | `<UndrawMapLight />`               |
 | Marilyn                   | `marilyn`                   | `<UndrawMarilyn />`                |
 | May the force             | `may-the-force`             | `<UndrawMayTheForce />`            |
+| Medicine                  | `medicine`                  | `<UndrawMedicine />`               |
 | Meditation                | `meditation`                | `<UndrawMeditation />`             |
 | Meeting                   | `meeting`                   | `<UndrawMeeting />`                |
 | Messages                  | `messages`                  | `<UndrawMessages />`               |
@@ -225,6 +229,7 @@
 | Mobile browsers           | `mobile-browsers`           | `<UndrawMobileBrowsers />`         |
 | Mobile marketing          | `mobile-marketing`          | `<UndrawMobileMarketing />`        |
 | Mobile payments           | `mobile-payments`           | `<UndrawMobilePayments />`         |
+| Mobile testing            | `mobile-testing`            | `<UndrawMobileTesting />`          |
 | Modern woman              | `modern-woman`              | `<UndrawModernWoman />`            |
 | Moment to remember        | `moment-to-remember`        | `<UndrawMomentToRemember />`       |
 | More music                | `more-music`                | `<UndrawMoreMusic />`              |
@@ -260,6 +265,7 @@
 | Pedestrian crossing       | `pedestrian-crossing`       | `<UndrawPedestrianCrossing />`     |
 | Pen tool                  | `pen-tool`                  | `<UndrawPenTool />`                |
 | People search             | `people-search`             | `<UndrawPeopleSearch />`           |
+| Personal trainer          | `personal-trainer`          | `<UndrawPersonalTrainer />`        |
 | Personalization           | `personalization`           | `<UndrawPersonalization />`        |
 | Photo                     | `photo`                     | `<UndrawPhoto />`                  |
 | Photo sharing             | `photo-sharing`             | `<UndrawPhotoSharing />`           |
@@ -295,13 +301,17 @@
 | Responsive                | `responsive`                | `<UndrawResponsive />`             |
 | Resume                    | `resume`                    | `<UndrawResume />`                 |
 | Resume folder             | `resume-folder`             | `<UndrawResumeFolder />`           |
+| Revenue                   | `revenue`                   | `<UndrawRevenue />`                |
 | Ride a bicycle            | `ride-a-bicycle`            | `<UndrawRideABicycle />`           |
 | Rising                    | `rising`                    | `<UndrawRising />`                 |
+| Robotics                  | `robotics`                  | `<UndrawRobotics />`               |
 | Romantic getaway          | `romantic-getaway`          | `<UndrawRomanticGetaway />`        |
 | Running wild              | `running-wild`              | `<UndrawRunningWild />`            |
 | Safe                      | `safe`                      | `<UndrawSafe />`                   |
 | Savings                   | `savings`                   | `<UndrawSavings />`                |
 | Science                   | `science`                   | `<UndrawScience />`                |
+| Scooter                   | `scooter`                   | `<UndrawScooter />`                |
+| Scrum board               | `scrum-board`               | `<UndrawScrumBoard />`             |
 | Search                    | `search`                    | `<UndrawSearch />`                 |
 | Search engines            | `search-engines`            | `<UndrawSearchEngines />`          |
 | Secure data               | `secure-data`               | `<UndrawSecureData />`             |
@@ -322,6 +332,7 @@
 | Sleep analysis            | `sleep-analysis`            | `<UndrawSleepAnalysis />`          |
 | Smiley face               | `smiley-face`               | `<UndrawSmileyFace />`             |
 | Snowman                   | `snowman`                   | `<UndrawSnowman />`                |
+| Social dashboard          | `social-dashboard`          | `<UndrawSocialDashboard />`        |
 | Social growth             | `social-growth`             | `<UndrawSocialGrowth />`           |
 | Social ideas              | `social-ideas`              | `<UndrawSocialIdeas />`            |
 | Social media              | `social-media`              | `<UndrawSocialMedia />`            |
@@ -335,6 +346,7 @@
 | Startup life              | `startup-life`              | `<UndrawStartupLife />`            |
 | Static assets             | `static-assets`             | `<UndrawStaticAssets />`           |
 | Statistics                | `statistics`                | `<UndrawStatistics />`             |
+| Status update             | `status-update`             | `<UndrawStatusUpdate />`           |
 | Staying in                | `staying-in`                | `<UndrawStayingIn />`              |
 | Street food               | `street-food`               | `<UndrawStreetFood />`             |
 | Studying                  | `studying`                  | `<UndrawStudying />`               |
@@ -365,23 +377,31 @@
 | Typing                    | `typing`                    | `<UndrawTyping />`                 |
 | Upload                    | `upload`                    | `<UndrawUpload />`                 |
 | Upvote                    | `upvote`                    | `<UndrawUpvote />`                 |
+| Usability testing         | `usability-testing`         | `<UndrawUsabilityTesting />`       |
 | Vault                     | `vault`                     | `<UndrawVault />`                  |
+| Version control           | `version-control`           | `<UndrawVersionControl />`         |
 | Videographer              | `videographer`              | `<UndrawVideographer />`           |
 | Virtual reality           | `virtual-reality`           | `<UndrawVirtualReality />`         |
 | Voice control             | `voice-control`             | `<UndrawVoiceControl />`           |
 | VR chat                   | `vr-chat`                   | `<UndrawVrChat />`                 |
 | Walk in the city          | `walk-in-the-city`          | `<UndrawWalkInTheCity />`          |
 | Wall post                 | `wall-post`                 | `<UndrawWallPost />`               |
+| Wallet                    | `wallet`                    | `<UndrawWallet />`                 |
+| Warning                   | `warning`                   | `<UndrawWarning />`                |
 | Weather                   | `weather`                   | `<UndrawWeather />`                |
 | Web devices               | `web-devices`               | `<UndrawWebDevices />`             |
 | Website setup             | `website-setup`             | `<UndrawWebsiteSetup />`           |
+| Wedding                   | `wedding`                   | `<UndrawWedding />`                |
 | Welcome                   | `welcome`                   | `<UndrawWelcome />`                |
+| Wind turbine              | `wind-turbine`              | `<UndrawWindTurbine />`            |
 | Window shopping           | `window-shopping`           | `<UndrawWindowShopping />`         |
 | Windows                   | `windows`                   | `<UndrawWindows />`                |
+| Winners                   | `winners`                   | `<UndrawWinners />`                |
 | Winter designer           | `winter-designer`           | `<UndrawWinterDesigner />`         |
 | Winter olympics           | `winter-olympics`           | `<UndrawWinterOlympics />`         |
 | Wireframing               | `wireframing`               | `<UndrawWireframing />`            |
 | Wishes                    | `wishes`                    | `<UndrawWishes />`                 |
+| Witch                     | `witch`                     | `<UndrawWitch />`                  |
 | Woman                     | `woman`                     | `<UndrawWoman />`                  |
 | Women day                 | `women-day`                 | `<UndrawWomenDay />`               |
 | Word of mouth             | `word-of-mouth`             | `<UndrawWordOfMouth />`            |

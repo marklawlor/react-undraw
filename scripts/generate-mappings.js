@@ -15,7 +15,7 @@ generate();
  */
 function generate() {
   const spinner = ora('Generating mappings ...').start();
-  const dest = path.join('./src/common', 'mappings.js');
+  const dest = path.join('./src/lib/common', 'mappings.js');
   const prefix = 'Undraw';
   let content = '';
 
