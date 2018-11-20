@@ -85,11 +85,15 @@
   },
   {
     "name": "Astronaut",
-    "svg": "Astronaut_0o7w.svg"
+    "svg": "Astronaut_kwwa.svg"
   },
   {
     "name": "At work",
     "svg": "files_6b3d.svg"
+  },
+  {
+    "name": "Authentication",
+    "svg": "authentication_fsn5.svg"
   },
   {
     "name": "Autumn",
@@ -181,7 +185,7 @@
   },
   {
     "name": "Building",
-    "svg": "Building_leu4.svg"
+    "svg": "Building_vpxo.svg"
   },
   {
     "name": "Building blocks",
@@ -225,11 +229,11 @@
   },
   {
     "name": "Camping",
-    "svg": "camping_j8s0.svg"
+    "svg": "Camping_2g8w.svg"
   },
   {
     "name": "Cautious dog",
-    "svg": "cautious_dog_1_xje0.svg"
+    "svg": "Cautious_dog_q83f.svg"
   },
   {
     "name": "Celebration",
@@ -388,6 +392,10 @@
     "svg": "dark_alley_hl3o.svg"
   },
   {
+    "name": "Dark analytics",
+    "svg": "dark_analytics_7axy.svg"
+  },
+  {
     "name": "Dashboard",
     "svg": "dashboard_nklg.svg"
   },
@@ -433,7 +441,7 @@
   },
   {
     "name": "Designer girl",
-    "svg": "working_woman_3uve.svg"
+    "svg": "designer_girl_xdmq.svg"
   },
   {
     "name": "Designer life",
@@ -441,7 +449,7 @@
   },
   {
     "name": "Destination",
-    "svg": "destanation1_h3vq.svg"
+    "svg": "Destination_mcr1.svg"
   },
   {
     "name": "Developer activity",
@@ -518,6 +526,10 @@
   {
     "name": "Events",
     "svg": "events_2p66.svg"
+  },
+  {
+    "name": "Exams",
+    "svg": "exams_g4ow.svg"
   },
   {
     "name": "Experts",
@@ -637,11 +649,11 @@
   },
   {
     "name": "Golden gate bridge",
-    "svg": "Golden_Gate_Bridge_00us.svg"
+    "svg": "Golden_gate_bridge_laqs.svg"
   },
   {
     "name": "Good doggy",
-    "svg": "good_doggy_9c2g.svg"
+    "svg": "good_doggy_4wfq.svg"
   },
   {
     "name": "Grades",
@@ -722,6 +734,10 @@
   {
     "name": "In love",
     "svg": "in_love_3dcq.svg"
+  },
+  {
+    "name": "In progress",
+    "svg": "in_progress_ql66.svg"
   },
   {
     "name": "In sync",
@@ -832,6 +848,14 @@
     "svg": "makeup_artist_rxn8.svg"
   },
   {
+    "name": "Making art",
+    "svg": "making_art_759c.svg"
+  },
+  {
+    "name": "Map",
+    "svg": "map_1r69.svg"
+  },
+  {
     "name": "Map dark",
     "svg": "map_dros.svg"
   },
@@ -866,6 +890,10 @@
   {
     "name": "Messaging",
     "svg": "messaging_uok8.svg"
+  },
+  {
+    "name": "Messaging fun",
+    "svg": "messaging_fun_86y2.svg"
   },
   {
     "name": "Messenger",
@@ -932,6 +960,10 @@
     "svg": "movie_night_93wl.svg"
   },
   {
+    "name": "Moving forward",
+    "svg": "moving_forward_lhhd.svg"
+  },
+  {
     "name": "Music",
     "svg": "music_r1se.svg"
   },
@@ -965,7 +997,7 @@
   },
   {
     "name": "Notebook",
-    "svg": "notebook_g9x9.svg"
+    "svg": "Notebook_o571.svg"
   },
   {
     "name": "Notes",
@@ -1029,7 +1061,11 @@
   },
   {
     "name": "Outer space",
-    "svg": "outer_space_3v6n.svg"
+    "svg": "Outer_space_drqu.svg"
+  },
+  {
+    "name": "pair programming",
+    "svg": "pair_programming_njlp.svg"
   },
   {
     "name": "Passing by",
@@ -1092,6 +1128,10 @@
     "svg": "podcast_q6p7.svg"
   },
   {
+    "name": "Podcast audience",
+    "svg": "podcast_audience_ddap.svg"
+  },
+  {
     "name": "Portfolio",
     "svg": "portfolio_essv.svg"
   },
@@ -1120,6 +1160,10 @@
     "svg": "press_play_bx2d.svg"
   },
   {
+    "name": "Printing invoices",
+    "svg": "printing_invoices_5r4r.svg"
+  },
+  {
     "name": "Processing",
     "svg": "processing_qj6a.svg"
   },
@@ -1144,6 +1188,10 @@
     "svg": "programming_2svr.svg"
   },
   {
+    "name": "Prototyping process",
+    "svg": "prototyping_process_rswj.svg"
+  },
+  {
     "name": "QA engineers",
     "svg": "QA_engineers_dg5p.svg"
   },
@@ -1154,6 +1202,10 @@
   {
     "name": "Queue",
     "svg": "queue_qt30.svg"
+  },
+  {
+    "name": "Quitting time",
+    "svg": "quitting_time_dm8t.svg"
   },
   {
     "name": "Reading list",
@@ -1224,6 +1276,10 @@
     "svg": "savings_hjfl.svg"
   },
   {
+    "name": "Schedule",
+    "svg": "schedule_pnbk.svg"
+  },
+  {
     "name": "Science",
     "svg": "science_fqhl.svg"
   },
@@ -1257,7 +1313,7 @@
   },
   {
     "name": "Security on",
-    "svg": "security_on_6e8f.svg"
+    "svg": "Security_on_s9ym.svg"
   },
   {
     "name": "Segment",
@@ -1345,7 +1401,7 @@
   },
   {
     "name": "Specs",
-    "svg": "specs2_2jb3.svg"
+    "svg": "Specs_h9jt.svg"
   },
   {
     "name": "Spreadsheets",
@@ -1421,7 +1477,7 @@
   },
   {
     "name": "Taken",
-    "svg": "taken_yju1.svg"
+    "svg": "Taken_if77.svg"
   },
   {
     "name": "Taking notes",
@@ -1436,12 +1492,20 @@
     "svg": "tasting_de22.svg"
   },
   {
+    "name": "Teacher",
+    "svg": "teacher_35j2.svg"
+  },
+  {
     "name": "Team",
     "svg": "team_ih79.svg"
   },
   {
     "name": "Team spirit",
     "svg": "team_spirit_hrr4.svg"
+  },
+  {
+    "name": "Texting",
+    "svg": "texting_k35o.svg"
   },
   {
     "name": "Thoughts",
@@ -1488,6 +1552,10 @@
     "svg": "typing_jie3.svg"
   },
   {
+    "name": "Unboxing",
+    "svg": "unboxing_pbmf.svg"
+  },
+  {
     "name": "Upload",
     "svg": "upload_87y9.svg"
   },
@@ -1500,12 +1568,20 @@
     "svg": "usability_testing_2xs4.svg"
   },
   {
+    "name": "User flow",
+    "svg": "user_flow_vr6w.svg"
+  },
+  {
     "name": "Vault",
     "svg": "vault_9cmw.svg"
   },
   {
     "name": "Version control",
     "svg": "version_control_9bpv.svg"
+  },
+  {
+    "name": "Video call",
+    "svg": "video_call_kxyp.svg"
   },
   {
     "name": "Videographer",
@@ -1597,7 +1673,7 @@
   },
   {
     "name": "Woman",
-    "svg": "girl_and_dog_yuhw.svg"
+    "svg": "woman_mevk.svg"
   },
   {
     "name": "Women day",
@@ -1617,7 +1693,7 @@
   },
   {
     "name": "Working",
-    "svg": "working2_ce2b.svg"
+    "svg": "Working_32n9.svg"
   },
   {
     "name": "Working late",
@@ -1629,7 +1705,7 @@
   },
   {
     "name": "Yacht",
-    "svg": "travel_pb6m.svg"
+    "svg": "Yacht_2wyo.svg"
   },
   {
     "name": "Young and happy",

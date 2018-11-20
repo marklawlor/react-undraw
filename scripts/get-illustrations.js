@@ -18,7 +18,7 @@
       } else {
         getIllustrations();
       }
-    }, 350);
+    }, 1000);
   }
 
   function getIllustrations() {
