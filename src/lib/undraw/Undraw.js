@@ -22,6 +22,19 @@ export default class Undraw extends Component {
   };
 
   /**
+   * Override default prop values.
+   *
+   * @param {Object} props Properties to set as default values.
+   */
+  static setDefaultProps(props) {
+    if (!props) {
+      return;
+    }
+
+    Object.assign(Undraw.defaultProps, props);
+  }
+
+  /**
    * Render.
    */
   render() {

@@ -31,6 +31,13 @@ Props:
 
 See [./src/lib/illustrations/README.md](./src/lib/illustrations/README.md) for a full list of supported illustration names.
 
+## Override Default Props
+```jsx
+import Undraw from 'react-undraw';
+
+Undraw.setDefaultProps({ primaryColor: 'darkblue' });
+```
+
 # Development
 ```
 npm install
