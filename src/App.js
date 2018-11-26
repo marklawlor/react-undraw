@@ -35,6 +35,8 @@ export default class App extends Component {
    * Render.
    */
   render() {
+    const { illustration, primaryColor } = this.state;
+
     return (
       <React.Fragment>
         <nav className="navbar navbar-dark bg-dark">
@@ -55,7 +57,7 @@ export default class App extends Component {
         <div className="container my-4">
           <div className="row">
             <div className="col-10">
-              <select name="illustration" className="form-control" onChange={this.onChange} value={this.state.illustration}>
+              <select name="illustration" className="form-control" onChange={this.onChange} value={illustration}>
                 {Object.keys(mappings).map(key => <option key={key} value={key}>{key}</option>)}
               </select>
             </div>
@@ -65,12 +67,12 @@ export default class App extends Component {
                 className="form-control"
                 name="primaryColor"
                 onChange={this.onChange}
-                value={this.state.primaryColor}
+                value={primaryColor}
               />
             </div>
           </div>
           <hr className="my-4" />
-          <Undraw name={this.state.illustration} primaryColor={this.state.primaryColor} />
+          <Undraw name={illustration} primaryColor={primaryColor} />
         </div>
       </React.Fragment>
     );

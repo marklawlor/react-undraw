@@ -12,10 +12,6 @@
     ],
     "import/no-extraneous-dependencies": 0,
     "linebreak-style": 0,
-    "react/destructuring-assignment": [
-      1,
-      "never"
-    ],
     "react/jsx-filename-extension": [
       1,
       {
