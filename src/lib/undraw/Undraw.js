@@ -38,12 +38,8 @@ export default class Undraw extends Component {
    * Render.
    */
   render() {
-    const {
-      name,
-      height,
-      primaryColor,
-      ...rest
-    } = this.props;
+    const { name, height, primaryColor, style, ...rest } = this.props;
+    const styleProp = { height, width: '100%', ...style };
     const Illustration = mappings[name];
 
     if (!Illustration) {
@@ -51,7 +47,7 @@ export default class Undraw extends Component {
     }
 
     return (
-      <Illustration height={height} primaryColor={primaryColor} {...rest} />
+      <Illustration style={styleProp} primaryColor={primaryColor} {...rest} />
     );
   }
 }

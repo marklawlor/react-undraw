@@ -172,6 +172,10 @@
     "svg": "book_lover_mkck.svg"
   },
   {
+    "name": "Booking",
+    "svg": "booking_33fn.svg"
+  },
+  {
     "name": "Brainstorming",
     "svg": "brainstorming_49d4.svg"
   },
@@ -404,6 +408,10 @@
     "svg": "data_xmfy.svg"
   },
   {
+    "name": "Data points",
+    "svg": "Data_points_ubvs.svg"
+  },
+  {
     "name": "Data report",
     "svg": "data_report_bi6l.svg"
   },
@@ -498,6 +506,10 @@
   {
     "name": "Electric car",
     "svg": "electric_car_b7hl.svg"
+  },
+  {
+    "name": "Email campaign",
+    "svg": "email_campaign_qa8y.svg"
   },
   {
     "name": "Email capture",
@@ -640,6 +652,10 @@
     "svg": "gift1_sgf8.svg"
   },
   {
+    "name": "Gifts",
+    "svg": "gifts_btw0.svg"
+  },
+  {
     "name": "Girls just wanna have fun",
     "svg": "girl_just_wanna_have_fun_9d5u.svg"
   },
@@ -686,6 +702,10 @@
   {
     "name": "Happy birthday",
     "svg": "happy_birthday_s72n.svg"
+  },
+  {
+    "name": "Having fun",
+    "svg": "having_fun_iais.svg"
   },
   {
     "name": "Healthy habit",
@@ -810,6 +830,10 @@
   {
     "name": "Login",
     "svg": "login_jdch.svg"
+  },
+  {
+    "name": "Logistics",
+    "svg": "logistics_x4dc.svg"
   },
   {
     "name": "Lost",
@@ -1040,6 +1064,10 @@
     "svg": "opened_gi4n.svg"
   },
   {
+    "name": "Operating system",
+    "svg": "operating_system_4lr6.svg"
+  },
+  {
     "name": "Order confirmed",
     "svg": "order_confirmed_1m3v.svg"
   },
@@ -1082,6 +1110,10 @@
   {
     "name": "People search",
     "svg": "people_search_wctu.svg"
+  },
+  {
+    "name": "Personal settings",
+    "svg": "personal_settings_kihd.svg"
   },
   {
     "name": "Personal trainer",
@@ -1138,6 +1170,10 @@
   {
     "name": "Post",
     "svg": "post2_19cj.svg"
+  },
+  {
+    "name": "Post online",
+    "svg": "post_online_dkuk.svg"
   },
   {
     "name": "Posts",
@@ -1214,6 +1250,10 @@
   {
     "name": "Real-time sync",
     "svg": "real-time_sync_o57k.svg"
+  },
+  {
+    "name": "Recording",
+    "svg": "recording_lywr.svg"
   },
   {
     "name": "Refreshing",
@@ -1364,6 +1404,10 @@
     "svg": "sleep_analysis_o5f9.svg"
   },
   {
+    "name": "Smart home",
+    "svg": "smart_home_28oy.svg"
+  },
+  {
     "name": "Smiley face",
     "svg": "smiley_face_lmgm.svg"
   },
@@ -1504,6 +1548,10 @@
     "svg": "team_spirit_hrr4.svg"
   },
   {
+    "name": "Teddy bear",
+    "svg": "teddy_bear_hns1.svg"
+  },
+  {
     "name": "Texting",
     "svg": "texting_k35o.svg"
   },
@@ -1556,8 +1604,16 @@
     "svg": "unboxing_pbmf.svg"
   },
   {
+    "name": "Under construction",
+    "svg": "under_construction_46pa.svg"
+  },
+  {
     "name": "Upload",
     "svg": "upload_87y9.svg"
+  },
+  {
+    "name": "Uploading",
+    "svg": "uploading_go67.svg"
   },
   {
     "name": "Upvote",
@@ -1574,6 +1630,10 @@
   {
     "name": "Vault",
     "svg": "vault_9cmw.svg"
+  },
+  {
+    "name": "Vehicle sale",
+    "svg": "vehicle_sale_v7fm.svg"
   },
   {
     "name": "Version control",
@@ -1700,6 +1760,10 @@
     "svg": "working_late_pukg.svg"
   },
   {
+    "name": "Working remotely",
+    "svg": "working_remotely_jh40.svg"
+  },
+  {
     "name": "Workout",
     "svg": "workout_gcgu.svg"
   },
@@ -1710,5 +1774,9 @@
   {
     "name": "Young and happy",
     "svg": "young_and_happy_hfpe.svg"
+  },
+  {
+    "name": "Youtube tutorial",
+    "svg": "youtube_tutorial_2gn3.svg"
   }
 ]

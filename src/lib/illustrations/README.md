@@ -1,5 +1,5 @@
 # Illustrations
-428 illustrations available.
+445 illustrations available.
 
 | Illustration              | Name                        | Component                          |
 | ------------------------- | --------------------------- | ---------------------------------- |
@@ -46,6 +46,7 @@
 | Blog post                 | `blog-post`                 | `<UndrawBlogPost />`               |
 | Blogging                  | `blogging`                  | `<UndrawBlogging />`               |
 | Book lover                | `book-lover`                | `<UndrawBookLover />`              |
+| Booking                   | `booking`                   | `<UndrawBooking />`                |
 | Brainstorming             | `brainstorming`             | `<UndrawBrainstorming />`          |
 | Broadcast                 | `broadcast`                 | `<UndrawBroadcast />`              |
 | Browser stats             | `browser-stats`             | `<UndrawBrowserStats />`           |
@@ -104,6 +105,7 @@
 | Dark analytics            | `dark-analytics`            | `<UndrawDarkAnalytics />`          |
 | Dashboard                 | `dashboard`                 | `<UndrawDashboard />`              |
 | Data                      | `data`                      | `<UndrawData />`                   |
+| Data points               | `data-points`               | `<UndrawDataPoints />`             |
 | Data report               | `data-report`               | `<UndrawDataReport />`             |
 | Data trends               | `data-trends`               | `<UndrawDataTrends />`             |
 | Delivery                  | `delivery`                  | `<UndrawDelivery />`               |
@@ -128,6 +130,7 @@
 | Easter egg hunt           | `easter-egg-hunt`           | `<UndrawEasterEggHunt />`          |
 | Eating together           | `eating-together`           | `<UndrawEatingTogether />`         |
 | Electric car              | `electric-car`              | `<UndrawElectricCar />`            |
+| Email campaign            | `email-campaign`            | `<UndrawEmailCampaign />`          |
 | Email capture             | `email-capture`             | `<UndrawEmailCapture />`           |
 | Emails                    | `emails`                    | `<UndrawEmails />`                 |
 | Empty                     | `empty`                     | `<UndrawEmpty />`                  |
@@ -163,6 +166,7 @@
 | GDPR                      | `gdpr`                      | `<UndrawGdpr />`                   |
 | Getting coffee            | `getting-coffee`            | `<UndrawGettingCoffee />`          |
 | Gift                      | `gift`                      | `<UndrawGift />`                   |
+| Gifts                     | `gifts`                     | `<UndrawGifts />`                  |
 | Girls just wanna have fun | `girls-just-wanna-have-fun` | `<UndrawGirlsJustWannaHaveFun />`  |
 | Goal                      | `goal`                      | `<UndrawGoal />`                   |
 | Golden gate bridge        | `golden-gate-bridge`        | `<UndrawGoldenGateBridge />`       |
@@ -175,6 +179,7 @@
 | Growing                   | `growing`                   | `<UndrawGrowing />`                |
 | Hang out                  | `hang-out`                  | `<UndrawHangOut />`                |
 | Happy birthday            | `happy-birthday`            | `<UndrawHappyBirthday />`          |
+| Having fun                | `having-fun`                | `<UndrawHavingFun />`              |
 | Healthy habit             | `healthy-habit`             | `<UndrawHealthyHabit />`           |
 | Heartbroken               | `heartbroken`               | `<UndrawHeartbroken />`            |
 | Hello                     | `hello`                     | `<UndrawHello />`                  |
@@ -206,6 +211,7 @@
 | Live collaboration        | `live-collaboration`        | `<UndrawLiveCollaboration />`      |
 | Loading                   | `loading`                   | `<UndrawLoading />`                |
 | Login                     | `login`                     | `<UndrawLogin />`                  |
+| Logistics                 | `logistics`                 | `<UndrawLogistics />`              |
 | Lost                      | `lost`                      | `<UndrawLost />`                   |
 | Love is in the air        | `love-is-in-the-air`        | `<UndrawLoveIsInTheAir />`         |
 | Mail                      | `mail`                      | `<UndrawMail />`                   |
@@ -263,6 +269,7 @@
 | Online shopping           | `online-shopping`           | `<UndrawOnlineShopping />`         |
 | Online world              | `online-world`              | `<UndrawOnlineWorld />`            |
 | Opened                    | `opened`                    | `<UndrawOpened />`                 |
+| Operating system          | `operating-system`          | `<UndrawOperatingSystem />`        |
 | Order confirmed           | `order-confirmed`           | `<UndrawOrderConfirmed />`         |
 | Ordinary day              | `ordinary-day`              | `<UndrawOrdinaryDay />`            |
 | Organize photos           | `organize-photos`           | `<UndrawOrganizePhotos />`         |
@@ -274,6 +281,7 @@
 | Pedestrian crossing       | `pedestrian-crossing`       | `<UndrawPedestrianCrossing />`     |
 | Pen tool                  | `pen-tool`                  | `<UndrawPenTool />`                |
 | People search             | `people-search`             | `<UndrawPeopleSearch />`           |
+| Personal settings         | `personal-settings`         | `<UndrawPersonalSettings />`       |
 | Personal trainer          | `personal-trainer`          | `<UndrawPersonalTrainer />`        |
 | Personalization           | `personalization`           | `<UndrawPersonalization />`        |
 | Photo                     | `photo`                     | `<UndrawPhoto />`                  |
@@ -288,6 +296,7 @@
 | Podcast audience          | `podcast-audience`          | `<UndrawPodcastAudience />`        |
 | Portfolio                 | `portfolio`                 | `<UndrawPortfolio />`              |
 | Post                      | `post`                      | `<UndrawPost />`                   |
+| Post online               | `post-online`               | `<UndrawPostOnline />`             |
 | Posts                     | `posts`                     | `<UndrawPosts />`                  |
 | Powerful                  | `powerful`                  | `<UndrawPowerful />`               |
 | Preferences               | `preferences`               | `<UndrawPreferences />`            |
@@ -307,6 +316,7 @@
 | Quitting time             | `quitting-time`             | `<UndrawQuittingTime />`           |
 | Reading list              | `reading-list`              | `<UndrawReadingList />`            |
 | Real-time sync            | `real-time-sync`            | `<UndrawRealTimeSync />`           |
+| Recording                 | `recording`                 | `<UndrawRecording />`              |
 | Refreshing                | `refreshing`                | `<UndrawRefreshing />`             |
 | Relaxation                | `relaxation`                | `<UndrawRelaxation />`             |
 | Relaxing at home          | `relaxing-at-home`          | `<UndrawRelaxingAtHome />`         |
@@ -344,6 +354,7 @@
 | Setup wizard              | `setup-wizard`              | `<UndrawSetupWizard />`            |
 | Site stats                | `site-stats`                | `<UndrawSiteStats />`              |
 | Sleep analysis            | `sleep-analysis`            | `<UndrawSleepAnalysis />`          |
+| Smart home                | `smart-home`                | `<UndrawSmartHome />`              |
 | Smiley face               | `smiley-face`               | `<UndrawSmileyFace />`             |
 | Snowman                   | `snowman`                   | `<UndrawSnowman />`                |
 | Social dashboard          | `social-dashboard`          | `<UndrawSocialDashboard />`        |
@@ -379,6 +390,7 @@
 | Teacher                   | `teacher`                   | `<UndrawTeacher />`                |
 | Team                      | `team`                      | `<UndrawTeam />`                   |
 | Team spirit               | `team-spirit`               | `<UndrawTeamSpirit />`             |
+| Teddy bear                | `teddy-bear`                | `<UndrawTeddyBear />`              |
 | Texting                   | `texting`                   | `<UndrawTexting />`                |
 | Thoughts                  | `thoughts`                  | `<UndrawThoughts />`               |
 | Through the desert        | `through-the-desert`        | `<UndrawThroughTheDesert />`       |
@@ -392,11 +404,14 @@
 | Tweetstorm                | `tweetstorm`                | `<UndrawTweetstorm />`             |
 | Typing                    | `typing`                    | `<UndrawTyping />`                 |
 | Unboxing                  | `unboxing`                  | `<UndrawUnboxing />`               |
+| Under construction        | `under-construction`        | `<UndrawUnderConstruction />`      |
 | Upload                    | `upload`                    | `<UndrawUpload />`                 |
+| Uploading                 | `uploading`                 | `<UndrawUploading />`              |
 | Upvote                    | `upvote`                    | `<UndrawUpvote />`                 |
 | Usability testing         | `usability-testing`         | `<UndrawUsabilityTesting />`       |
 | User flow                 | `user-flow`                 | `<UndrawUserFlow />`               |
 | Vault                     | `vault`                     | `<UndrawVault />`                  |
+| Vehicle sale              | `vehicle-sale`              | `<UndrawVehicleSale />`            |
 | Version control           | `version-control`           | `<UndrawVersionControl />`         |
 | Video call                | `video-call`                | `<UndrawVideoCall />`              |
 | Videographer              | `videographer`              | `<UndrawVideographer />`           |
@@ -428,6 +443,8 @@
 | Work time                 | `work-time`                 | `<UndrawWorkTime />`               |
 | Working                   | `working`                   | `<UndrawWorking />`                |
 | Working late              | `working-late`              | `<UndrawWorkingLate />`            |
+| Working remotely          | `working-remotely`          | `<UndrawWorkingRemotely />`        |
 | Workout                   | `workout`                   | `<UndrawWorkout />`                |
 | Yacht                     | `yacht`                     | `<UndrawYacht />`                  |
 | Young and happy           | `young-and-happy`           | `<UndrawYoungAndHappy />`          |
+| Youtube tutorial          | `youtube-tutorial`          | `<UndrawYoutubeTutorial />`        |

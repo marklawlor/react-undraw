@@ -10,9 +10,6 @@ const illustrations = require('./illustrations.json');
 const replaceAttrValues = {
   '#6c63ff': '{props.primaryColor}',
 };
-const svgProps = {
-  style: '{{ height: props.height, width: "100%" }}'
-};
 
 // execute
 generate();
@@ -34,8 +31,7 @@ function generate() {
     const destPath = path.join(dest, `${componentName}.js`);
 
     promises.push(
-      svgr(srcCode, { icon: true, replaceAttrValues, svgProps }, { componentName })
-        .then(js => fixAttrs(js))
+      svgr(srcCode, { icon: true, replaceAttrValues }, { componentName })
         .then(js => {
           let banner = '';
           banner += '/* eslint-disable */ ';
@@ -48,23 +44,6 @@ function generate() {
   });
 
   Promise.all(promises)
-    .then(() => spinner.succeed(`Sucessfully generated ${illustrations.length} files!`))
+    .then(() => spinner.succeed(`Successfully generated ${illustrations.length} files!`))
     .catch(error => spinner.fail(error));
-}
-
-/**
- * Remove quotes around prop attributes.
- *
- * https://github.com/smooth-code/svgr/issues/205
- */
-function fixAttrs(js) {
-  Object.keys(replaceAttrValues)
-    .map(key => replaceAttrValues[key])
-    .filter(value => value.startsWith('{') && value.endsWith('}'))
-    .forEach(value => {
-      const pattern = new RegExp(`"${value}"`, 'g');
-      js = js.replace(pattern, value);
-    });
-
-  return js;
 }

@@ -29,6 +29,7 @@ Props:
 | `primaryColor` | `string` | Illustration primary color.    | `#6c63ff` |
 | `height`       | `string` | Illustration height.           | `250px`   |
 
+
 See [./src/lib/illustrations/README.md](./src/lib/illustrations/README.md) for a full list of supported illustration names.
 
 ## Override Default Props
