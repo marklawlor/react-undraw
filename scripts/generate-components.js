@@ -8,7 +8,7 @@ const svgr = require('@svgr/core').default;
 const illustrations = require('./illustrations.json');
 
 const replaceAttrValues = {
-  '#6c63ff': '{props.primaryColor}',
+  '#6c63ff': '{props.primaryColor}'
 };
 
 // execute

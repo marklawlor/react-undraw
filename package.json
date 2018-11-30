@@ -41,7 +41,13 @@
     "prepublishOnly": "npm run lib:build",
     "lib": "npm run lib:clean && npm run lib:build",
     "lib:clean": "rimraf dist",
-    "lib:build": "cross-env NODE_ENV=production babel src/lib --out-dir dist --copy-files"
+    "lib:build": "cross-env NODE_ENV=production babel src/lib --out-dir dist --copy-files",
+    "format:all": "prettier --write **/*.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   },
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -74,9 +80,12 @@
     "eslint-plugin-react": "^7.11.1",
     "fs-extra": "^7.0.1",
     "gh-pages": "^2.0.1",
+    "husky": "^1.2.0",
     "markdown-table": "^1.1.2",
     "ora": "^3.0.0",
     "pascal-case": "^2.0.1",
+    "prettier": "^1.15.3",
+    "pretty-quick": "^1.8.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-scripts": "^2.1.1",

@@ -20,11 +20,7 @@ function download() {
   illustrations.forEach(item => {
     const dir = path.join(dest, item.svg);
 
-    promises.push(
-      axios
-        .get(`${url}/${item.svg}`)
-        .then(res => fs.outputFileSync(dir, res.data))
-    );
+    promises.push(axios.get(`${url}/${item.svg}`).then(res => fs.outputFileSync(dir, res.data)));
   });
 
   Promise.all(promises)

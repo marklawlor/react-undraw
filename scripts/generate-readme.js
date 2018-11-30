@@ -4,7 +4,7 @@ const fs = require('fs-extra');
 const ora = require('ora');
 const pascalCase = require('pascal-case');
 const path = require('path');
-const table = require('markdown-table')
+const table = require('markdown-table');
 
 const illustrations = require('./illustrations.json');
 
@@ -28,14 +28,10 @@ function generate() {
     const name = dashify(item.name);
     const component = prefix + pascalCase(item.name);
 
-    rows.push([
-      item.name,
-      '`' + name + '`',
-      '`<' + component + ' />`'
-    ]);
+    rows.push([item.name, '`' + name + '`', '`<' + component + ' />`']);
   });
 
-  content += '# Illustrations'
+  content += '# Illustrations';
   content += EOL;
   content += `${illustrations.length} illustrations available.`;
   content += EOL;

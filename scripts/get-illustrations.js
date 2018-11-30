@@ -25,9 +25,7 @@
     console.log('Getting SVG items ...');
 
     // some illustrations cause stack overflow exceptions ¯\_(ツ)_/¯
-    const blacklist = [
-      'world_9iqb.svg'
-    ];
+    const blacklist = ['world_9iqb.svg'];
 
     const container = document.querySelector('.item__container');
     const sources = container.querySelectorAll('a[data-src]');
@@ -36,7 +34,10 @@
     items = items
       .map(x => ({
         name: x.getAttribute('data-title'),
-        svg: x.getAttribute('data-src').split('/').pop()
+        svg: x
+          .getAttribute('data-src')
+          .split('/')
+          .pop()
       }))
       .filter(x => blacklist.indexOf(x.svg) === -1)
       .sort((a, b) => a.name.localeCompare(b.name));

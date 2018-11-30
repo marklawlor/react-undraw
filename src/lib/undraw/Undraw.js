@@ -46,8 +46,6 @@ export default class Undraw extends Component {
       return null;
     }
 
-    return (
-      <Illustration style={styleProp} primaryColor={primaryColor} {...rest} />
-    );
+    return <Illustration style={styleProp} primaryColor={primaryColor} {...rest} />;
   }
 }
