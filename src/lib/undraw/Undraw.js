@@ -38,14 +38,20 @@ export default class Undraw extends Component {
    * Render.
    */
   render() {
-    const { name, height, primaryColor, style, ...rest } = this.props;
-    const styleProp = { height, width: '100%', ...style };
+    const { className, height, name, primaryColor, style, ...rest } = this.props;
     const Illustration = mappings[name];
 
     if (!Illustration) {
       return null;
     }
 
-    return <Illustration style={styleProp} primaryColor={primaryColor} {...rest} />;
+    return (
+      <Illustration
+        className={className}
+        style={{ height, width: '100%', ...style }}
+        primaryColor={primaryColor}
+        {...rest}
+      />
+    );
   }
 }
