@@ -5,9 +5,10 @@ const path = require('path');
 const svgr = require('@svgr/core').default;
 
 const illustrations = require('./illustrations.json');
+const template = require('./svgr-template');
 
 const replaceAttrValues = {
-  '#6c63ff': '{props.primaryColor}'
+  '#6c63ff': '{primaryColor}'
 };
 
 // execute
@@ -30,7 +31,16 @@ function generate() {
     const destPath = path.join(dest, `${componentName}.js`);
 
     promises.push(
-      svgr(srcCode, { icon: true, replaceAttrValues }, { componentName }).then(js => fs.outputFile(destPath, js))
+      svgr(
+        srcCode,
+        {
+          icon: true,
+          replaceAttrValues,
+          template,
+          plugins: ['@svgr/plugin-svgo', '@svgr/plugin-jsx', '@svgr/plugin-prettier']
+        },
+        { componentName }
+      ).then(js => fs.outputFile(destPath, js))
     );
   });
 

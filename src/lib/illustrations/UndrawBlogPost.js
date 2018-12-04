@@ -1,5 +1,39 @@
-import React from "react";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-const UndrawBlogPost = props => <svg id="148311d9-c125-4449-a148-b8fa33f3c561" data-name="Layer 1" width="1em" height="1em" viewBox="0 0 627.45 759" {...props}><defs><linearGradient id="fe24b365-19a0-4a71-abdc-76e4b2fc8dee" x1={313.72} y1={759} x2={313.72} gradientUnits="userSpaceOnUse"><stop offset={0} stopColor="gray" stopOpacity={0.25} /><stop offset={0.54} stopColor="gray" stopOpacity={0.12} /><stop offset={1} stopColor="gray" stopOpacity={0.1} /></linearGradient><linearGradient id="f1e26e3d-9d52-4866-b24c-036458e443cc" x1={313.72} y1={455.23} x2={313.72} y2={213.09} gradientUnits="userSpaceOnUse"><stop offset={0} stopColor="#b3b3b3" stopOpacity={0.25} /><stop offset={0.54} stopColor="#b3b3b3" stopOpacity={0.1} /><stop offset={1} stopColor="#b3b3b3" stopOpacity={0.05} /></linearGradient></defs><title>{"blog"}</title><rect width={627.45} height={759} fill="url(#fe24b365-19a0-4a71-abdc-76e4b2fc8dee)" /><rect x={7.58} y={5.49} width={612.28} height={736.45} fill="#fff" /><rect x={50.71} y={52.74} width={240.74} height={19.72} fill="#64ffda" /><rect x={50.71} y={513.37} width={240.74} height={19.72} fill="#64ffda" /><rect x={50.71} y={92.18} width={526.03} height={19.72} fill="#e0e0e0" /><rect x={50.71} y={131.63} width={526.03} height={19.72} fill="#e0e0e0" /><rect x={46.44} y={213.09} width={534.56} height={242.14} fill="url(#f1e26e3d-9d52-4866-b24c-036458e443cc)" /><rect x={51.18} y={216.78} width={526.03} height={231.2} fill={props.primaryColor} /><rect x={50.71} y={637.59} width={526.03} height={19.72} fill="#e0e0e0" /><rect x={50.71} y={678.34} width={526.03} height={19.72} fill="#e0e0e0" /><rect x={50.71} y={597.05} width={526.03} height={19.72} fill="#e0e0e0" /><rect x={50.71} y={556.51} width={526.03} height={19.72} fill="#e0e0e0" /></svg>;
+const UndrawBlogPost = _props => {
+  const props = Object.assign({}, _props);
+  const primaryColor = props.primaryColor;
+  delete props.primaryColor;
+  return (
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 627.45 759" {...props}>
+      <defs>
+        <linearGradient id="prefix__a" x1={313.72} y1={759} x2={313.72} gradientUnits="userSpaceOnUse">
+          <stop offset={0} stopColor="gray" stopOpacity={0.25} />
+          <stop offset={0.54} stopColor="gray" stopOpacity={0.12} />
+          <stop offset={1} stopColor="gray" stopOpacity={0.1} />
+        </linearGradient>
+        <linearGradient id="prefix__b" x1={313.72} y1={455.23} x2={313.72} y2={213.09} gradientUnits="userSpaceOnUse">
+          <stop offset={0} stopColor="#b3b3b3" stopOpacity={0.25} />
+          <stop offset={0.54} stopColor="#b3b3b3" stopOpacity={0.1} />
+          <stop offset={1} stopColor="#b3b3b3" stopOpacity={0.05} />
+        </linearGradient>
+      </defs>
+      <path fill="url(#prefix__a)" d="M0 0h627.45v759H0z" />
+      <path fill="#fff" d="M7.58 5.49h612.28v736.45H7.58z" />
+      <path fill="#64ffda" d="M50.71 52.74h240.74v19.72H50.71zM50.71 513.37h240.74v19.72H50.71z" />
+      <path fill="#e0e0e0" d="M50.71 92.18h526.03v19.72H50.71zM50.71 131.63h526.03v19.72H50.71z" />
+      <path fill="url(#prefix__b)" d="M46.44 213.09H581v242.14H46.44z" />
+      <path fill={primaryColor} d="M51.18 216.78h526.03v231.2H51.18z" />
+      <path
+        fill="#e0e0e0"
+        d="M50.71 637.59h526.03v19.72H50.71zM50.71 678.34h526.03v19.72H50.71zM50.71 597.05h526.03v19.72H50.71zM50.71 556.51h526.03v19.72H50.71z"
+      />
+    </svg>
+  );
+};
 
+UndrawBlogPost.propTypes = {
+  primaryColor: PropTypes.string
+};
 export default UndrawBlogPost;
