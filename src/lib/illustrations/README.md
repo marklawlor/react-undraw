@@ -1,5 +1,5 @@
 # Illustrations
-445 illustrations available.
+448 illustrations available.
 
 | Illustration              | Name                        | Component                          |
 | ------------------------- | --------------------------- | ---------------------------------- |
@@ -151,6 +151,7 @@
 | Filing system             | `filing-system`             | `<UndrawFilingSystem />`           |
 | Filter                    | `filter`                    | `<UndrawFilter />`                 |
 | Finance                   | `finance`                   | `<UndrawFinance />`                |
+| Fireworks                 | `fireworks`                 | `<UndrawFireworks />`              |
 | Firmware                  | `firmware`                  | `<UndrawFirmware />`               |
 | Fishing                   | `fishing`                   | `<UndrawFishing />`                |
 | Floating                  | `floating`                  | `<UndrawFloating />`               |
@@ -161,6 +162,7 @@
 | Forgot password           | `forgot-password`           | `<UndrawForgotPassword />`         |
 | Freelancer                | `freelancer`                | `<UndrawFreelancer />`             |
 | Friendship                | `friendship`                | `<UndrawFriendship />`             |
+| Game day                  | `game-day`                  | `<UndrawGameDay />`                |
 | Gaming                    | `gaming`                    | `<UndrawGaming />`                 |
 | Gardening                 | `gardening`                 | `<UndrawGardening />`              |
 | GDPR                      | `gdpr`                      | `<UndrawGdpr />`                   |
@@ -416,6 +418,7 @@
 | Video call                | `video-call`                | `<UndrawVideoCall />`              |
 | Videographer              | `videographer`              | `<UndrawVideographer />`           |
 | Virtual reality           | `virtual-reality`           | `<UndrawVirtualReality />`         |
+| visual data               | `visual-data`               | `<UndrawVisualData />`             |
 | Voice control             | `voice-control`             | `<UndrawVoiceControl />`           |
 | VR chat                   | `vr-chat`                   | `<UndrawVrChat />`                 |
 | Walk in the city          | `walk-in-the-city`          | `<UndrawWalkInTheCity />`          |

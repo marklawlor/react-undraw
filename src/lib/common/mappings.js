@@ -1,5 +1,3 @@
-/* eslint-disable */
-
 import UndrawADayAtThePark from '../illustrations/UndrawADayAtThePark';
 import UndrawAboutUsPage from '../illustrations/UndrawAboutUsPage';
 import UndrawAcceptTerms from '../illustrations/UndrawAcceptTerms';
@@ -148,6 +146,7 @@ import UndrawFileSearching from '../illustrations/UndrawFileSearching';
 import UndrawFilingSystem from '../illustrations/UndrawFilingSystem';
 import UndrawFilter from '../illustrations/UndrawFilter';
 import UndrawFinance from '../illustrations/UndrawFinance';
+import UndrawFireworks from '../illustrations/UndrawFireworks';
 import UndrawFirmware from '../illustrations/UndrawFirmware';
 import UndrawFishing from '../illustrations/UndrawFishing';
 import UndrawFloating from '../illustrations/UndrawFloating';
@@ -158,6 +157,7 @@ import UndrawForever from '../illustrations/UndrawForever';
 import UndrawForgotPassword from '../illustrations/UndrawForgotPassword';
 import UndrawFreelancer from '../illustrations/UndrawFreelancer';
 import UndrawFriendship from '../illustrations/UndrawFriendship';
+import UndrawGameDay from '../illustrations/UndrawGameDay';
 import UndrawGaming from '../illustrations/UndrawGaming';
 import UndrawGardening from '../illustrations/UndrawGardening';
 import UndrawGdpr from '../illustrations/UndrawGdpr';
@@ -413,6 +413,7 @@ import UndrawVersionControl from '../illustrations/UndrawVersionControl';
 import UndrawVideoCall from '../illustrations/UndrawVideoCall';
 import UndrawVideographer from '../illustrations/UndrawVideographer';
 import UndrawVirtualReality from '../illustrations/UndrawVirtualReality';
+import UndrawVisualData from '../illustrations/UndrawVisualData';
 import UndrawVoiceControl from '../illustrations/UndrawVoiceControl';
 import UndrawVrChat from '../illustrations/UndrawVrChat';
 import UndrawWalkInTheCity from '../illustrations/UndrawWalkInTheCity';
@@ -595,6 +596,7 @@ const mappings = {
   'filing-system': UndrawFilingSystem,
   filter: UndrawFilter,
   finance: UndrawFinance,
+  fireworks: UndrawFireworks,
   firmware: UndrawFirmware,
   fishing: UndrawFishing,
   floating: UndrawFloating,
@@ -605,6 +607,7 @@ const mappings = {
   'forgot-password': UndrawForgotPassword,
   freelancer: UndrawFreelancer,
   friendship: UndrawFriendship,
+  'game-day': UndrawGameDay,
   gaming: UndrawGaming,
   gardening: UndrawGardening,
   gdpr: UndrawGdpr,
@@ -860,6 +863,7 @@ const mappings = {
   'video-call': UndrawVideoCall,
   videographer: UndrawVideographer,
   'virtual-reality': UndrawVirtualReality,
+  'visual-data': UndrawVisualData,
   'voice-control': UndrawVoiceControl,
   'vr-chat': UndrawVrChat,
   'walk-in-the-city': UndrawWalkInTheCity,

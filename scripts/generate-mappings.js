@@ -19,10 +19,6 @@ function generate() {
   const prefix = 'Undraw';
   let content = '';
 
-  content += '/* eslint-disable */ ';
-  content += EOL;
-  content += EOL;
-
   illustrations.forEach(item => {
     const component = prefix + pascalCase(item.name);
     content += `import ${component} from '../illustrations/${component}';` + EOL;
@@ -35,8 +31,9 @@ function generate() {
   illustrations.forEach((item, index) => {
     const name = dashify(item.name);
     const component = prefix + pascalCase(item.name);
+    const quotedName = name.indexOf('-') !== -1 ? `'${name}'` : name;
 
-    content += `  '${name}': ${component}`;
+    content += `  ${quotedName}: ${component}`;
 
     if (index != illustrations.length - 1) {
       content += ',';
@@ -52,5 +49,5 @@ function generate() {
   content += EOL;
 
   fs.outputFileSync(dest, content);
-  spinner.succeed('Sucessfully generated mappings!');
+  spinner.succeed('Successfully generated mappings!');
 }
