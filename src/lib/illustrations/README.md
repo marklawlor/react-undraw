@@ -1,8 +1,9 @@
 # Illustrations
-474 illustrations available.
+491 illustrations available.
 
 | Illustration              | Name                        | Component                          |
 | ------------------------- | --------------------------- | ---------------------------------- |
+| 3d modeling               | `3d-modeling`               | `<Undraw3dModeling />`             |
 | A day at the park         | `a-day-at-the-park`         | `<UndrawADayAtThePark />`          |
 | A whole year              | `a-whole-year`              | `<UndrawAWholeYear />`             |
 | About me                  | `about-me`                  | `<UndrawAboutMe />`                |
@@ -53,6 +54,8 @@
 | Brainstorming             | `brainstorming`             | `<UndrawBrainstorming />`          |
 | Broadcast                 | `broadcast`                 | `<UndrawBroadcast />`              |
 | Browser stats             | `browser-stats`             | `<UndrawBrowserStats />`           |
+| Buddies                   | `buddies`                   | `<UndrawBuddies />`                |
+| Bug fixing                | `bug-fixing`                | `<UndrawBugFixing />`              |
 | Building                  | `building`                  | `<UndrawBuilding />`               |
 | Building blocks           | `building-blocks`           | `<UndrawBuildingBlocks />`         |
 | Bus stop                  | `bus-stop`                  | `<UndrawBusStop />`                |
@@ -63,6 +66,7 @@
 | By my car                 | `by-my-car`                 | `<UndrawByMyCar />`                |
 | Calculator                | `calculator`                | `<UndrawCalculator />`             |
 | Calendar                  | `calendar`                  | `<UndrawCalendar />`               |
+| Calling                   | `calling`                   | `<UndrawCalling />`                |
 | Campfire                  | `campfire`                  | `<UndrawCampfire />`               |
 | Camping                   | `camping`                   | `<UndrawCamping />`                |
 | Cautious dog              | `cautious-dog`              | `<UndrawCautiousDog />`            |
@@ -76,6 +80,7 @@
 | Chilling                  | `chilling`                  | `<UndrawChilling />`               |
 | Choose                    | `choose`                    | `<UndrawChoose />`                 |
 | Christmas stocking        | `christmas-stocking`        | `<UndrawChristmasStocking />`      |
+| Christmas tree            | `christmas-tree`            | `<UndrawChristmasTree />`          |
 | Circles                   | `circles`                   | `<UndrawCircles />`                |
 | City driver               | `city-driver`               | `<UndrawCityDriver />`             |
 | Cloud hosting             | `cloud-hosting`             | `<UndrawCloudHosting />`           |
@@ -93,6 +98,7 @@
 | Confirmed                 | `confirmed`                 | `<UndrawConfirmed />`              |
 | Connected                 | `connected`                 | `<UndrawConnected />`              |
 | Connecting Teams          | `connecting-teams`          | `<UndrawConnectingTeams />`        |
+| Contact us                | `contact-us`                | `<UndrawContactUs />`              |
 | Container ship            | `container-ship`            | `<UndrawContainerShip />`          |
 | Content                   | `content`                   | `<UndrawContent />`                |
 | Contrast                  | `contrast`                  | `<UndrawContrast />`               |
@@ -129,9 +135,11 @@
 | Development               | `development`               | `<UndrawDevelopment />`            |
 | Devices                   | `devices`                   | `<UndrawDevices />`                |
 | Digital nomad             | `digital-nomad`             | `<UndrawDigitalNomad />`           |
+| Discount                  | `discount`                  | `<UndrawDiscount />`               |
 | Doctor                    | `doctor`                    | `<UndrawDoctor />`                 |
 | Doctors                   | `doctors`                   | `<UndrawDoctors />`                |
 | Documents                 | `documents`                 | `<UndrawDocuments />`              |
+| Dreamer                   | `dreamer`                   | `<UndrawDreamer />`                |
 | Drone delivery            | `drone-delivery`            | `<UndrawDroneDelivery />`          |
 | Drone race                | `drone-race`                | `<UndrawDroneRace />`              |
 | Easter egg hunt           | `easter-egg-hunt`           | `<UndrawEasterEggHunt />`          |
@@ -154,6 +162,7 @@
 | Fatherhood                | `fatherhood`                | `<UndrawFatherhood />`             |
 | Features overview         | `features-overview`         | `<UndrawFeaturesOverview />`       |
 | Feeling blue              | `feeling-blue`              | `<UndrawFeelingBlue />`            |
+| Festivities               | `festivities`               | `<UndrawFestivities />`            |
 | File bundle               | `file-bundle`               | `<UndrawFileBundle />`             |
 | File searching            | `file-searching`            | `<UndrawFileSearching />`          |
 | Filing system             | `filing-system`             | `<UndrawFilingSystem />`           |
@@ -192,6 +201,7 @@
 | Group selfie              | `group-selfie`              | `<UndrawGroupSelfie />`            |
 | Growing                   | `growing`                   | `<UndrawGrowing />`                |
 | Hang out                  | `hang-out`                  | `<UndrawHangOut />`                |
+| Happy 2019                | `happy-2019`                | `<UndrawHappy_2019 />`             |
 | Happy birthday            | `happy-birthday`            | `<UndrawHappyBirthday />`          |
 | Having fun                | `having-fun`                | `<UndrawHavingFun />`              |
 | Healthy habit             | `healthy-habit`             | `<UndrawHealthyHabit />`           |
@@ -360,6 +370,7 @@
 | Science                   | `science`                   | `<UndrawScience />`                |
 | Scooter                   | `scooter`                   | `<UndrawScooter />`                |
 | Scrum board               | `scrum-board`               | `<UndrawScrumBoard />`             |
+| Sculpting                 | `sculpting`                 | `<UndrawSculpting />`              |
 | Search                    | `search`                    | `<UndrawSearch />`                 |
 | Search engines            | `search-engines`            | `<UndrawSearchEngines />`          |
 | Secure data               | `secure-data`               | `<UndrawSecureData />`             |
@@ -384,6 +395,7 @@
 | Social dashboard          | `social-dashboard`          | `<UndrawSocialDashboard />`        |
 | Social growth             | `social-growth`             | `<UndrawSocialGrowth />`           |
 | Social ideas              | `social-ideas`              | `<UndrawSocialIdeas />`            |
+| Social life               | `social-life`               | `<UndrawSocialLife />`             |
 | Social media              | `social-media`              | `<UndrawSocialMedia />`            |
 | Social networking         | `social-networking`         | `<UndrawSocialNetworking />`       |
 | Social strategy           | `social-strategy`           | `<UndrawSocialStrategy />`         |
@@ -421,6 +433,8 @@
 | Thoughts                  | `thoughts`                  | `<UndrawThoughts />`               |
 | Through the desert        | `through-the-desert`        | `<UndrawThroughTheDesert />`       |
 | Time management           | `time-management`           | `<UndrawTimeManagement />`         |
+| Timeline                  | `timeline`                  | `<UndrawTimeline />`               |
+| To do                     | `to-do`                     | `<UndrawToDo />`                   |
 | To do list                | `to-do-list`                | `<UndrawToDoList />`               |
 | To the stars              | `to-the-stars`              | `<UndrawToTheStars />`             |
 | Together                  | `together`                  | `<UndrawTogether />`               |
@@ -433,6 +447,8 @@
 | Typing                    | `typing`                    | `<UndrawTyping />`                 |
 | Unboxing                  | `unboxing`                  | `<UndrawUnboxing />`               |
 | Under construction        | `under-construction`        | `<UndrawUnderConstruction />`      |
+| Update                    | `update`                    | `<UndrawUpdate />`                 |
+| Upgrade                   | `upgrade`                   | `<UndrawUpgrade />`                |
 | Upload                    | `upload`                    | `<UndrawUpload />`                 |
 | Uploading                 | `uploading`                 | `<UndrawUploading />`              |
 | Upvote                    | `upvote`                    | `<UndrawUpvote />`                 |
@@ -474,6 +490,7 @@
 | Working late              | `working-late`              | `<UndrawWorkingLate />`            |
 | Working remotely          | `working-remotely`          | `<UndrawWorkingRemotely />`        |
 | Workout                   | `workout`                   | `<UndrawWorkout />`                |
+| Xmas surprise             | `xmas-surprise`             | `<UndrawXmasSurprise />`           |
 | Yacht                     | `yacht`                     | `<UndrawYacht />`                  |
 | Young and happy           | `young-and-happy`           | `<UndrawYoungAndHappy />`          |
 | Youtube tutorial          | `youtube-tutorial`          | `<UndrawYoutubeTutorial />`        |
