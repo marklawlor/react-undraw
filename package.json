@@ -97,9 +97,6 @@
     "rimraf": "^2.6.2",
     "standard-version": "^4.4.0"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
   "browserslist": [
     ">0.2%",
     "not dead",
