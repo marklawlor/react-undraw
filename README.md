@@ -1,6 +1,6 @@
-[![NPM Version](https://badge.fury.io/js/react-undraw.svg)](https://badge.fury.io/js/react-undraw)
-[![Build Status](https://travis-ci.org/justinlettau/react-undraw.svg?branch=master)](https://travis-ci.org/justinlettau/react-undraw)
-[![Dependency Status](https://david-dm.org/justinlettau/react-undraw.svg)](https://david-dm.org/justinlettau/react-undraw)
+[![NPM Version](https://badge.fury.io/js/react-undraw.svg)](https://badge.fury.io/js/react-undraw)
+[![Build Status](https://travis-ci.org/justinlettau/react-undraw.svg?branch=master)](https://travis-ci.org/justinlettau/react-undraw)
+[![Dependency Status](https://david-dm.org/justinlettau/react-undraw.svg)](https://david-dm.org/justinlettau/react-undraw)
 [![Dev Dependency Status](https://david-dm.org/justinlettau/react-undraw/dev-status.svg)](https://david-dm.org/justinlettau/react-undraw?type=dev)
 
 # React unDraw
