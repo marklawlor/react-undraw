@@ -15,11 +15,12 @@ export default class App extends Component {
     super(props);
 
     this.state = {
-      illustration: 'hello',
+      search: '',
       primaryColor: Undraw.defaultProps.primaryColor
     };
 
     this.onChange = this.onChange.bind(this);
+    this.onSearch = this.onSearch.bind(this);
   }
 
   /**
@@ -32,10 +33,38 @@ export default class App extends Component {
   }
 
   /**
+   * On search.
+   */
+  onSearch(event) {
+    if (this.debounce) {
+      window.clearTimeout(this.debounce);
+    }
+
+    const { value } = event.target;
+
+    this.debounce = window.setTimeout(() => {
+      this.setState({
+        search: value
+      });
+    }, 300);
+  }
+
+  /**
+   * Debounce timer.
+   */
+  debounce;
+
+  /**
    * Render.
    */
   render() {
-    const { illustration, primaryColor } = this.state;
+    const { primaryColor, search } = this.state;
+    let illustrations = Object.keys(mappings);
+    const total = illustrations.length;
+
+    if (search) {
+      illustrations = illustrations.filter(item => item.indexOf(search) !== -1);
+    }
 
     return (
       <React.Fragment>
@@ -57,13 +86,13 @@ export default class App extends Component {
         <div className="container my-4">
           <div className="row">
             <div className="col-10">
-              <select name="illustration" className="form-control" onChange={this.onChange} value={illustration}>
-                {Object.keys(mappings).map(key => (
-                  <option key={key} value={key}>
-                    {key}
-                  </option>
-                ))}
-              </select>
+              <input
+                type="text"
+                placeholder={`Search ${total} illustrations ...`}
+                className="form-control"
+                name="search"
+                onChange={this.onSearch}
+              />
             </div>
             <div className="col-2">
               <input
@@ -76,7 +105,18 @@ export default class App extends Component {
             </div>
           </div>
           <hr className="my-4" />
-          <Undraw name={illustration} primaryColor={primaryColor} />
+          <div className="row">
+            {illustrations.map(key => (
+              <div className="col-3 mb-4" key={key}>
+                <div className="card">
+                  <div className="card-body">
+                    <Undraw name={key} primaryColor={primaryColor} />
+                    <p className="card-text mb-0 text-center">{key}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </React.Fragment>
     );
