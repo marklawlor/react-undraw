@@ -1,5 +1,4 @@
 build/
 dist/
 src/lib/illustrations/
-src/lib/common/mappings.js
 svg/

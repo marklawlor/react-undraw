@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { Component } from 'react';
 
 import Undraw from './lib';
-import mappings from './lib/common/mappings';
+import mappings from './lib/illustrations/mappings';
 
 const illustrations = Object.keys(mappings);
 library.add(faGithub, faNpm);

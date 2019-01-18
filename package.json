@@ -36,6 +36,7 @@
     "generate:components": "node ./scripts/generate-components.js",
     "generate:mappings": "node ./scripts/generate-mappings.js",
     "generate:readme": "node ./scripts/generate-readme.js",
+    "generate:barrel": "node ./scripts/generate-barrel.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "prepublishOnly": "npm run lib:build",
@@ -51,9 +52,10 @@
   },
   "main": "dist/index.js",
   "module": "dist/index.js",
-  "typings": "./undraw.d.ts",
+  "types": "./undraw.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "undraw.d.ts"
   ],
   "peerDependencies": {
     "react": "^16.5.2",

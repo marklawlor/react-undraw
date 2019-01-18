@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 
-import mappings from '../common/mappings';
+import mappings from '../illustrations/mappings';
 
 export default class Undraw extends Component {
   /**

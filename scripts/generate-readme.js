@@ -16,7 +16,7 @@ generate();
  */
 function generate() {
   const spinner = ora('Generating readme ...').start();
-  const dest = path.join('./src/lib/illustrations', 'README.md');
+  const dest = path.join('./', 'ILLUSTRATIONS.md');
   const prefix = 'Undraw';
   const rows = [];
   let content = '';
@@ -39,5 +39,5 @@ function generate() {
   content += table(rows);
 
   fs.outputFileSync(dest, content);
-  spinner.succeed('Sucessfully generated readme!');
+  spinner.succeed('Successfully generated readme!');
 }

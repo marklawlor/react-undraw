@@ -1,0 +1,29 @@
+const EOL = require('os').EOL;
+const dashify = require('dashify');
+const fs = require('fs-extra');
+const ora = require('ora');
+const pascalCase = require('pascal-case');
+const path = require('path');
+
+const illustrations = require('./illustrations.json');
+
+// execute
+generate();
+
+/**
+ * Generate illustration barrel file.
+ */
+function generate() {
+  const spinner = ora('Generating barrel ...').start();
+  const dest = path.join('./src/lib/illustrations', 'index.js');
+  const prefix = 'Undraw';
+  let content = '';
+
+  illustrations.forEach(item => {
+    const component = prefix + pascalCase(item.name);
+    content += `export { default as ${component} } from './${component}';` + EOL;
+  });
+
+  fs.outputFileSync(dest, content);
+  spinner.succeed('Successfully generated barrel!');
+}
