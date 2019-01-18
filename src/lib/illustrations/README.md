@@ -1,5 +1,5 @@
 # Illustrations
-491 illustrations available.
+511 illustrations available.
 
 | Illustration              | Name                        | Component                          |
 | ------------------------- | --------------------------- | ---------------------------------- |
@@ -55,6 +55,7 @@
 | Broadcast                 | `broadcast`                 | `<UndrawBroadcast />`              |
 | Browser stats             | `browser-stats`             | `<UndrawBrowserStats />`           |
 | Buddies                   | `buddies`                   | `<UndrawBuddies />`                |
+| Buffer                    | `buffer`                    | `<UndrawBuffer />`                 |
 | Bug fixing                | `bug-fixing`                | `<UndrawBugFixing />`              |
 | Building                  | `building`                  | `<UndrawBuilding />`               |
 | Building blocks           | `building-blocks`           | `<UndrawBuildingBlocks />`         |
@@ -69,6 +70,7 @@
 | Calling                   | `calling`                   | `<UndrawCalling />`                |
 | Campfire                  | `campfire`                  | `<UndrawCampfire />`               |
 | Camping                   | `camping`                   | `<UndrawCamping />`                |
+| career progress           | `career-progress`           | `<UndrawCareerProgress />`         |
 | Cautious dog              | `cautious-dog`              | `<UndrawCautiousDog />`            |
 | Celebration               | `celebration`               | `<UndrawCelebration />`            |
 | Charts                    | `charts`                    | `<UndrawCharts />`                 |
@@ -135,13 +137,16 @@
 | Development               | `development`               | `<UndrawDevelopment />`            |
 | Devices                   | `devices`                   | `<UndrawDevices />`                |
 | Digital nomad             | `digital-nomad`             | `<UndrawDigitalNomad />`           |
+| Directions                | `directions`                | `<UndrawDirections />`             |
 | Discount                  | `discount`                  | `<UndrawDiscount />`               |
 | Doctor                    | `doctor`                    | `<UndrawDoctor />`                 |
 | Doctors                   | `doctors`                   | `<UndrawDoctors />`                |
 | Documents                 | `documents`                 | `<UndrawDocuments />`              |
+| Doll play                 | `doll-play`                 | `<UndrawDollPlay />`               |
 | Dreamer                   | `dreamer`                   | `<UndrawDreamer />`                |
 | Drone delivery            | `drone-delivery`            | `<UndrawDroneDelivery />`          |
 | Drone race                | `drone-race`                | `<UndrawDroneRace />`              |
+| Dua Lipa                  | `dua-lipa`                  | `<UndrawDuaLipa />`                |
 | Easter egg hunt           | `easter-egg-hunt`           | `<UndrawEasterEggHunt />`          |
 | Eating together           | `eating-together`           | `<UndrawEatingTogether />`         |
 | Electric car              | `electric-car`              | `<UndrawElectricCar />`            |
@@ -171,10 +176,13 @@
 | Finish line               | `finish-line`               | `<UndrawFinishLine />`             |
 | Fireworks                 | `fireworks`                 | `<UndrawFireworks />`              |
 | Firmware                  | `firmware`                  | `<UndrawFirmware />`               |
+| Fish bowl                 | `fish-bowl`                 | `<UndrawFishBowl />`               |
 | Fishing                   | `fishing`                   | `<UndrawFishing />`                |
+| Fitness tracker           | `fitness-tracker`           | `<UndrawFitnessTracker />`         |
 | Floating                  | `floating`                  | `<UndrawFloating />`               |
 | Focus                     | `focus`                     | `<UndrawFocus />`                  |
 | Follow me drone           | `follow-me-drone`           | `<UndrawFollowMeDrone />`          |
+| Followers                 | `followers`                 | `<UndrawFollowers />`              |
 | Following                 | `following`                 | `<UndrawFollowing />`              |
 | For sale                  | `for-sale`                  | `<UndrawForSale />`                |
 | Forever                   | `forever`                   | `<UndrawForever />`                |
@@ -200,6 +208,7 @@
 | Group chat                | `group-chat`                | `<UndrawGroupChat />`              |
 | Group selfie              | `group-selfie`              | `<UndrawGroupSelfie />`            |
 | Growing                   | `growing`                   | `<UndrawGrowing />`                |
+| Growth analytics          | `growth-analytics`          | `<UndrawGrowthAnalytics />`        |
 | Hang out                  | `hang-out`                  | `<UndrawHangOut />`                |
 | Happy 2019                | `happy-2019`                | `<UndrawHappy_2019 />`             |
 | Happy birthday            | `happy-birthday`            | `<UndrawHappyBirthday />`          |
@@ -208,6 +217,7 @@
 | Heartbroken               | `heartbroken`               | `<UndrawHeartbroken />`            |
 | Hello                     | `hello`                     | `<UndrawHello />`                  |
 | High five                 | `high-five`                 | `<UndrawHighFive />`               |
+| Hiking                    | `hiking`                    | `<UndrawHiking />`                 |
 | Hiring                    | `hiring`                    | `<UndrawHiring />`                 |
 | Home run                  | `home-run`                  | `<UndrawHomeRun />`                |
 | Horror movie              | `horror-movie`              | `<UndrawHorrorMovie />`            |
@@ -234,6 +244,7 @@
 | JavaScript frameworks     | `java-script-frameworks`    | `<UndrawJavaScriptFrameworks />`   |
 | Job hunt                  | `job-hunt`                  | `<UndrawJobHunt />`                |
 | Jogging                   | `jogging`                   | `<UndrawJogging />`                |
+| Joyride                   | `joyride`                   | `<UndrawJoyride />`                |
 | Judge                     | `judge`                     | `<UndrawJudge />`                  |
 | Launching                 | `launching`                 | `<UndrawLaunching />`              |
 | Lighthouse                | `lighthouse`                | `<UndrawLighthouse />`             |
@@ -278,6 +289,7 @@
 | Mobile testing            | `mobile-testing`            | `<UndrawMobileTesting />`          |
 | Modern woman              | `modern-woman`              | `<UndrawModernWoman />`            |
 | Moment to remember        | `moment-to-remember`        | `<UndrawMomentToRemember />`       |
+| Monitor                   | `monitor`                   | `<UndrawMonitor />`                |
 | More music                | `more-music`                | `<UndrawMoreMusic />`              |
 | Morning essentials        | `morning-essentials`        | `<UndrawMorningEssentials />`      |
 | Motherhood                | `motherhood`                | `<UndrawMotherhood />`             |
@@ -291,6 +303,7 @@
 | Newsletter                | `newsletter`                | `<UndrawNewsletter />`             |
 | Night calls               | `night-calls`               | `<UndrawNightCalls />`             |
 | No data                   | `no-data`                   | `<UndrawNoData />`                 |
+| Note list                 | `note-list`                 | `<UndrawNoteList />`               |
 | Notebook                  | `notebook`                  | `<UndrawNotebook />`               |
 | Notes                     | `notes`                     | `<UndrawNotes />`                  |
 | Off road                  | `off-road`                  | `<UndrawOffRoad />`                |
@@ -330,6 +343,7 @@
 | Portfolio                 | `portfolio`                 | `<UndrawPortfolio />`              |
 | Post                      | `post`                      | `<UndrawPost />`                   |
 | Post online               | `post-online`               | `<UndrawPostOnline />`             |
+| Posting photo             | `posting-photo`             | `<UndrawPostingPhoto />`           |
 | Posts                     | `posts`                     | `<UndrawPosts />`                  |
 | Powerful                  | `powerful`                  | `<UndrawPowerful />`               |
 | Preferences               | `preferences`               | `<UndrawPreferences />`            |
@@ -341,6 +355,7 @@
 | Product teardown          | `product-teardown`          | `<UndrawProductTeardown />`        |
 | Product Tour              | `product-tour`              | `<UndrawProductTour />`            |
 | Profile pic               | `profile-pic`               | `<UndrawProfilePic />`             |
+| Programmer                | `programmer`                | `<UndrawProgrammer />`             |
 | Programming               | `programming`               | `<UndrawProgramming />`            |
 | Prototyping process       | `prototyping-process`       | `<UndrawPrototypingProcess />`     |
 | QA engineers              | `qa-engineers`              | `<UndrawQaEngineers />`            |
@@ -402,6 +417,7 @@
 | Social tree               | `social-tree`               | `<UndrawSocialTree />`             |
 | Specs                     | `specs`                     | `<UndrawSpecs />`                  |
 | Spreadsheets              | `spreadsheets`              | `<UndrawSpreadsheets />`           |
+| Stability ball            | `stability-ball`            | `<UndrawStabilityBall />`          |
 | Starman                   | `starman`                   | `<UndrawStarman />`                |
 | Startled                  | `startled`                  | `<UndrawStartled />`               |
 | Startup life              | `startup-life`              | `<UndrawStartupLife />`            |
@@ -412,6 +428,7 @@
 | Street food               | `street-food`               | `<UndrawStreetFood />`             |
 | Stripe payments           | `stripe-payments`           | `<UndrawStripePayments />`         |
 | Studying                  | `studying`                  | `<UndrawStudying />`               |
+| Subway                    | `subway`                    | `<UndrawSubway />`                 |
 | Successful purchase       | `successful-purchase`       | `<UndrawSuccessfulPurchase />`     |
 | Sunny day                 | `sunny-day`                 | `<UndrawSunnyDay />`               |
 | Super thank you           | `super-thank-you`           | `<UndrawSuperThankYou />`          |
@@ -438,8 +455,11 @@
 | To do list                | `to-do-list`                | `<UndrawToDoList />`               |
 | To the stars              | `to-the-stars`              | `<UndrawToTheStars />`             |
 | Together                  | `together`                  | `<UndrawTogether />`               |
+| Toy car                   | `toy-car`                   | `<UndrawToyCar />`                 |
 | Track and field           | `track-and-field`           | `<UndrawTrackAndField />`          |
 | Transfer files            | `transfer-files`            | `<UndrawTransferFiles />`          |
+| Travel booking            | `travel-booking`            | `<UndrawTravelBooking />`          |
+| Treasure                  | `treasure`                  | `<UndrawTreasure />`               |
 | Trip                      | `trip`                      | `<UndrawTrip />`                   |
 | True friends              | `true-friends`              | `<UndrawTrueFriends />`            |
 | Tweetstorm                | `tweetstorm`                | `<UndrawTweetstorm />`             |
