@@ -8,6 +8,7 @@ import React, { Component } from 'react';
 import Undraw from './lib';
 import mappings from './lib/common/mappings';
 
+const illustrations = Object.keys(mappings);
 library.add(faGithub, faNpm);
 
 export default class App extends Component {
@@ -16,10 +17,12 @@ export default class App extends Component {
 
     this.state = {
       search: '',
+      limit: 100,
       primaryColor: Undraw.defaultProps.primaryColor
     };
 
     this.onChange = this.onChange.bind(this);
+    this.onLoadMore = this.onLoadMore.bind(this);
     this.onSearch = this.onSearch.bind(this);
   }
 
@@ -36,17 +39,25 @@ export default class App extends Component {
    * On search.
    */
   onSearch(event) {
+    const { value } = event.target;
+
     if (this.debounce) {
       window.clearTimeout(this.debounce);
     }
 
-    const { value } = event.target;
-
     this.debounce = window.setTimeout(() => {
       this.setState({
+        limit: 100,
         search: value
       });
     }, 300);
+  }
+
+  /**
+   * On load more.
+   */
+  onLoadMore() {
+    this.setState(state => ({ limit: state.limit + 100 }));
   }
 
   /**
@@ -58,12 +69,20 @@ export default class App extends Component {
    * Render.
    */
   render() {
-    const { primaryColor, search } = this.state;
-    let illustrations = Object.keys(mappings);
+    const { limit, primaryColor, search } = this.state;
     const total = illustrations.length;
+    let items = [...illustrations];
+    let shown = total;
+    let hasMore = false;
 
     if (search) {
-      illustrations = illustrations.filter(item => item.indexOf(search) !== -1);
+      items = illustrations.filter(item => item.indexOf(search) !== -1);
+      shown = items.length;
+    }
+
+    if (items.length > limit) {
+      items.length = limit;
+      hasMore = true;
     }
 
     return (
@@ -106,7 +125,7 @@ export default class App extends Component {
           </div>
           <hr className="my-4" />
           <div className="row">
-            {illustrations.map(key => (
+            {items.map(key => (
               <div className="col-3 mb-4" key={key}>
                 <div className="card">
                   <div className="card-body">
@@ -117,6 +136,16 @@ export default class App extends Component {
               </div>
             ))}
           </div>
+          {hasMore && (
+            <p className="text-center">
+              <span className="align-middle pr-1">
+                Showing {limit} of {shown} ...
+              </span>
+              <button type="button" className="btn btn-link p-0" onClick={this.onLoadMore}>
+                load more
+              </button>
+            </p>
+          )}
         </div>
       </React.Fragment>
     );
