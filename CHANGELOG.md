@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.8.0"></a>
+
+# [1.8.0](https://github.com/justinlettau/react-undraw/compare/v1.7.0...v1.8.0) (2019-01-18)
+
+### Features
+
+- add new illustrations ([4dbd5df](https://github.com/justinlettau/react-undraw/commit/4dbd5df))
+- export illustraion components ([496368b](https://github.com/justinlettau/react-undraw/commit/496368b)), closes [#6](https://github.com/justinlettau/react-undraw/issues/6)
+
 <a name="1.7.0"></a>
 
 # [1.7.0](https://github.com/justinlettau/react-undraw/compare/v1.6.0...v1.7.0) (2019-01-04)
