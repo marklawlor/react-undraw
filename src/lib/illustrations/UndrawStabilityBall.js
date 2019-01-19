@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawStabilityBall = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1063.01 715.08" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1063.01 715.08" style={style} {...props}>
       <path
         d="M999.72 174.41a105.8 105.8 0 0 0 8.38-12.34l-59.12-9.7 63.94.47a107.93 107.93 0 0 0 2.06-85.4l-85.78 44.5 79.11-58.15a107.78 107.78 0 1 0-178 120.62 108.18 108.18 0 0 0-12.29 19.65l76.74 39.87-81.82-27.46a107.83 107.83 0 0 0 17.36 101.21 107.79 107.79 0 0 0 64.83 172.57 37 37 0 0 0-2.13 12.52 35.52 35.52 0 0 0 4.69 18 36.89 36.89 0 0 0 0 36 36.89 36.89 0 0 0 0 36 36.89 36.89 0 0 0 0 36 35.52 35.52 0 0 0-4.69 18c0 16.27 10.07 29.45 22.5 29.45s22.5-13.18 22.5-29.45a35.53 35.53 0 0 0-4.7-18 36.82 36.82 0 0 0 0-36 36.82 36.82 0 0 0 0-36 36.82 36.82 0 0 0 0-36 35.53 35.53 0 0 0 4.7-18 37.1 37.1 0 0 0-2.19-12.69 107.79 107.79 0 0 0 63.91-172.4 107.77 107.77 0 0 0 0-133.27zM643.33 289.11a72.48 72.48 0 0 1-5.6-8.25l39.53-6.49-42.75.31a72.17 72.17 0 0 1-1.38-57.1l57.37 29.76-52.9-38.89a72.07 72.07 0 1 1 119 80.66 71.75 71.75 0 0 1 8.22 13.14l-51.32 26.66 54.74-18.37a72.06 72.06 0 0 1-11.62 67.68 72.07 72.07 0 0 1-43.34 115.4 24.83 24.83 0 0 1 1.42 8.37 23.7 23.7 0 0 1-3.14 12 24.63 24.63 0 0 1 0 24.07 24.65 24.65 0 0 1 0 24.08 24.63 24.63 0 0 1 0 24.07 23.71 23.71 0 0 1 3.14 12c0 10.87-6.73 19.69-15 19.69s-15-8.82-15-19.69a23.71 23.71 0 0 1 3.14-12 24.63 24.63 0 0 1 0-24.07 24.65 24.65 0 0 1 0-24.08 24.63 24.63 0 0 1 0-24.07 23.7 23.7 0 0 1-3.14-12 24.76 24.76 0 0 1 1.47-8.49 72.08 72.08 0 0 1-42.75-115.28 72.08 72.08 0 0 1 0-89.11z"
         fill="#f2f2f2"
@@ -116,6 +126,7 @@ const UndrawStabilityBall = _props => {
 };
 
 UndrawStabilityBall.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawStabilityBall;

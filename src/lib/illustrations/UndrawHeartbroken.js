@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawHeartbroken = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1071.46 877.29" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1071.46 877.29" style={style} {...props}>
       <defs>
         <linearGradient id="prefix__a" x1={925.45} y1={875.88} x2={925.45} y2={555.43} gradientUnits="userSpaceOnUse">
           <stop offset={0} stopColor="gray" stopOpacity={0.25} />
@@ -415,6 +425,7 @@ const UndrawHeartbroken = _props => {
 };
 
 UndrawHeartbroken.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawHeartbroken;

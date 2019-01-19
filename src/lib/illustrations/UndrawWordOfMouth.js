@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawWordOfMouth = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1088.42 770.78" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1088.42 770.78" style={style} {...props}>
       <defs>
         <linearGradient id="prefix__a" x1={622.98} y1={835.39} x2={622.98} y2={166.73} gradientUnits="userSpaceOnUse">
           <stop offset={0} stopColor="gray" stopOpacity={0.25} />
@@ -159,6 +169,7 @@ const UndrawWordOfMouth = _props => {
 };
 
 UndrawWordOfMouth.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawWordOfMouth;

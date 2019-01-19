@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawCreditCardPayments = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1084 830.5" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1084 830.5" style={style} {...props}>
       <defs>
         <linearGradient id="prefix__a" x1={637.43} y1={864.75} x2={637.43} y2={34.75} gradientUnits="userSpaceOnUse">
           <stop offset={0} stopColor="gray" stopOpacity={0.25} />
@@ -114,6 +124,7 @@ const UndrawCreditCardPayments = _props => {
 };
 
 UndrawCreditCardPayments.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawCreditCardPayments;

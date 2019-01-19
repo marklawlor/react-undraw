@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawWorkingRemotely = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1144 637" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1144 637" style={style} {...props}>
       <path
         d="M1144 416.31a180.56 180.56 0 0 1-26.12 93.88c0 34.62-16.14 66-42.32 88.87a144.74 144.74 0 0 1-21.08 15.28c-.3.19-.61.37-.92.55-.56.33-1.12.66-1.69 1l-.53.31a141.39 141.39 0 0 1-7.32 3.87 165.67 165.67 0 0 1-73.76 17H217.17q-9 0-17.84-.72a211.15 211.15 0 0 1-61.06-14.14q-5.72-2.26-11.22-4.86-2.62-1.23-5.19-2.53c-1.07-.54-2.14-1.1-3.2-1.66A190.5 190.5 0 0 1 100 601.82a183.89 183.89 0 0 1-15.8-12.12c-34.03-29.2-55.08-69.61-55.08-114.2A180.5 180.5 0 0 1 0 376.82c0-99.14 79.24-179.51 177-179.51 3 0 6 .09 9 .25.43 0 .85 0 1.28.06 16.48-28.09 38.51-53.9 65-76.62C324.52 59.1 430.1 20.08 547.71 20.08c98.82 0 189.15 27.55 258.34 73.07A174.18 174.18 0 0 1 892 70.6c97.74 0 177 80.37 177 179.51a184.9 184.9 0 0 1-1 18.78 180 180 0 0 1 76 147.42z"
         fill={primaryColor}
@@ -202,6 +212,7 @@ const UndrawWorkingRemotely = _props => {
 };
 
 UndrawWorkingRemotely.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawWorkingRemotely;

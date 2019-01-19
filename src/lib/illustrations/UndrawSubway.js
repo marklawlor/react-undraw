@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawSubway = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 982 469.75" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 982 469.75" style={style} {...props}>
       <path
         d="M981 15.75V454a16.28 16.28 0 0 1-.37 3.45 15.43 15.43 0 0 1-15 12.3H15.32a15.29 15.29 0 0 1-14.18-9.81A15.9 15.9 0 0 1 0 454V15.75A15.53 15.53 0 0 1 15.32 0h950.36A15.53 15.53 0 0 1 981 15.75z"
         fill="#f2f2f2"
@@ -173,6 +183,7 @@ const UndrawSubway = _props => {
 };
 
 UndrawSubway.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawSubway;

@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawTexting = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1162 716.89" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1162 716.89" style={style} {...props}>
       <path
         d="M0 716.88h1123s98.45-127.44-17.43-258.44c-43-48.58-46.27-108.65-33.39-165C1107 141.12 967.65 6.32 816.46 45.88c-2.88.76-5.79 1.53-8.72 2.33-227.89 62.15-414.47-.31-486.28-31.23A206.52 206.52 0 0 0 230.66.2c-80.59 3.6-202.72 34.64-89.28 205.62C301.31 446.86 0 716.88 0 716.88z"
         fill={primaryColor}
@@ -152,6 +162,7 @@ const UndrawTexting = _props => {
 };
 
 UndrawTexting.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawTexting;

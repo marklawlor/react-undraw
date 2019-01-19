@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawFatherhood = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1097.1 790.89" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1097.1 790.89" style={style} {...props}>
       <defs>
         <linearGradient id="prefix__a" x1={567.33} y1={839.89} x2={567.33} y2={127.09} gradientUnits="userSpaceOnUse">
           <stop offset={0} stopColor="gray" stopOpacity={0.25} />
@@ -247,6 +257,7 @@ const UndrawFatherhood = _props => {
 };
 
 UndrawFatherhood.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawFatherhood;

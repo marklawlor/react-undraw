@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawVideoCall = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1155.6 697.61" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1155.6 697.61" style={style} {...props}>
       <path
         d="M1143.41 650.64a189.09 189.09 0 0 1-16.41 31.52 136.38 136.38 0 0 1-9.94 13.66l-.11.13H5.6l.2-.14c1-.78 6.87-5.53 16-13.66 6.55-5.84 14.77-13.42 24-22.54 75.49-74.25 220.5-250 99.73-411-112.27-149.67 8.61-176.84 88.35-180a228.25 228.25 0 0 1 89.87 14.69c36.83 14 104.16 35.47 191.88 45.3q4.32.49 8.72.94a840.2 840.2 0 0 0 139.78 2.53c1.37-.07 2.75-.17 4.14-.27a831.75 831.75 0 0 0 136.72-21.16c2.91-.71 5.78-1.38 8.64-2 149.63-34.62 287.57 83.37 253.09 216.72-12.76 49.31-9.52 101.89 33 144.41 69.55 69.44 61.08 137.8 43.69 180.87z"
         fill={primaryColor}
@@ -268,6 +278,7 @@ const UndrawVideoCall = _props => {
 };
 
 UndrawVideoCall.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawVideoCall;

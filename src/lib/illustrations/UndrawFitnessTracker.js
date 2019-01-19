@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawFitnessTracker = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1050 750.87" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1050 750.87" style={style} {...props}>
       <ellipse cx={525} cy={717.87} rx={525} ry={33} fill={primaryColor} opacity={0.1} />
       <path
         d="M967.65 693.43a37 37 0 0 1-.8 7.76c-.1.48-.21 1-.32 1.41-2.84 11.39-10.85 19.72-20.41 20.25h-1c-10.11 0-18.66-8.72-21.48-20.73-.08-.32-.15-.64-.22-1a37 37 0 0 1-.8-7.76c0-16.27 10.07-29.45 22.5-29.45s22.53 13.27 22.53 29.52z"
@@ -145,6 +155,7 @@ const UndrawFitnessTracker = _props => {
 };
 
 UndrawFitnessTracker.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawFitnessTracker;

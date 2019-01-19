@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawScooter = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1117.97 735.28" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1117.97 735.28" style={style} {...props}>
       <path
         d="M1027.85 197.92c50.92-1.94 91.26-44.92 90.09-95.86a93.73 93.73 0 0 0-93.7-91.52h-1.56a93.86 93.86 0 0 0-90.12 2A93.29 93.29 0 0 0 883.25.03c-50.17 1.28-90.75 42.53-91.26 92.72a93.32 93.32 0 0 0 19 57.61 93.31 93.31 0 0 0-13 47.07c-.29 50.5 40.11 92.57 90.58 94.22a93.56 93.56 0 0 0 35.83-5.81c18.44 23.18 39.53 51.88 35.35 62.13-5.23 12.82-2.12 142.94-.64 195.15a23.79 23.79 0 0 0 .24 2.69c-34.56 1.89-59.57 7.37-59.57 13.84 0 8 38.5 14.54 86 14.54s86-6.51 86-14.54c0-3-5.53-5.86-15-8.2a42.26 42.26 0 0 0 7-5.24c1.91-1.77 3.71-3.87 4.26-6.42s-.54-5.61-3-6.54c-2.73-1.05-5.65.85-7.86 2.76s-4.75 4.09-7.65 3.69a11.65 11.65 0 0 0 3.6-10.9 4.56 4.56 0 0 0-1-2.21c-1.52-1.62-4.27-.93-6.08.35-5.78 4.06-7.39 11.91-7.42 19-.58-2.55-.09-5.2-.11-7.81s-.73-5.51-2.93-6.92a8.92 8.92 0 0 0-4.48-1c-2.59-.09-5.48.17-7.26 2.07-2.2 2.35-1.63 6.31.29 8.91s4.83 4.22 7.51 6l.41.27c-8.71-.94-18.48-1.63-29-2a20.88 20.88 0 0 0 .19-2.51c.92-50.57 3.44-172.93 6.75-187.47 4.18-18.38 0-130.29 0-130.29s-.44-12.43.16-28.18a95.61 95.61 0 0 0 17.69.91zm-78.15 73.72a91.89 91.89 0 0 0 7.42-6.51l2.68 17.71z"
         fill={primaryColor}
@@ -701,6 +711,7 @@ const UndrawScooter = _props => {
 };
 
 UndrawScooter.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawScooter;

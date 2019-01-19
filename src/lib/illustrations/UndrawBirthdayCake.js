@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawBirthdayCake = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1196.94 837.07" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1196.94 837.07" style={style} {...props}>
       <path
         d="M663.83 91.84c-46.25 32.39-106.24 30.29-158.81 13.44S404.16 58.44 352.94 37.12A493.86 493.86 0 0 0 219.32 2.28c-65.28-7.47-138.18 1.63-183.66 54-50.65 58.3-46.76 163.45 8 217 27.87 27.22 64.36 40.58 96.18 61.84s61.28 56.54 58.57 97.57c-2.51 38-31.68 67.12-61.87 85.4-23.33 14.13-52.06 29.57-54.87 58.84-2.72 28.32 21.44 50.51 44.51 63.13 75.26 41.17 168 40.77 243-1 26.76-14.99 51.32-34.85 79.37-46.47 73.65-30.53 154.81.2 232.8 11.44a465.38 465.38 0 0 0 198-14.42c38.62-11.4 77.39-28.84 104.52-61.33 19.57-23.43 31.76-53.08 43.2-82.36q18.3-46.85 35.19-94.33c6.75-19 13.4-38.39 15.15-58.72 3.16-36.86-10.16-73.29-28.3-104.39-43.07-73.84-115.61-125.77-194.17-138.96s-161.67 12.55-222.6 68.95"
         fill={primaryColor}
@@ -884,6 +894,7 @@ const UndrawBirthdayCake = _props => {
 };
 
 UndrawBirthdayCake.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawBirthdayCake;

@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawYoutubeTutorial = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1130 831.56" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1130 831.56" style={style} {...props}>
       <defs>
         <linearGradient id="prefix__a" x1={321.68} y1={857.11} x2={321.68} y2={447.21} gradientUnits="userSpaceOnUse">
           <stop offset={0} stopColor="gray" stopOpacity={0.25} />
@@ -221,6 +231,7 @@ const UndrawYoutubeTutorial = _props => {
 };
 
 UndrawYoutubeTutorial.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawYoutubeTutorial;

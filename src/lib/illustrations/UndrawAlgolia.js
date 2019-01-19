@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawAlgolia = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1137.97 736.21" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1137.97 736.21" style={style} {...props}>
       <defs>
         <linearGradient id="prefix__a" x1={442.21} y1={651.25} x2={442.21} y2={380.1} gradientUnits="userSpaceOnUse">
           <stop offset={0} stopColor="gray" stopOpacity={0.25} />
@@ -238,6 +248,7 @@ const UndrawAlgolia = _props => {
 };
 
 UndrawAlgolia.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawAlgolia;

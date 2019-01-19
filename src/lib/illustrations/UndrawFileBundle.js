@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawFileBundle = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1024 806.04" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1024 806.04" style={style} {...props}>
       <path
         d="M530.37 77.02c6.76 44.56-12 84.37-12 84.37s-29.77-32.43-36.53-77 12-84.37 12-84.37 29.77 32.42 36.53 77zM656.07 148.02c24.53-.27 44.56 12.89 44.56 12.89s-19.74 13.59-44.27 13.85-44.56-12.89-44.56-12.89 19.74-13.58 44.27-13.85z"
         fill={primaryColor}
@@ -123,6 +133,7 @@ const UndrawFileBundle = _props => {
 };
 
 UndrawFileBundle.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawFileBundle;

@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawFileSearching = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 842 778.92" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 842 778.92" style={style} {...props}>
       <defs>
         <linearGradient id="prefix__a" x1={378.37} y1={732.81} x2={378.37} y2={130.21} gradientUnits="userSpaceOnUse">
           <stop offset={0} stopColor="gray" stopOpacity={0.25} />
@@ -156,6 +166,7 @@ const UndrawFileSearching = _props => {
 };
 
 UndrawFileSearching.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawFileSearching;

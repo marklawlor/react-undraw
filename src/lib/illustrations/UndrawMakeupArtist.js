@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawMakeupArtist = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 930.29 802.11" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 930.29 802.11" style={style} {...props}>
       <defs>
         <linearGradient id="prefix__a" x1={777.82} y1={813.84} x2={777.82} y2={182.84} gradientUnits="userSpaceOnUse">
           <stop offset={0} stopColor="gray" stopOpacity={0.25} />
@@ -208,6 +218,7 @@ const UndrawMakeupArtist = _props => {
 };
 
 UndrawMakeupArtist.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawMakeupArtist;

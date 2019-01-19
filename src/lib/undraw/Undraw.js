@@ -1,17 +1,10 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 
+import defaultProps from '../default-props';
 import mappings from '../illustrations/mappings';
 
 export default class Undraw extends Component {
-  /**
-   * Prop default values.
-   */
-  static defaultProps = {
-    height: '250px',
-    primaryColor: '#6c63ff'
-  };
-
   /**
    * Prop types.
    */
@@ -31,27 +24,20 @@ export default class Undraw extends Component {
       return;
     }
 
-    Object.assign(Undraw.defaultProps, props);
+    Object.assign(defaultProps, props);
   }
 
   /**
    * Render.
    */
   render() {
-    const { className, height, name, primaryColor, style, ...rest } = this.props;
+    const { name, ...rest } = this.props;
     const Illustration = mappings[name];
 
     if (!Illustration) {
       return null;
     }
 
-    return (
-      <Illustration
-        className={className}
-        style={{ height, width: '100%', ...style }}
-        primaryColor={primaryColor}
-        {...rest}
-      />
-    );
+    return <Illustration {...rest} />;
   }
 }

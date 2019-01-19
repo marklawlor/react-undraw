@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawTweetstorm = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 813.15 752" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 813.15 752" style={style} {...props}>
       <path fill="#e0e0e0" d="M559.73 403.7l-211.87-51.03V752l211.87-55.46V403.7z" />
       <path opacity={0.1} d="M559.73 403.7l-211.87-51.03V752l211.87-55.46V403.7z" />
       <path fill="#e0e0e0" d="M135.99 403.7l211.87-51.03V752l-211.87-54.35V403.7z" />
@@ -65,6 +75,7 @@ const UndrawTweetstorm = _props => {
 };
 
 UndrawTweetstorm.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawTweetstorm;

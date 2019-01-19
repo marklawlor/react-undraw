@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawHorrorMovie = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1022 795" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1022 795" style={style} {...props}>
       <path
         d="M829 105.37v425.26A105.34 105.34 0 0 1 723.63 636H298.37a105 105 0 0 1-65.55-22.86 106.41 106.41 0 0 1-20.26-21.34A105.38 105.38 0 0 1 193 530.63V105.37q0-4.23.33-8.37a104 104 0 0 1 2.51-16A105.4 105.4 0 0 1 298.37 0h425.26a105.4 105.4 0 0 1 102.53 81 104 104 0 0 1 2.51 16q.33 4.14.33 8.37z"
         fill={primaryColor}
@@ -355,6 +365,7 @@ const UndrawHorrorMovie = _props => {
 };
 
 UndrawHorrorMovie.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawHorrorMovie;

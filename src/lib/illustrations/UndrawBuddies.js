@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawBuddies = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1131.46 736.12" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1131.46 736.12" style={style} {...props}>
       <g opacity={0.2}>
         <path
           d="M166.46 657.47a40.64 40.64 0 0 0 1.75 6.64q21.32-6.85 43.07-13c-.09-.59-.18-1.22-.29-1.83a36.88 36.88 0 0 0-7.78-17.37c-5.29-6.32-12.45-9.7-19.63-8.38s-12.76 7-15.61 14.84a37.47 37.47 0 0 0-1.51 19.1z"
@@ -247,6 +257,7 @@ const UndrawBuddies = _props => {
 };
 
 UndrawBuddies.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawBuddies;

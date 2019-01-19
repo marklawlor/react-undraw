@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawHappyBirthday = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 839.2 727.08" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 839.2 727.08" style={style} {...props}>
       <defs>
         <linearGradient id="prefix__a" x1={484.88} y1={578.23} x2={600.81} y2={578.23} gradientUnits="userSpaceOnUse">
           <stop offset={0} stopColor="gray" stopOpacity={0.25} />
@@ -150,6 +160,7 @@ const UndrawHappyBirthday = _props => {
 };
 
 UndrawHappyBirthday.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawHappyBirthday;

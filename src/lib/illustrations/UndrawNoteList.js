@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawNoteList = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 974 805.02" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 974 805.02" style={style} {...props}>
       <path
         d="M974 768.75v5a19.11 19.11 0 0 1-20.91 19c-39.15-3.72-78.12-10.64-117.4-9.43-72.42 2.21-145.44 31.83-215.54 13.53-19.77-5.16-39.32-14.13-59.66-12.2-18.25 1.73-34.49 12.05-52.17 16.89C454.55 816.3 399.8 779 344.06 780.51c-36.74 1-71.92 18.89-108.62 16.9-21.27-1.14-41.53-8.92-62.28-13.71-51.66-11.94-104.86-5.27-158.09-1.13A14 14 0 0 1 0 768.64v-4.28a14 14 0 0 1 14-14l940.92-.76A19.11 19.11 0 0 1 974 768.75z"
         fill="#3f3d56"
@@ -148,6 +158,7 @@ const UndrawNoteList = _props => {
 };
 
 UndrawNoteList.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawNoteList;

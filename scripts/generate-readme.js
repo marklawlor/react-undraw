@@ -21,6 +21,11 @@ function generate() {
   const rows = [];
   let content = '';
 
+  // banner
+  content += '<!-- Generated file, do not edit directly! -->';
+  content += EOL;
+  content += EOL;
+
   // headers
   rows.push(['Illustration', 'Name', 'Component']);
 

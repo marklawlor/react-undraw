@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawWorkTime = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 975.26 825.18" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 975.26 825.18" style={style} {...props}>
       <ellipse cx={91} cy={703.78} rx={41.4} ry={6.35} fill={primaryColor} opacity={0.1} />
       <ellipse cx={688.12} cy={712.42} rx={41.4} ry={6.35} fill={primaryColor} opacity={0.1} />
       <ellipse cx={586.13} cy={771.25} rx={41.4} ry={6.35} fill={primaryColor} opacity={0.1} />
@@ -260,6 +270,7 @@ const UndrawWorkTime = _props => {
 };
 
 UndrawWorkTime.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawWorkTime;

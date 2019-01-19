@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawBarber = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1144 714.9" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1144 714.9" style={style} {...props}>
       <path
         d="M1144 494.2a180 180 0 0 0-76-147.42 184.71 184.71 0 0 0 1-18.77c0-99.14-79.24-179.51-177-179.51a174.28 174.28 0 0 0-85.91 22.54c-69.19-45.52-159.52-73.07-258.34-73.07-160.79 0-299.1 72.95-360.46 177.55-3.41-.2-6.84-.31-10.3-.31-97.74 0-177 80.37-177 179.51a180.53 180.53 0 0 0 29.13 98.69c0 89.2 84.19 161.5 188 161.5h753.12c81.54 0 147.64-56.77 147.64-126.81a180.52 180.52 0 0 0 26.12-93.9z"
         fill={primaryColor}
@@ -131,6 +141,7 @@ const UndrawBarber = _props => {
 };
 
 UndrawBarber.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawBarber;

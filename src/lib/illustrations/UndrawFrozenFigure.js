@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawFrozenFigure = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 392.6 794" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 392.6 794" style={style} {...props}>
       <path
         d="M196.3 0a25.14 25.14 0 0 0-25 28.3 24.82 24.82 0 0 0 2.82 8.7 25.64 25.64 0 0 0 1.69 2.75 25.2 25.2 0 0 0 31.42 8 22.14 22.14 0 0 0 2.48-1.38A25.16 25.16 0 0 0 196.3 0zm0 21.39a7.55 7.55 0 1 1 7.55-7.55 7.55 7.55 0 0 1-7.55 7.55z"
         fill="#eeeff0"
@@ -106,6 +116,7 @@ const UndrawFrozenFigure = _props => {
 };
 
 UndrawFrozenFigure.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawFrozenFigure;

@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawVrChat = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1081.36 714.79" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1081.36 714.79" style={style} {...props}>
       <path
         fill={primaryColor}
         opacity={0.1}
@@ -347,6 +357,7 @@ const UndrawVrChat = _props => {
 };
 
 UndrawVrChat.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawVrChat;

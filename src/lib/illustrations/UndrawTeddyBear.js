@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawTeddyBear = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1071.08 838.44" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1071.08 838.44" style={style} {...props}>
       <path
         d="M1058.89 601.22a197.3 197.3 0 0 1-16.41 32.55c0 .08-.1.17-.16.25a30.7 30.7 0 0 1-26 14H88.19c-67.75 0-110.2-69.94-76.23-125.81 61.13-100.5 118.89-240 49-336.14C-51.27 31.48 69.61 3.43 149.35.22a221.52 221.52 0 0 1 89.86 15.17c36.84 14.48 104.17 36.62 191.89 46.78 2.88.34 5.78.66 8.72 1a813.59 813.59 0 0 0 139.78 2.61c1.37-.07 2.74-.18 4.14-.28a806 806 0 0 0 136.73-21.92c2.91-.73 5.78-1.42 8.63-2.11 149.64-35.76 287.58 86.09 253.09 223.75-12.75 50.94-9.51 105.23 33 149.14 69.55 71.78 61.12 142.38 43.7 186.86z"
         fill={primaryColor}
@@ -219,6 +229,7 @@ const UndrawTeddyBear = _props => {
 };
 
 UndrawTeddyBear.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawTeddyBear;

@@ -11,6 +11,10 @@ const replaceAttrValues = {
   '#6c63ff': '{primaryColor}'
 };
 
+const svgProps = {
+  style: '{style}'
+};
+
 // execute
 generate();
 
@@ -35,9 +39,10 @@ function generate() {
         srcCode,
         {
           icon: true,
+          plugins: ['@svgr/plugin-svgo', '@svgr/plugin-jsx', '@svgr/plugin-prettier'],
           replaceAttrValues,
-          template,
-          plugins: ['@svgr/plugin-svgo', '@svgr/plugin-jsx', '@svgr/plugin-prettier']
+          svgProps,
+          template
         },
         { componentName }
       ).then(js => fs.outputFile(destPath, js))

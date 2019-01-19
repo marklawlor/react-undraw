@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawMovingForward = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1153.45 845.67" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1153.45 845.67" style={style} {...props}>
       <path
         d="M1146.38 386.99l-129.94 300.63-44.46 102.85c-14.44 33.39-48.57 55.18-86.46 55.18h-617.6c-37.89 0-72-21.79-86.46-55.18l-6.2-14.35L7.06 386.99c-17.89-41.4-.79-89 40-111.3l40.8-22.28 23.34-12.75 117.02-63.92 34.08-18.62 43.94-24 50.07-27.35 35.74-19.51 87-47.54 19.96-10.88 30.38-16.6.85-.45a97.46 97.46 0 0 1 93 0L777.72 96.2l49.58 27.09 50.88 27.79 35.29 19.27 81.67 44.59 65.4 35.73 45.8 25c40.83 22.29 57.93 69.92 40.04 111.32z"
         fill={primaryColor}
@@ -93,6 +103,7 @@ const UndrawMovingForward = _props => {
 };
 
 UndrawMovingForward.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawMovingForward;

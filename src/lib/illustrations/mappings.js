@@ -1,3 +1,5 @@
+// Generated file, do not edit directly!
+
 import Undraw3dModeling from '../illustrations/Undraw3dModeling';
 import UndrawADayAtThePark from '../illustrations/UndrawADayAtThePark';
 import UndrawAWholeYear from '../illustrations/UndrawAWholeYear';

@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawMobileLife = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1077 722.2" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1077 722.2" style={style} {...props}>
       <g opacity={0.2}>
         <path
           d="M119.24 655.43a46.72 46.72 0 0 0-.43 7.86q26.15.42 52.5 1.75c.12-.68.24-1.38.34-2.09a41.67 41.67 0 0 0-2.45-21.73c-3.62-8.83-10.37-15.14-18.82-16.35s-16.69 2.94-22.64 10.36a41.74 41.74 0 0 0-8.5 20.2z"
@@ -198,6 +208,7 @@ const UndrawMobileLife = _props => {
 };
 
 UndrawMobileLife.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawMobileLife;

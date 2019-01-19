@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawFishing = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1064.62 798.95" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1064.62 798.95" style={style} {...props}>
       <defs>
         <linearGradient id="prefix__a" x1={552.67} y1={633.88} x2={552.67} y2={359.93} gradientUnits="userSpaceOnUse">
           <stop offset={0} stopColor="gray" stopOpacity={0.25} />
@@ -160,6 +170,7 @@ const UndrawFishing = _props => {
 };
 
 UndrawFishing.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawFishing;

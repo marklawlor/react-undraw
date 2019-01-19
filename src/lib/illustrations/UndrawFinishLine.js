@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawFinishLine = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1100.11 731.98" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1100.11 731.98" style={style} {...props}>
       <path
         d="M641.24 145.99c-64.72-2.3-126.36-23.19-185.18-46S338.9 51.8 275.73 39.69c-40.63-7.79-87.1-8.89-119.83 12.89-31.51 21-41.69 57.15-47.16 90.73-4.12 25.26-6.54 51.84 4.74 75.49 7.84 16.42 21.74 30.22 31.36 45.95 33.47 54.72 9.81 122.2-26.45 175.63-17 25.07-36.75 49-49.88 75.66s-19.2 57.25-7.71 84.47c11.38 27 38.51 47.24 67.9 61.49 59.69 28.94 130 37.23 198.61 41.92 151.83 10.39 304.46 5.89 456.69 1.39 56.34-1.67 112.92-3.36 168.34-12.07 30.78-4.84 62.55-12.52 84.9-31.05 28.36-23.53 35.39-63.38 16.38-92.88-31.88-49.49-120-61.78-142.31-114.9-12.26-29.23.33-61.8 18.16-88.91 38.24-58.16 102.33-109.19 105.7-175.68 2.32-45.66-28.49-91.39-76.13-113-49.93-22.65-119.18-19.8-156 17.69-37.98 38.56-104.65 53.41-161.8 51.48z"
         fill={primaryColor}
@@ -100,6 +110,7 @@ const UndrawFinishLine = _props => {
 };
 
 UndrawFinishLine.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawFinishLine;

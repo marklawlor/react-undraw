@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawMusic = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1105.56 813.07" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1105.56 813.07" style={style} {...props}>
       <defs>
         <linearGradient id="prefix__a" x1={221.48} y1={829.79} x2={221.48} y2={197.45} gradientUnits="userSpaceOnUse">
           <stop offset={0} stopColor="gray" stopOpacity={0.25} />
@@ -298,6 +308,7 @@ const UndrawMusic = _props => {
 };
 
 UndrawMusic.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawMusic;

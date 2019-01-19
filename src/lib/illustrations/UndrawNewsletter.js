@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawNewsletter = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 960.22 727.85" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 960.22 727.85" style={style} {...props}>
       <defs>
         <linearGradient id="prefix__a" x1={224.88} y1={440.26} x2={438.9} y2={440.26} gradientUnits="userSpaceOnUse">
           <stop offset={0} stopColor="gray" stopOpacity={0.25} />
@@ -184,6 +194,7 @@ const UndrawNewsletter = _props => {
 };
 
 UndrawNewsletter.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawNewsletter;

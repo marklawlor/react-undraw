@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawConfirmation = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1149.12 755.51" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1149.12 755.51" style={style} {...props}>
       <defs>
         <linearGradient id="prefix__a" x1={974.2} y1={792.81} x2={974.2} y2={205.4} gradientUnits="userSpaceOnUse">
           <stop offset={0} stopColor="gray" stopOpacity={0.25} />
@@ -291,6 +301,7 @@ const UndrawConfirmation = _props => {
 };
 
 UndrawConfirmation.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawConfirmation;

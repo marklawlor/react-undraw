@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawChristmasTree = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1145.7 818.64" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1145.7 818.64" style={style} {...props}>
       <path
         d="M1145.7 538.14a268.06 268.06 0 0 1-310.49 264.52H410.5a364.06 364.06 0 0 1-49.5 3.38q-17.83 0-35.23-1.7A360.62 360.62 0 0 1 0 445.04c0-199.38 161.63-361 361-361 160.57 0 296.63 104.84 343.52 249.8a266.84 266.84 0 0 1 173.33-63.6c147.91 0 267.85 119.94 267.85 267.9z"
         fill={primaryColor}
@@ -230,6 +240,7 @@ const UndrawChristmasTree = _props => {
 };
 
 UndrawChristmasTree.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawChristmasTree;

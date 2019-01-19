@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawAndroid = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1097.1 807.9" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1097.1 807.9" style={style} {...props}>
       <path
         d="M11.85 429.95c17.36 74.2 54.11 138.34 112.19 169.43 120.7 64.61 392.91 31.29 596.07-7a465.21 465.21 0 0 0 264.54-151.23zM1077.2 80.71H965.73a9.635 9.635 0 1 1 0-19.27H985a9.635 9.635 0 0 1 0-19.27h-13.76a9.635 9.635 0 0 1 0-19.27h58.18c-12.91-6-28-10.27-45.38-12.51-158.64-20.38-215.28-6.9-235.26 7-24.65 17.1-52.15 29.68-81.54 35.74-97.88 20.19-280.93 44.49-446.84-7.78-82.46-26-143.75 17.92-180.48 91.28h1056.63c-1.38-21.32-5.51-41-13.09-58.24a9.58 9.58 0 0 1-6.26 2.32zM2.39 275.1a491.06 491.06 0 0 0 4.32 129.45l978.68 35.79a460 460 0 0 0 68-103.7zm387.08 92.35H370.2a9.635 9.635 0 1 1 0 19.27H258.73a9.635 9.635 0 1 1 0-19.27H278a9.635 9.635 0 0 1 0-19.27h-13.76a9.635 9.635 0 0 1 0-19.27h111.47a9.635 9.635 0 1 1 0 19.27h13.76a9.635 9.635 0 0 1 0 19.27zM1096.6 137.29l-1068.49 26c-12.99 33.4-21.56 71.17-25.56 110.33h1075.33a456.46 456.46 0 0 0 15.53-70.33c3.2-23.02 4.48-45.27 3.19-66zm-877.13 85.16H200.2a9.635 9.635 0 1 1 0 19.27H88.73a9.635 9.635 0 1 1 0-19.27H108a9.635 9.635 0 0 1 0-19.27H94.24a9.635 9.635 0 0 1 0-19.27h111.47a9.635 9.635 0 1 1 0 19.27h13.76a9.635 9.635 0 0 1 0 19.27z"
         fill={primaryColor}
@@ -65,6 +75,7 @@ const UndrawAndroid = _props => {
 };
 
 UndrawAndroid.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawAndroid;

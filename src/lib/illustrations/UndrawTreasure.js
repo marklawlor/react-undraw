@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawTreasure = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 853.78 726" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 853.78 726" style={style} {...props}>
       <ellipse cx={284.98} cy={672} rx={277} ry={54} fill="#3f3d56" />
       <path
         d="M63.25 659S11.89 645.19 2.2 646.21s14.68-47.36 30.91-41.46 37.87 21.42 50.24-.5 19.31-33.72 34.38-32.54 35.94-9.43 51 0 25.64 21.06 46.44 20.56 40.52-47.69 56.72-28.81 35.63 36.15 50.86 29.87 32.61 3.16 46.52 13.78 38.26 5.9 47.53-2.36 16.24-14.16 35.94-13 82.31 15.34 105.5 33-30.14 40.12-55.65 40.12-30.14 7.08-52.17 17.7-58-5.9-83.47 11.8-58-9.44-102 0-34.78 22.41-60.29 13-16.23-13-53.33-15.34-77.67 5.9-81.15-9.44-26.64-18.88-40.56-23.6 33.63.01 33.63.01z"
@@ -143,6 +153,7 @@ const UndrawTreasure = _props => {
 };
 
 UndrawTreasure.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawTreasure;

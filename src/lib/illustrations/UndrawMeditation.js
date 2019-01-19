@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawMeditation = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 778 761.81" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 778 761.81" style={style} {...props}>
       <defs>
         <linearGradient id="prefix__a" x1={593} y1={777.92} x2={593} y2={344.92} gradientUnits="userSpaceOnUse">
           <stop offset={0} stopColor="gray" stopOpacity={0.25} />
@@ -170,6 +180,7 @@ const UndrawMeditation = _props => {
 };
 
 UndrawMeditation.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawMeditation;

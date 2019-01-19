@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawMobileTesting = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 924.18 818.88" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 924.18 818.88" style={style} {...props}>
       <path
         d="M414.03 316.83c-36.12-11.69-74.31-21.49-113.34-20.48-57.38 1.49-112.55 28.23-139.76 67.75-23 33.49-26.07 72.85-36.11 110.09-12.37 45.88-35.85 89.42-60.91 132-13.46 22.87-27.66 46.22-30 71.35-3.21 34.89 17.93 69.77 51.26 93.15s77.68 35.84 122.24 38.75c23.71 1.54 48.49.35 69.6-8.19 22.33-9 38.66-25.47 61.08-34.37 20.78-8.24 45-9.3 68.31-8.09a380.06 380.06 0 0 1 89.06 15.26c32.49 9.72 62.68 23.71 95.1 33.57s68.66 15.44 101.88 7.51c31.19-7.44 55.93-25.78 78.24-44.36a850.66 850.66 0 0 0 99.95-98c20.15-23.39 38.92-48.09 47.92-75.42 17.19-52.26-5.84-111.43-57.37-147.42-42.69-29.83-100.12-43-156.36-51-51.29-7.37-110.63-8.1-157.77-26.87-44.96-17.95-85.86-39.97-133.02-55.23z"
         fill={primaryColor}
@@ -295,6 +305,7 @@ const UndrawMobileTesting = _props => {
 };
 
 UndrawMobileTesting.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawMobileTesting;

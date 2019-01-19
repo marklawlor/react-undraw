@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawVoiceControl = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 972.57 830.55" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 972.57 830.55" style={style} {...props}>
       <path
         d="M265.84 29.66C295.05 3.66 340.9-1.67 382.63.4c131.09 6.51 249.43 69.8 351.79 141.39 37 25.91 73.53 53.84 97.59 89.53 49 72.65 34.44 173.29-33.65 233.13-23.16 20.37-51.25 36-80.07 49.81-51.26 24.61-106.57 44.36-164.75 50-41.49 4-83.49.75-124.73-4.84-115.24-15.65-228.35-50.21-323.15-109.33-41.58-25.93-80.77-58.17-97.91-100.12s-6.17-95.12 36.29-119.95c17.56-10.27 38.55-14.9 59.11-19.26 30.25-6.41 61-12.73 88.3-25.76 28.2-13.46 61.59-39.5 56-69.29-5.98-31.97-10.79-60.05 18.39-86.05z"
         fill={primaryColor}
@@ -767,6 +777,7 @@ const UndrawVoiceControl = _props => {
 };
 
 UndrawVoiceControl.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawVoiceControl;

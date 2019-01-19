@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawOnTheWay = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1056.29 808.9" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1056.29 808.9" style={style} {...props}>
       <path
         d="M1035.84 218.55a257.25 257.25 0 0 0-41.89-66.76l-581.3-5.73 478.6-67.22a271.88 271.88 0 0 0-97.11-19.26 272.17 272.17 0 0 0-325.12-11 271 271 0 0 0-124.43-30c-129.16 0-236.78 89.46-260.92 208.08zM1056.28 318.04a251.31 251.31 0 0 0-18.11-93.9L30.71 329.89A253 253 0 0 0 7.14 389.5l312 46.5L0 469.91C9.6 604.2 124.72 710.24 265.35 710.24c70.79 0 135.12-26.87 182.78-70.69 47.81 44.65 112.76 72.11 184.31 72.11 106.17 0 197.8-60.45 240.47-147.85 85.61-27.17 152.11-95.39 174.87-180.74l-394.54-61.19h403c.02-1.28.04-2.56.04-3.84z"
         fill={primaryColor}
@@ -276,6 +286,7 @@ const UndrawOnTheWay = _props => {
 };
 
 UndrawOnTheWay.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawOnTheWay;

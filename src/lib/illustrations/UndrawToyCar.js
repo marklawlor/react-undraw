@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawToyCar = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1094 811.38" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1094 811.38" style={style} {...props}>
       <g opacity={0.3}>
         <rect x={631.64} y={450.62} width={130.73} height={39.52} rx={7.43} fill="#f2f2f2" />
         <rect x={768.45} y={490.14} width={130.73} height={39.52} rx={7.43} fill="#f2f2f2" />
@@ -184,6 +194,7 @@ const UndrawToyCar = _props => {
 };
 
 UndrawToyCar.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawToyCar;

@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawAWholeYear = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1097.59 694.62" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1097.59 694.62" style={style} {...props}>
       <g opacity={0.2}>
         <path
           d="M925.25 600.31q-11.34 6.83-23.13 13.23c-1.22.66-2.44 1.32-3.66 2q-8.86 4.75-18 9.24.07-.72.18-1.44a43.59 43.59 0 0 1 4.58-14.22 35.82 35.82 0 0 1 3.9-6c5.95-7.43 14.21-11.58 22.65-10.37a22 22 0 0 1 13.48 7.56z"
@@ -146,6 +156,7 @@ const UndrawAWholeYear = _props => {
 };
 
 UndrawAWholeYear.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawAWholeYear;

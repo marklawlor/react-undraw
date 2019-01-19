@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const Undraw3dModeling = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1086.87 645.26" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1086.87 645.26" style={style} {...props}>
       <defs>
         <linearGradient
           id="prefix__a"
@@ -227,6 +237,7 @@ const Undraw3dModeling = _props => {
 };
 
 Undraw3dModeling.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default Undraw3dModeling;

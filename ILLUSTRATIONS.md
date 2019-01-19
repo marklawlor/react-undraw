@@ -1,3 +1,5 @@
+<!-- Generated file, do not edit directly! -->
+
 # Illustrations
 
 511 illustrations available.

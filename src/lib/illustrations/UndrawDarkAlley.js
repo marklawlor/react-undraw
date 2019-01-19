@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawDarkAlley = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1081.15 638.54" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1081.15 638.54" style={style} {...props}>
       <path fill="#65617d" d="M25.58 609.63h1055.57v28.91H25.58z" />
       <path
         d="M749.57 235.34a19.14 19.14 0 0 0 .16 2.29 19.14 19.14 0 0 1-.16-2.29zM759.05 250.95a17.36 17.36 0 0 1-3.76-2.65 17.36 17.36 0 0 0 3.76 2.65z"
@@ -208,6 +218,7 @@ const UndrawDarkAlley = _props => {
 };
 
 UndrawDarkAlley.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawDarkAlley;

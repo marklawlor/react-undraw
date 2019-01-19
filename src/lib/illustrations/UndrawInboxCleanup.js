@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawInboxCleanup = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1000 841.56" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1000 841.56" style={style} {...props}>
       <defs>
         <linearGradient id="prefix__a" x1={471.84} y1={810.65} x2={471.84} y2={179} gradientUnits="userSpaceOnUse">
           <stop offset={0} stopColor="gray" stopOpacity={0.25} />
@@ -224,6 +234,7 @@ const UndrawInboxCleanup = _props => {
 };
 
 UndrawInboxCleanup.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawInboxCleanup;

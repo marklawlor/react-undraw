@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawVehicleSale = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1114 593.54" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1114 593.54" style={style} {...props}>
       <ellipse cx={557} cy={419.77} rx={557} ry={173.78} fill={primaryColor} opacity={0.1} />
       <g opacity={0.8}>
         <path
@@ -688,6 +698,7 @@ const UndrawVehicleSale = _props => {
 };
 
 UndrawVehicleSale.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawVehicleSale;

@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawPostingPhoto = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1050 594.02" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1050 594.02" style={style} {...props}>
       <ellipse cx={525} cy={561.02} rx={525} ry={33} fill={primaryColor} opacity={0.1} />
       <path fill="#d0d2d5" d="M497.09 549.99l-178.19-2.28.53-4.57 8.61-75.39h156.49l11.51 75.39.88 5.71.17 1.14z" />
       <path opacity={0.1} d="M496.92 548.85H408l-89.1-1.14.53-4.57h176.61l.88 5.71z" />
@@ -164,6 +174,7 @@ const UndrawPostingPhoto = _props => {
 };
 
 UndrawPostingPhoto.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawPostingPhoto;

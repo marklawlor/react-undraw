@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawDuaLipa = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1114 811.04" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1114 811.04" style={style} {...props}>
       <g opacity={0.3} fill={primaryColor}>
         <path
           d="M352.31 61.68c-2.09-2.85-6.41.23-4.45 3.18.51.77 1.06 1.51 1.59 2.22 6.44 8.69 9.77 19.23 12.64 29.65.71 2.56 1.39 5.3.58 7.82a48.93 48.93 0 0 0-1.33-20.41 127 127 0 0 0-7.22-19.27 17.42 17.42 0 0 0-1.81-3.19z"
@@ -214,6 +224,7 @@ const UndrawDuaLipa = _props => {
 };
 
 UndrawDuaLipa.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawDuaLipa;

@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawSocialTree = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 598 771" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 598 771" style={style} {...props}>
       <defs>
         <linearGradient id="prefix__a" x1={299.55} y1={771} x2={299.55} y2={569.5} gradientUnits="userSpaceOnUse">
           <stop offset={0} stopColor="gray" stopOpacity={0.25} />
@@ -224,6 +234,7 @@ const UndrawSocialTree = _props => {
 };
 
 UndrawSocialTree.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawSocialTree;

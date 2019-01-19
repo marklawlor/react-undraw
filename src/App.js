@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { Component } from 'react';
 
 import Undraw from './lib';
+import defaultProps from './lib/default-props';
 import mappings from './lib/illustrations/mappings';
 
 const illustrations = Object.keys(mappings);
@@ -18,7 +19,7 @@ export default class App extends Component {
     this.state = {
       search: '',
       limit: 100,
-      primaryColor: Undraw.defaultProps.primaryColor
+      primaryColor: defaultProps.primaryColor
     };
 
     this.onChange = this.onChange.bind(this);

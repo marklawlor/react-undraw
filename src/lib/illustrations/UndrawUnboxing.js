@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawUnboxing = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1131.14 783.2" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1131.14 783.2" style={style} {...props}>
       <path
         d="M584.49 133.6c-71.37 12-142.69 6.62-211.31-1.15s-137-17.88-208.48-15.06c-45.95 1.86-97.13 10.95-129.13 37.63C4.76 180.7.03 215.44 0 246.8c0 23.6 2 48 18.63 66.83 11.51 13.06 29.22 22.44 42.56 34.49 46.44 41.93 32.5 107.71 2.23 163.61-14.2 26.22-31.58 52-41.23 78.82s-10.88 55.63 6.56 77.6c17.28 21.77 50.64 34.1 85.4 40.53 70.61 13.07 149.21 5.25 225.26-5.42 168.35-23.61 334.94-60.78 501.08-97.86 61.48-13.73 123.23-27.52 182.46-47.38 32.89-11 66.37-24.83 87.58-46.33 26.92-27.31 27.54-64.65 1.45-87-43.77-37.57-142.62-29.49-176.5-72.39-18.65-23.7-10.63-55.7 4.09-83.9 31.59-60.58 92.8-120.35 84.68-180.84-5.58-41.54-47.5-76-103.59-85-58.79-9.52-134.22 8.07-168 49.76-34.69 42.89-105.15 70.7-168.17 81.28z"
         fill={primaryColor}
@@ -211,6 +221,7 @@ const UndrawUnboxing = _props => {
 };
 
 UndrawUnboxing.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawUnboxing;

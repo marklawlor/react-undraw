@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawHouseSearching = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 964.26 486.72" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 964.26 486.72" style={style} {...props}>
       <defs>
         <linearGradient id="prefix__a" x1={1001.2} y1={623.61} x2={1001.2} y2={406.11} gradientUnits="userSpaceOnUse">
           <stop offset={0} stopColor="gray" stopOpacity={0.25} />
@@ -242,6 +252,7 @@ const UndrawHouseSearching = _props => {
 };
 
 UndrawHouseSearching.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawHouseSearching;

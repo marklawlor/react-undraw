@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawNightCalls = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1159.03 868.09" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1159.03 868.09" style={style} {...props}>
       <defs>
         <linearGradient id="prefix__b" x1={611.1} y1={658.16} x2={611.1} y2={98.62} gradientUnits="userSpaceOnUse">
           <stop offset={0} stopColor={primaryColor} stopOpacity={0.1} />
@@ -455,6 +465,7 @@ const UndrawNightCalls = _props => {
 };
 
 UndrawNightCalls.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawNightCalls;

@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawTeaching = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 948.37 758" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 948.37 758" style={style} {...props}>
       <rect x={193.87} y={130} width={86} height={26} rx={7.43} fill={primaryColor} opacity={0.1} />
       <rect x={283.87} y={156} width={86} height={26} rx={7.43} fill={primaryColor} opacity={0.1} />
       <rect x={373.87} y={182} width={86} height={26} rx={7.43} fill={primaryColor} opacity={0.1} />
@@ -203,6 +213,7 @@ const UndrawTeaching = _props => {
 };
 
 UndrawTeaching.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawTeaching;

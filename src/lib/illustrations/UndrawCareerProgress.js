@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import defaultProps from '../default-props';
 
 const UndrawCareerProgress = _props => {
   const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor;
+  const primaryColor = props.primaryColor || defaultProps.primaryColor;
+  const style = Object.assign(
+    {
+      height: props.height || defaultProps.height,
+      width: '100%'
+    },
+    props.style
+  );
   delete props.primaryColor;
+  delete props.height;
+  delete props.style;
   return (
-    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1094 760" {...props}>
+    <svg data-name="Layer 1" width="1em" height="1em" viewBox="0 0 1094 760" style={style} {...props}>
       <rect x={155} y={304.52} width={130.73} height={39.52} rx={7.43} fill={primaryColor} opacity={0.1} />
       <rect x={291.81} y={344.05} width={130.73} height={39.52} rx={7.43} fill={primaryColor} opacity={0.1} />
       <rect x={428.63} y={383.57} width={130.73} height={39.52} rx={7.43} fill={primaryColor} opacity={0.1} />
@@ -142,6 +152,7 @@ const UndrawCareerProgress = _props => {
 };
 
 UndrawCareerProgress.propTypes = {
+  height: PropTypes.string,
   primaryColor: PropTypes.string
 };
 export default UndrawCareerProgress;
