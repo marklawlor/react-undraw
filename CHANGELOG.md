@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.9.0"></a>
+# [1.9.0](https://github.com/justinlettau/react-undraw/compare/v1.8.0...v1.9.0) (2019-01-20)
+
+
+### Bug Fixes
+
+* update typescript types ([27da21c](https://github.com/justinlettau/react-undraw/commit/27da21c))
+
+
+### Features
+
+* apply default props to individual illustrations ([f4d870c](https://github.com/justinlettau/react-undraw/commit/f4d870c))
+
+
+
 <a name="1.8.0"></a>
 
 # [1.8.0](https://github.com/justinlettau/react-undraw/compare/v1.7.0...v1.8.0) (2019-01-18)
