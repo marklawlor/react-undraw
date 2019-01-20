@@ -38,6 +38,7 @@ function generate() {
 
   content += '# Illustrations';
   content += EOL;
+  content += EOL;
   content += `${illustrations.length} illustrations available.`;
   content += EOL;
   content += EOL;
