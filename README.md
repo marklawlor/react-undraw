@@ -43,7 +43,7 @@ Props:
 | `primaryColor` | `string` | Illustration primary color.    | `#6c63ff` |
 | `height`       | `string` | Illustration height.           | `250px`   |
 
-See [./ILLUSTRATIONS.md](./ILLUSTRATIONS.md) for a full list of supported illustration names.
+See [ILLUSTRATIONS.md](./ILLUSTRATIONS.md) for a full list of supported illustration names.
 
 ## Override Default Props
 
