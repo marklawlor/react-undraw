@@ -42,7 +42,7 @@ function generate() {
 
   illustrations.forEach(item => {
     const component = prefix + pascalCase(item.name);
-    content += `  export class ${component} extends React.Component<IllustrationProps> {};`;
+    content += `  export class ${component} extends React.Component<IllustrationProps> {}`;
     content += EOL;
   });
 
