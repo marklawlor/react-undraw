@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.11.0"></a>
+# [1.11.0](https://github.com/justinlettau/react-undraw/compare/v1.10.0...v1.11.0) (2019-02-07)
+
+
+### Bug Fixes
+
+* script lint issues ([62907ed](https://github.com/justinlettau/react-undraw/commit/62907ed))
+
+
+### Features
+
+* add new illustrations ([5eb8ab3](https://github.com/justinlettau/react-undraw/commit/5eb8ab3))
+
+
+
 <a name="1.10.0"></a>
 # [1.10.0](https://github.com/justinlettau/react-undraw/compare/v1.9.0...v1.10.0) (2019-01-25)
 
