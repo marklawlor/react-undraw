@@ -5,9 +5,6 @@ const path = require('path');
 
 const illustrations = require('./illustrations.json');
 
-// execute
-download();
-
 /**
  * Download all defined SVG files.
  */
@@ -27,3 +24,6 @@ function download() {
     .then(() => spinner.succeed(`Successfully downloaded ${illustrations.length} files!`))
     .catch(error => spinner.fail(error));
 }
+
+// execute
+download();

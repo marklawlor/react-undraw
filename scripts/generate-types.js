@@ -1,14 +1,10 @@
-const EOL = require('os').EOL;
-const dashify = require('dashify');
+const { EOL } = require('os');
 const fs = require('fs-extra');
 const ora = require('ora');
 const pascalCase = require('pascal-case');
 const path = require('path');
 
 const illustrations = require('./illustrations.json');
-
-// execute
-generate();
 
 /**
  * Generate types file.
@@ -24,7 +20,7 @@ function generate() {
   content += EOL;
   content += EOL;
 
-  content += `declare module 'react-undraw' {`;
+  content += "declare module 'react-undraw' {";
 
   content += `
   export interface IllustrationProps {
@@ -46,12 +42,16 @@ function generate() {
 
   illustrations.forEach(item => {
     const component = prefix + pascalCase(item.name);
-    content += `  export class ${component} extends React.Component<IllustrationProps> {};` + EOL;
+    content += `  export class ${component} extends React.Component<IllustrationProps> {};`;
+    content += EOL;
   });
 
-  content += `}`;
+  content += '}';
   content += EOL;
 
   fs.outputFileSync(dest, content);
   spinner.succeed('Successfully generated types!');
 }
+
+// execute
+generate();

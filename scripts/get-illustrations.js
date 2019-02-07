@@ -4,22 +4,6 @@
  */
 (() => {
   let lastHeight = document.body.scrollHeight;
-  scroll();
-
-  function scroll() {
-    window.scrollTo(0, document.body.scrollHeight);
-
-    setTimeout(() => {
-      console.log('Scrolling ...');
-
-      if (document.body.scrollHeight > lastHeight) {
-        lastHeight = document.body.scrollHeight;
-        scroll();
-      } else {
-        getIllustrations();
-      }
-    }, 1000);
-  }
 
   function getIllustrations() {
     console.log('Getting SVG items ...');
@@ -45,4 +29,22 @@
     const output = JSON.stringify(items);
     console.log(output);
   }
+
+  function scroll() {
+    window.scrollTo(0, document.body.scrollHeight);
+
+    setTimeout(() => {
+      console.log('Scrolling ...');
+
+      if (document.body.scrollHeight > lastHeight) {
+        lastHeight = document.body.scrollHeight;
+        scroll();
+      } else {
+        getIllustrations();
+      }
+    }, 1000);
+  }
+
+  // execute
+  scroll();
 })();

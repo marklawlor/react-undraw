@@ -1,4 +1,4 @@
-const EOL = require('os').EOL;
+const { EOL } = require('os');
 const dashify = require('dashify');
 const fs = require('fs-extra');
 const ora = require('ora');
@@ -6,9 +6,6 @@ const pascalCase = require('pascal-case');
 const path = require('path');
 
 const illustrations = require('./illustrations.json');
-
-// execute
-generate();
 
 /**
  * Generate mapping file.
@@ -26,11 +23,12 @@ function generate() {
 
   illustrations.forEach(item => {
     const component = prefix + pascalCase(item.name);
-    content += `import ${component} from '../illustrations/${component}';` + EOL;
+    content += `import ${component} from '../illustrations/${component}';`;
+    content += EOL;
   });
 
   content += EOL;
-  content += `const mappings = {`;
+  content += 'const mappings = {';
   content += EOL;
 
   illustrations.forEach((item, index) => {
@@ -40,7 +38,7 @@ function generate() {
 
     content += `  ${quotedName}: ${component}`;
 
-    if (index != illustrations.length - 1) {
+    if (index !== illustrations.length - 1) {
       content += ',';
     }
 
@@ -56,3 +54,6 @@ function generate() {
   fs.outputFileSync(dest, content);
   spinner.succeed('Successfully generated mappings!');
 }
+
+// execute
+generate();

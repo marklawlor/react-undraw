@@ -15,9 +15,6 @@ const svgProps = {
   style: '{style}'
 };
 
-// execute
-generate();
-
 /**
  * Generate component files.
  */
@@ -26,7 +23,7 @@ function generate() {
   const src = './svg';
   const dest = './src/lib/illustrations';
   const prefix = 'Undraw';
-  let promises = [];
+  const promises = [];
 
   illustrations.forEach(item => {
     const componentName = prefix + pascalCase(item.name);
@@ -53,3 +50,6 @@ function generate() {
     .then(() => spinner.succeed(`Successfully generated ${illustrations.length} files!`))
     .catch(error => spinner.fail(error));
 }
+
+// execute
+generate();

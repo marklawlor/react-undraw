@@ -1,4 +1,4 @@
-const EOL = require('os').EOL;
+const { EOL } = require('os');
 const dashify = require('dashify');
 const fs = require('fs-extra');
 const ora = require('ora');
@@ -7,9 +7,6 @@ const path = require('path');
 const table = require('markdown-table');
 
 const illustrations = require('./illustrations.json');
-
-// execute
-generate();
 
 /**
  * Generate readme file.
@@ -33,6 +30,7 @@ function generate() {
     const name = dashify(item.name);
     const component = prefix + pascalCase(item.name);
 
+    // eslint-disable-next-line prefer-template
     rows.push([item.name, '`' + name + '`', '`<' + component + ' />`']);
   });
 
@@ -47,3 +45,6 @@ function generate() {
   fs.outputFileSync(dest, content);
   spinner.succeed('Successfully generated readme!');
 }
+
+// execute
+generate();
