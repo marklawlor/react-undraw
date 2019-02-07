@@ -1,32 +1,8 @@
 {
-  "extends": "airbnb",
+  "extends": "@justinlettau/eslint-config",
   "parser": "babel-eslint",
   "env": {
     "browser": true,
     "jest": true
-  },
-  "rules": {
-    "comma-dangle": [
-      "error",
-      "never"
-    ],
-    "import/no-extraneous-dependencies": 0,
-    "linebreak-style": 0,
-    "object-curly-newline": [
-      1,
-      {
-        "consistent": true
-      }
-    ],
-    "react/jsx-filename-extension": [
-      1,
-      {
-        "extensions": [
-          ".js",
-          ".jsx"
-        ]
-      }
-    ],
-    "react/prefer-stateless-function": 0
   }
 }

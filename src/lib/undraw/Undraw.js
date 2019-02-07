@@ -6,6 +6,14 @@ import mappings from '../illustrations/mappings';
 
 export default class Undraw extends Component {
   /**
+   * Default props.
+   */
+  static defaultProps = {
+    height: defaultProps.height,
+    primaryColor: defaultProps.primaryColor
+  };
+
+  /**
    * Prop types.
    */
   static propTypes = {
