@@ -5,6 +5,7 @@ import UndrawADayAtThePark from '../illustrations/UndrawADayAtThePark';
 import UndrawAWholeYear from '../illustrations/UndrawAWholeYear';
 import UndrawAboutMe from '../illustrations/UndrawAboutMe';
 import UndrawAboutUsPage from '../illustrations/UndrawAboutUsPage';
+import UndrawAcceptRequest from '../illustrations/UndrawAcceptRequest';
 import UndrawAcceptTerms from '../illustrations/UndrawAcceptTerms';
 import UndrawAccount from '../illustrations/UndrawAccount';
 import UndrawActiveSupport from '../illustrations/UndrawActiveSupport';
@@ -23,6 +24,7 @@ import UndrawAlienScience from '../illustrations/UndrawAlienScience';
 import UndrawAnalysis from '../illustrations/UndrawAnalysis';
 import UndrawAnalytics from '../illustrations/UndrawAnalytics';
 import UndrawAndroid from '../illustrations/UndrawAndroid';
+import UndrawApartmentRent from '../illustrations/UndrawApartmentRent';
 import UndrawAppInstallation from '../illustrations/UndrawAppInstallation';
 import UndrawAppreciation from '../illustrations/UndrawAppreciation';
 import UndrawArtLover from '../illustrations/UndrawArtLover';
@@ -72,6 +74,7 @@ import UndrawCalendar from '../illustrations/UndrawCalendar';
 import UndrawCalling from '../illustrations/UndrawCalling';
 import UndrawCampfire from '../illustrations/UndrawCampfire';
 import UndrawCamping from '../illustrations/UndrawCamping';
+import UndrawCandidate from '../illustrations/UndrawCandidate';
 import UndrawCareerProgress from '../illustrations/UndrawCareerProgress';
 import UndrawCautiousDog from '../illustrations/UndrawCautiousDog';
 import UndrawCelebration from '../illustrations/UndrawCelebration';
@@ -99,6 +102,7 @@ import UndrawCollaboration from '../illustrations/UndrawCollaboration';
 import UndrawCollecting from '../illustrations/UndrawCollecting';
 import UndrawCollection from '../illustrations/UndrawCollection';
 import UndrawCommunity from '../illustrations/UndrawCommunity';
+import UndrawCompleted from '../illustrations/UndrawCompleted';
 import UndrawComposeMusic from '../illustrations/UndrawComposeMusic';
 import UndrawConference from '../illustrations/UndrawConference';
 import UndrawConferenceSpeaker from '../illustrations/UndrawConferenceSpeaker';
@@ -108,7 +112,9 @@ import UndrawConnected from '../illustrations/UndrawConnected';
 import UndrawConnectingTeams from '../illustrations/UndrawConnectingTeams';
 import UndrawContactUs from '../illustrations/UndrawContactUs';
 import UndrawContainerShip from '../illustrations/UndrawContainerShip';
+import UndrawContemplating from '../illustrations/UndrawContemplating';
 import UndrawContent from '../illustrations/UndrawContent';
+import UndrawContentCreator from '../illustrations/UndrawContentCreator';
 import UndrawContrast from '../illustrations/UndrawContrast';
 import UndrawControlPanel from '../illustrations/UndrawControlPanel';
 import UndrawConversation from '../illustrations/UndrawConversation';
@@ -117,6 +123,7 @@ import UndrawCouple from '../illustrations/UndrawCouple';
 import UndrawCreate from '../illustrations/UndrawCreate';
 import UndrawCreationProcess from '../illustrations/UndrawCreationProcess';
 import UndrawCreativeThinking from '../illustrations/UndrawCreativeThinking';
+import UndrawCreativeWoman from '../illustrations/UndrawCreativeWoman';
 import UndrawCreativity from '../illustrations/UndrawCreativity';
 import UndrawCreditCard from '../illustrations/UndrawCreditCard';
 import UndrawCreditCardPayment from '../illustrations/UndrawCreditCardPayment';
@@ -153,6 +160,7 @@ import UndrawDoctors from '../illustrations/UndrawDoctors';
 import UndrawDocuments from '../illustrations/UndrawDocuments';
 import UndrawDogWalking from '../illustrations/UndrawDogWalking';
 import UndrawDollPlay from '../illustrations/UndrawDollPlay';
+import UndrawDomainNames from '../illustrations/UndrawDomainNames';
 import UndrawDownload from '../illustrations/UndrawDownload';
 import UndrawDreamer from '../illustrations/UndrawDreamer';
 import UndrawDroneDelivery from '../illustrations/UndrawDroneDelivery';
@@ -175,6 +183,7 @@ import UndrawExperts from '../illustrations/UndrawExperts';
 import UndrawExploring from '../illustrations/UndrawExploring';
 import UndrawFallIsComing from '../illustrations/UndrawFallIsComing';
 import UndrawFans from '../illustrations/UndrawFans';
+import UndrawFashionBlogging from '../illustrations/UndrawFashionBlogging';
 import UndrawFastCar from '../illustrations/UndrawFastCar';
 import UndrawFastLoading from '../illustrations/UndrawFastLoading';
 import UndrawFatherhood from '../illustrations/UndrawFatherhood';
@@ -195,6 +204,7 @@ import UndrawFishing from '../illustrations/UndrawFishing';
 import UndrawFitnessTracker from '../illustrations/UndrawFitnessTracker';
 import UndrawFloating from '../illustrations/UndrawFloating';
 import UndrawFocus from '../illustrations/UndrawFocus';
+import UndrawFolder from '../illustrations/UndrawFolder';
 import UndrawFollowMeDrone from '../illustrations/UndrawFollowMeDrone';
 import UndrawFollowers from '../illustrations/UndrawFollowers';
 import UndrawFollowing from '../illustrations/UndrawFollowing';
@@ -225,6 +235,7 @@ import UndrawGroupChat from '../illustrations/UndrawGroupChat';
 import UndrawGroupSelfie from '../illustrations/UndrawGroupSelfie';
 import UndrawGrowing from '../illustrations/UndrawGrowing';
 import UndrawGrowthAnalytics from '../illustrations/UndrawGrowthAnalytics';
+import UndrawHamburger from '../illustrations/UndrawHamburger';
 import UndrawHangOut from '../illustrations/UndrawHangOut';
 import UndrawHappy_2019 from '../illustrations/UndrawHappy_2019';
 import UndrawHappyBirthday from '../illustrations/UndrawHappyBirthday';
@@ -253,17 +264,21 @@ import UndrawInThought from '../illustrations/UndrawInThought';
 import UndrawInboxCleanup from '../illustrations/UndrawInboxCleanup';
 import UndrawInfluencer from '../illustrations/UndrawInfluencer';
 import UndrawInstantSupport from '../illustrations/UndrawInstantSupport';
+import UndrawInstructionManual from '../illustrations/UndrawInstructionManual';
 import UndrawInteractionDesign from '../illustrations/UndrawInteractionDesign';
 import UndrawInternetOnTheGo from '../illustrations/UndrawInternetOnTheGo';
 import UndrawInterview from '../illustrations/UndrawInterview';
+import UndrawInvesting from '../illustrations/UndrawInvesting';
 import UndrawInvite from '../illustrations/UndrawInvite';
 import UndrawJapan from '../illustrations/UndrawJapan';
 import UndrawJasonMask from '../illustrations/UndrawJasonMask';
 import UndrawJavaScriptFrameworks from '../illustrations/UndrawJavaScriptFrameworks';
 import UndrawJobHunt from '../illustrations/UndrawJobHunt';
 import UndrawJogging from '../illustrations/UndrawJogging';
+import UndrawJourney from '../illustrations/UndrawJourney';
 import UndrawJoyride from '../illustrations/UndrawJoyride';
 import UndrawJudge from '../illustrations/UndrawJudge';
+import UndrawLateAtNight from '../illustrations/UndrawLateAtNight';
 import UndrawLaunching from '../illustrations/UndrawLaunching';
 import UndrawLighthouse from '../illustrations/UndrawLighthouse';
 import UndrawLiveCollaboration from '../illustrations/UndrawLiveCollaboration';
@@ -291,11 +306,13 @@ import UndrawMedicine from '../illustrations/UndrawMedicine';
 import UndrawMeditating from '../illustrations/UndrawMeditating';
 import UndrawMeditation from '../illustrations/UndrawMeditation';
 import UndrawMeeting from '../illustrations/UndrawMeeting';
+import UndrawMemoryStorage from '../illustrations/UndrawMemoryStorage';
 import UndrawMessageSent from '../illustrations/UndrawMessageSent';
 import UndrawMessages from '../illustrations/UndrawMessages';
 import UndrawMessaging from '../illustrations/UndrawMessaging';
 import UndrawMessagingFun from '../illustrations/UndrawMessagingFun';
 import UndrawMessenger from '../illustrations/UndrawMessenger';
+import UndrawMetrics from '../illustrations/UndrawMetrics';
 import UndrawMillennialGirl from '../illustrations/UndrawMillennialGirl';
 import UndrawMindMap from '../illustrations/UndrawMindMap';
 import UndrawMindfulness from '../illustrations/UndrawMindfulness';
@@ -318,6 +335,7 @@ import UndrawMorningEssentials from '../illustrations/UndrawMorningEssentials';
 import UndrawMotherhood from '../illustrations/UndrawMotherhood';
 import UndrawMovieNight from '../illustrations/UndrawMovieNight';
 import UndrawMovingForward from '../illustrations/UndrawMovingForward';
+import UndrawMultitasking from '../illustrations/UndrawMultitasking';
 import UndrawMusic from '../illustrations/UndrawMusic';
 import UndrawNavigation from '../illustrations/UndrawNavigation';
 import UndrawNerd from '../illustrations/UndrawNerd';
@@ -330,6 +348,7 @@ import UndrawNoData from '../illustrations/UndrawNoData';
 import UndrawNoteList from '../illustrations/UndrawNoteList';
 import UndrawNotebook from '../illustrations/UndrawNotebook';
 import UndrawNotes from '../illustrations/UndrawNotes';
+import UndrawNotify from '../illustrations/UndrawNotify';
 import UndrawOffRoad from '../illustrations/UndrawOffRoad';
 import UndrawOldDay from '../illustrations/UndrawOldDay';
 import UndrawOnTheOffice from '../illustrations/UndrawOnTheOffice';
@@ -339,6 +358,7 @@ import UndrawOnline from '../illustrations/UndrawOnline';
 import UndrawOnlineFriends from '../illustrations/UndrawOnlineFriends';
 import UndrawOnlineShopping from '../illustrations/UndrawOnlineShopping';
 import UndrawOnlineWorld from '../illustrations/UndrawOnlineWorld';
+import UndrawOpenSource from '../illustrations/UndrawOpenSource';
 import UndrawOpened from '../illustrations/UndrawOpened';
 import UndrawOperatingSystem from '../illustrations/UndrawOperatingSystem';
 import UndrawOrderConfirmed from '../illustrations/UndrawOrderConfirmed';
@@ -350,6 +370,7 @@ import UndrawOuterSpace from '../illustrations/UndrawOuterSpace';
 import UndrawPageNotFound from '../illustrations/UndrawPageNotFound';
 import UndrawPairProgramming from '../illustrations/UndrawPairProgramming';
 import UndrawPassingBy from '../illustrations/UndrawPassingBy';
+import UndrawPayments from '../illustrations/UndrawPayments';
 import UndrawPedestrianCrossing from '../illustrations/UndrawPedestrianCrossing';
 import UndrawPenTool from '../illustrations/UndrawPenTool';
 import UndrawPeopleSearch from '../illustrations/UndrawPeopleSearch';
@@ -379,11 +400,13 @@ import UndrawPreferences from '../illustrations/UndrawPreferences';
 import UndrawPresentation from '../illustrations/UndrawPresentation';
 import UndrawPressPlay from '../illustrations/UndrawPressPlay';
 import UndrawPrintingInvoices from '../illustrations/UndrawPrintingInvoices';
+import UndrawProblemSolving from '../illustrations/UndrawProblemSolving';
 import UndrawProcessing from '../illustrations/UndrawProcessing';
 import UndrawProductHunt from '../illustrations/UndrawProductHunt';
 import UndrawProductTeardown from '../illustrations/UndrawProductTeardown';
 import UndrawProductTour from '../illustrations/UndrawProductTour';
 import UndrawProfile from '../illustrations/UndrawProfile';
+import UndrawProfileData from '../illustrations/UndrawProfileData';
 import UndrawProfilePic from '../illustrations/UndrawProfilePic';
 import UndrawProgrammer from '../illustrations/UndrawProgrammer';
 import UndrawProgramming from '../illustrations/UndrawProgramming';
@@ -462,6 +485,7 @@ import UndrawStaticAssets from '../illustrations/UndrawStaticAssets';
 import UndrawStatistics from '../illustrations/UndrawStatistics';
 import UndrawStatusUpdate from '../illustrations/UndrawStatusUpdate';
 import UndrawStayingIn from '../illustrations/UndrawStayingIn';
+import UndrawStepToTheSun from '../illustrations/UndrawStepToTheSun';
 import UndrawStreetFood from '../illustrations/UndrawStreetFood';
 import UndrawStripePayments from '../illustrations/UndrawStripePayments';
 import UndrawStudying from '../illustrations/UndrawStudying';
@@ -469,10 +493,12 @@ import UndrawSubway from '../illustrations/UndrawSubway';
 import UndrawSuccessfulPurchase from '../illustrations/UndrawSuccessfulPurchase';
 import UndrawSunnyDay from '../illustrations/UndrawSunnyDay';
 import UndrawSuperThankYou from '../illustrations/UndrawSuperThankYou';
+import UndrawSuperWoman from '../illustrations/UndrawSuperWoman';
 import UndrawSuperhero from '../illustrations/UndrawSuperhero';
 import UndrawSurfer from '../illustrations/UndrawSurfer';
 import UndrawSwipeProfiles from '../illustrations/UndrawSwipeProfiles';
 import UndrawSync from '../illustrations/UndrawSync';
+import UndrawSynchronize from '../illustrations/UndrawSynchronize';
 import UndrawTabs from '../illustrations/UndrawTabs';
 import UndrawTaken from '../illustrations/UndrawTaken';
 import UndrawTakingNotes from '../illustrations/UndrawTakingNotes';
@@ -483,6 +509,7 @@ import UndrawTeaching from '../illustrations/UndrawTeaching';
 import UndrawTeam from '../illustrations/UndrawTeam';
 import UndrawTeamPage from '../illustrations/UndrawTeamPage';
 import UndrawTeamSpirit from '../illustrations/UndrawTeamSpirit';
+import UndrawTeamWork from '../illustrations/UndrawTeamWork';
 import UndrawTeddyBear from '../illustrations/UndrawTeddyBear';
 import UndrawTexting from '../illustrations/UndrawTexting';
 import UndrawThoughts from '../illustrations/UndrawThoughts';
@@ -529,6 +556,7 @@ import UndrawWallPost from '../illustrations/UndrawWallPost';
 import UndrawWallet from '../illustrations/UndrawWallet';
 import UndrawWarning from '../illustrations/UndrawWarning';
 import UndrawWeather from '../illustrations/UndrawWeather';
+import UndrawWeatherApp from '../illustrations/UndrawWeatherApp';
 import UndrawWebDevices from '../illustrations/UndrawWebDevices';
 import UndrawWebsiteSetup from '../illustrations/UndrawWebsiteSetup';
 import UndrawWedding from '../illustrations/UndrawWedding';
@@ -563,6 +591,7 @@ const mappings = {
   'a-whole-year': UndrawAWholeYear,
   'about-me': UndrawAboutMe,
   'about-us-page': UndrawAboutUsPage,
+  'accept-request': UndrawAcceptRequest,
   'accept-terms': UndrawAcceptTerms,
   account: UndrawAccount,
   'active-support': UndrawActiveSupport,
@@ -581,6 +610,7 @@ const mappings = {
   analysis: UndrawAnalysis,
   analytics: UndrawAnalytics,
   android: UndrawAndroid,
+  'apartment-rent': UndrawApartmentRent,
   'app-installation': UndrawAppInstallation,
   appreciation: UndrawAppreciation,
   'art-lover': UndrawArtLover,
@@ -630,6 +660,7 @@ const mappings = {
   calling: UndrawCalling,
   campfire: UndrawCampfire,
   camping: UndrawCamping,
+  candidate: UndrawCandidate,
   'career-progress': UndrawCareerProgress,
   'cautious-dog': UndrawCautiousDog,
   celebration: UndrawCelebration,
@@ -657,6 +688,7 @@ const mappings = {
   collecting: UndrawCollecting,
   collection: UndrawCollection,
   community: UndrawCommunity,
+  completed: UndrawCompleted,
   'compose-music': UndrawComposeMusic,
   conference: UndrawConference,
   'conference-speaker': UndrawConferenceSpeaker,
@@ -666,7 +698,9 @@ const mappings = {
   'connecting-teams': UndrawConnectingTeams,
   'contact-us': UndrawContactUs,
   'container-ship': UndrawContainerShip,
+  contemplating: UndrawContemplating,
   content: UndrawContent,
+  'content-creator': UndrawContentCreator,
   contrast: UndrawContrast,
   'control-panel': UndrawControlPanel,
   conversation: UndrawConversation,
@@ -675,6 +709,7 @@ const mappings = {
   create: UndrawCreate,
   'creation-process': UndrawCreationProcess,
   'creative-thinking': UndrawCreativeThinking,
+  'creative-woman': UndrawCreativeWoman,
   creativity: UndrawCreativity,
   'credit-card': UndrawCreditCard,
   'credit-card-payment': UndrawCreditCardPayment,
@@ -711,6 +746,7 @@ const mappings = {
   documents: UndrawDocuments,
   'dog-walking': UndrawDogWalking,
   'doll-play': UndrawDollPlay,
+  'domain-names': UndrawDomainNames,
   download: UndrawDownload,
   dreamer: UndrawDreamer,
   'drone-delivery': UndrawDroneDelivery,
@@ -733,6 +769,7 @@ const mappings = {
   exploring: UndrawExploring,
   'fall-is-coming': UndrawFallIsComing,
   fans: UndrawFans,
+  'fashion-blogging': UndrawFashionBlogging,
   'fast-car': UndrawFastCar,
   'fast-loading': UndrawFastLoading,
   fatherhood: UndrawFatherhood,
@@ -753,6 +790,7 @@ const mappings = {
   'fitness-tracker': UndrawFitnessTracker,
   floating: UndrawFloating,
   focus: UndrawFocus,
+  folder: UndrawFolder,
   'follow-me-drone': UndrawFollowMeDrone,
   followers: UndrawFollowers,
   following: UndrawFollowing,
@@ -783,6 +821,7 @@ const mappings = {
   'group-selfie': UndrawGroupSelfie,
   growing: UndrawGrowing,
   'growth-analytics': UndrawGrowthAnalytics,
+  hamburger: UndrawHamburger,
   'hang-out': UndrawHangOut,
   'happy-2019': UndrawHappy_2019,
   'happy-birthday': UndrawHappyBirthday,
@@ -811,17 +850,21 @@ const mappings = {
   'inbox-cleanup': UndrawInboxCleanup,
   influencer: UndrawInfluencer,
   'instant-support': UndrawInstantSupport,
+  'instruction-manual': UndrawInstructionManual,
   'interaction-design': UndrawInteractionDesign,
   'internet-on-the-go': UndrawInternetOnTheGo,
   interview: UndrawInterview,
+  investing: UndrawInvesting,
   invite: UndrawInvite,
   japan: UndrawJapan,
   'jason-mask': UndrawJasonMask,
   'java-script-frameworks': UndrawJavaScriptFrameworks,
   'job-hunt': UndrawJobHunt,
   jogging: UndrawJogging,
+  journey: UndrawJourney,
   joyride: UndrawJoyride,
   judge: UndrawJudge,
+  'late-at-night': UndrawLateAtNight,
   launching: UndrawLaunching,
   lighthouse: UndrawLighthouse,
   'live-collaboration': UndrawLiveCollaboration,
@@ -849,11 +892,13 @@ const mappings = {
   meditating: UndrawMeditating,
   meditation: UndrawMeditation,
   meeting: UndrawMeeting,
+  'memory-storage': UndrawMemoryStorage,
   'message-sent': UndrawMessageSent,
   messages: UndrawMessages,
   messaging: UndrawMessaging,
   'messaging-fun': UndrawMessagingFun,
   messenger: UndrawMessenger,
+  metrics: UndrawMetrics,
   'millennial-girl': UndrawMillennialGirl,
   'mind-map': UndrawMindMap,
   mindfulness: UndrawMindfulness,
@@ -876,6 +921,7 @@ const mappings = {
   motherhood: UndrawMotherhood,
   'movie-night': UndrawMovieNight,
   'moving-forward': UndrawMovingForward,
+  multitasking: UndrawMultitasking,
   music: UndrawMusic,
   navigation: UndrawNavigation,
   nerd: UndrawNerd,
@@ -888,6 +934,7 @@ const mappings = {
   'note-list': UndrawNoteList,
   notebook: UndrawNotebook,
   notes: UndrawNotes,
+  notify: UndrawNotify,
   'off-road': UndrawOffRoad,
   'old-day': UndrawOldDay,
   'on-the-office': UndrawOnTheOffice,
@@ -897,6 +944,7 @@ const mappings = {
   'online-friends': UndrawOnlineFriends,
   'online-shopping': UndrawOnlineShopping,
   'online-world': UndrawOnlineWorld,
+  'open-source': UndrawOpenSource,
   opened: UndrawOpened,
   'operating-system': UndrawOperatingSystem,
   'order-confirmed': UndrawOrderConfirmed,
@@ -908,6 +956,7 @@ const mappings = {
   'page-not-found': UndrawPageNotFound,
   'pair-programming': UndrawPairProgramming,
   'passing-by': UndrawPassingBy,
+  payments: UndrawPayments,
   'pedestrian-crossing': UndrawPedestrianCrossing,
   'pen-tool': UndrawPenTool,
   'people-search': UndrawPeopleSearch,
@@ -937,11 +986,13 @@ const mappings = {
   presentation: UndrawPresentation,
   'press-play': UndrawPressPlay,
   'printing-invoices': UndrawPrintingInvoices,
+  'problem-solving': UndrawProblemSolving,
   processing: UndrawProcessing,
   'product-hunt': UndrawProductHunt,
   'product-teardown': UndrawProductTeardown,
   'product-tour': UndrawProductTour,
   profile: UndrawProfile,
+  'profile-data': UndrawProfileData,
   'profile-pic': UndrawProfilePic,
   programmer: UndrawProgrammer,
   programming: UndrawProgramming,
@@ -1020,6 +1071,7 @@ const mappings = {
   statistics: UndrawStatistics,
   'status-update': UndrawStatusUpdate,
   'staying-in': UndrawStayingIn,
+  'step-to-the-sun': UndrawStepToTheSun,
   'street-food': UndrawStreetFood,
   'stripe-payments': UndrawStripePayments,
   studying: UndrawStudying,
@@ -1027,10 +1079,12 @@ const mappings = {
   'successful-purchase': UndrawSuccessfulPurchase,
   'sunny-day': UndrawSunnyDay,
   'super-thank-you': UndrawSuperThankYou,
+  'super-woman': UndrawSuperWoman,
   superhero: UndrawSuperhero,
   surfer: UndrawSurfer,
   'swipe-profiles': UndrawSwipeProfiles,
   sync: UndrawSync,
+  synchronize: UndrawSynchronize,
   tabs: UndrawTabs,
   taken: UndrawTaken,
   'taking-notes': UndrawTakingNotes,
@@ -1041,6 +1095,7 @@ const mappings = {
   team: UndrawTeam,
   'team-page': UndrawTeamPage,
   'team-spirit': UndrawTeamSpirit,
+  'team-work': UndrawTeamWork,
   'teddy-bear': UndrawTeddyBear,
   texting: UndrawTexting,
   thoughts: UndrawThoughts,
@@ -1087,6 +1142,7 @@ const mappings = {
   wallet: UndrawWallet,
   warning: UndrawWarning,
   weather: UndrawWeather,
+  'weather-app': UndrawWeatherApp,
   'web-devices': UndrawWebDevices,
   'website-setup': UndrawWebsiteSetup,
   wedding: UndrawWedding,
