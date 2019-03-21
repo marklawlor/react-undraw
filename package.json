@@ -30,10 +30,12 @@
     "eject": "react-scripts eject",
     "lint": "eslint src/**/*.js -c .eslintrc",
     "release": "standard-version",
-    "refresh": "npm run download && npm run generate",
+    "refresh": "npm run illustration:json && npm run download && npm run generate",
+    "illustration:json": "node ./scripts/illustrations-json.js",
     "download": "node ./scripts/download.js",
-    "generate": "npm run generate:components && npm run generate:mappings && npm run generate:types && npm run generate:readme",
+    "generate": "npm run generate:components && npm run generate:exports && npm run generate:mappings && npm run generate:types && npm run generate:readme",
     "generate:components": "node ./scripts/generate-components.js",
+    "generate:exports": "node ./scripts/generate-exports.js",
     "generate:mappings": "node ./scripts/generate-mappings.js",
     "generate:readme": "node ./scripts/generate-readme.js",
     "generate:barrel": "node ./scripts/generate-barrel.js",
@@ -44,7 +46,8 @@
     "lib": "npm run lib:clean && npm run lib:build",
     "lib:clean": "rimraf dist",
     "lib:build": "cross-env NODE_ENV=production babel src/lib --out-dir dist --copy-files",
-    "format:all": "prettier --write **/*.js"
+    "format:all": "prettier --write **/*.js",
+    "format:illustrations": "prettier --write src/lib/illustrations/*.js"
   },
   "husky": {
     "hooks": {
@@ -81,6 +84,7 @@
     "@svgr/plugin-svgo": "^4.0.3",
     "axios": "^0.18.0",
     "bootstrap": "^4.1.3",
+    "cheerio": "^1.0.0-rc.2",
     "cross-env": "^5.2.0",
     "dashify": "^2.0.0",
     "eslint-config-airbnb": "^17.1.0",
@@ -98,6 +102,8 @@
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-scripts": "^2.1.1",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
     "rimraf": "^2.6.2",
     "standard-version": "^5.0.0"
   },

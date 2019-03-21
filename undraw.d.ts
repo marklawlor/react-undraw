@@ -43,8 +43,11 @@ declare module 'react-undraw' {
   export class UndrawApartmentRent extends React.Component<IllustrationProps> {}
   export class UndrawAppInstallation extends React.Component<IllustrationProps> {}
   export class UndrawAppreciation extends React.Component<IllustrationProps> {}
+  export class UndrawAroundTheWorld extends React.Component<IllustrationProps> {}
+  export class UndrawArt extends React.Component<IllustrationProps> {}
   export class UndrawArtLover extends React.Component<IllustrationProps> {}
   export class UndrawArtificialIntelligence extends React.Component<IllustrationProps> {}
+  export class UndrawArtist extends React.Component<IllustrationProps> {}
   export class UndrawAstronaut extends React.Component<IllustrationProps> {}
   export class UndrawAtWork extends React.Component<IllustrationProps> {}
   export class UndrawAuthentication extends React.Component<IllustrationProps> {}
@@ -90,6 +93,7 @@ declare module 'react-undraw' {
   export class UndrawCalling extends React.Component<IllustrationProps> {}
   export class UndrawCampfire extends React.Component<IllustrationProps> {}
   export class UndrawCamping extends React.Component<IllustrationProps> {}
+  export class UndrawCancel extends React.Component<IllustrationProps> {}
   export class UndrawCandidate extends React.Component<IllustrationProps> {}
   export class UndrawCareerProgress extends React.Component<IllustrationProps> {}
   export class UndrawCautiousDog extends React.Component<IllustrationProps> {}
@@ -108,10 +112,12 @@ declare module 'react-undraw' {
   export class UndrawChristmasTree extends React.Component<IllustrationProps> {}
   export class UndrawCircles extends React.Component<IllustrationProps> {}
   export class UndrawCityDriver extends React.Component<IllustrationProps> {}
+  export class UndrawCityGirl extends React.Component<IllustrationProps> {}
   export class UndrawCloudHosting extends React.Component<IllustrationProps> {}
   export class UndrawCloudSync extends React.Component<IllustrationProps> {}
   export class UndrawCoWorkers extends React.Component<IllustrationProps> {}
   export class UndrawCoWorking extends React.Component<IllustrationProps> {}
+  export class UndrawCodeTyping extends React.Component<IllustrationProps> {}
   export class UndrawCoding extends React.Component<IllustrationProps> {}
   export class UndrawCoffeeBreak extends React.Component<IllustrationProps> {}
   export class UndrawCollaboration extends React.Component<IllustrationProps> {}
@@ -125,6 +131,7 @@ declare module 'react-undraw' {
   export class UndrawConfirmation extends React.Component<IllustrationProps> {}
   export class UndrawConfirmed extends React.Component<IllustrationProps> {}
   export class UndrawConnected extends React.Component<IllustrationProps> {}
+  export class UndrawConnectedWorld extends React.Component<IllustrationProps> {}
   export class UndrawConnectingTeams extends React.Component<IllustrationProps> {}
   export class UndrawContactUs extends React.Component<IllustrationProps> {}
   export class UndrawContainerShip extends React.Component<IllustrationProps> {}
@@ -134,6 +141,7 @@ declare module 'react-undraw' {
   export class UndrawContrast extends React.Component<IllustrationProps> {}
   export class UndrawControlPanel extends React.Component<IllustrationProps> {}
   export class UndrawConversation extends React.Component<IllustrationProps> {}
+  export class UndrawConvert extends React.Component<IllustrationProps> {}
   export class UndrawCountrySide extends React.Component<IllustrationProps> {}
   export class UndrawCouple extends React.Component<IllustrationProps> {}
   export class UndrawCreate extends React.Component<IllustrationProps> {}
@@ -194,6 +202,7 @@ declare module 'react-undraw' {
   export class UndrawEther extends React.Component<IllustrationProps> {}
   export class UndrawEthereum extends React.Component<IllustrationProps> {}
   export class UndrawEvents extends React.Component<IllustrationProps> {}
+  export class UndrawEverydayDesign extends React.Component<IllustrationProps> {}
   export class UndrawExams extends React.Component<IllustrationProps> {}
   export class UndrawExperts extends React.Component<IllustrationProps> {}
   export class UndrawExploring extends React.Component<IllustrationProps> {}
@@ -212,6 +221,7 @@ declare module 'react-undraw' {
   export class UndrawFilter extends React.Component<IllustrationProps> {}
   export class UndrawFinance extends React.Component<IllustrationProps> {}
   export class UndrawFinancialData extends React.Component<IllustrationProps> {}
+  export class UndrawFingerprint extends React.Component<IllustrationProps> {}
   export class UndrawFinishLine extends React.Component<IllustrationProps> {}
   export class UndrawFireworks extends React.Component<IllustrationProps> {}
   export class UndrawFirmware extends React.Component<IllustrationProps> {}
@@ -255,12 +265,14 @@ declare module 'react-undraw' {
   export class UndrawHangOut extends React.Component<IllustrationProps> {}
   export class UndrawHappy_2019 extends React.Component<IllustrationProps> {}
   export class UndrawHappyBirthday extends React.Component<IllustrationProps> {}
+  export class UndrawHappyWomenDay extends React.Component<IllustrationProps> {}
   export class UndrawHavingFun extends React.Component<IllustrationProps> {}
   export class UndrawHealthyHabit extends React.Component<IllustrationProps> {}
   export class UndrawHeartbroken extends React.Component<IllustrationProps> {}
   export class UndrawHello extends React.Component<IllustrationProps> {}
   export class UndrawHighFive extends React.Component<IllustrationProps> {}
   export class UndrawHiking extends React.Component<IllustrationProps> {}
+  export class UndrawHire extends React.Component<IllustrationProps> {}
   export class UndrawHiring extends React.Component<IllustrationProps> {}
   export class UndrawHomeRun extends React.Component<IllustrationProps> {}
   export class UndrawHorrorMovie extends React.Component<IllustrationProps> {}
@@ -284,6 +296,7 @@ declare module 'react-undraw' {
   export class UndrawInteractionDesign extends React.Component<IllustrationProps> {}
   export class UndrawInternetOnTheGo extends React.Component<IllustrationProps> {}
   export class UndrawInterview extends React.Component<IllustrationProps> {}
+  export class UndrawIntoTheNight extends React.Component<IllustrationProps> {}
   export class UndrawInvesting extends React.Component<IllustrationProps> {}
   export class UndrawInvite extends React.Component<IllustrationProps> {}
   export class UndrawJapan extends React.Component<IllustrationProps> {}
@@ -294,6 +307,8 @@ declare module 'react-undraw' {
   export class UndrawJourney extends React.Component<IllustrationProps> {}
   export class UndrawJoyride extends React.Component<IllustrationProps> {}
   export class UndrawJudge extends React.Component<IllustrationProps> {}
+  export class UndrawKnowledge extends React.Component<IllustrationProps> {}
+  export class UndrawLaravelAndVue extends React.Component<IllustrationProps> {}
   export class UndrawLateAtNight extends React.Component<IllustrationProps> {}
   export class UndrawLaunching extends React.Component<IllustrationProps> {}
   export class UndrawLighthouse extends React.Component<IllustrationProps> {}
@@ -316,6 +331,7 @@ declare module 'react-undraw' {
   export class UndrawMapDark extends React.Component<IllustrationProps> {}
   export class UndrawMapLight extends React.Component<IllustrationProps> {}
   export class UndrawMarilyn extends React.Component<IllustrationProps> {}
+  export class UndrawMarketing extends React.Component<IllustrationProps> {}
   export class UndrawMayTheForce extends React.Component<IllustrationProps> {}
   export class UndrawMediaPlayer extends React.Component<IllustrationProps> {}
   export class UndrawMedicine extends React.Component<IllustrationProps> {}
@@ -353,6 +369,7 @@ declare module 'react-undraw' {
   export class UndrawMovingForward extends React.Component<IllustrationProps> {}
   export class UndrawMultitasking extends React.Component<IllustrationProps> {}
   export class UndrawMusic extends React.Component<IllustrationProps> {}
+  export class UndrawMyPassword extends React.Component<IllustrationProps> {}
   export class UndrawNavigation extends React.Component<IllustrationProps> {}
   export class UndrawNerd extends React.Component<IllustrationProps> {}
   export class UndrawNewMessage extends React.Component<IllustrationProps> {}
@@ -372,7 +389,9 @@ declare module 'react-undraw' {
   export class UndrawOnboarding extends React.Component<IllustrationProps> {}
   export class UndrawOnline extends React.Component<IllustrationProps> {}
   export class UndrawOnlineFriends extends React.Component<IllustrationProps> {}
+  export class UndrawOnlinePage extends React.Component<IllustrationProps> {}
   export class UndrawOnlineShopping extends React.Component<IllustrationProps> {}
+  export class UndrawOnlineWishes extends React.Component<IllustrationProps> {}
   export class UndrawOnlineWorld extends React.Component<IllustrationProps> {}
   export class UndrawOpenSource extends React.Component<IllustrationProps> {}
   export class UndrawOpened extends React.Component<IllustrationProps> {}
@@ -385,11 +404,13 @@ declare module 'react-undraw' {
   export class UndrawOuterSpace extends React.Component<IllustrationProps> {}
   export class UndrawPageNotFound extends React.Component<IllustrationProps> {}
   export class UndrawPairProgramming extends React.Component<IllustrationProps> {}
+  export class UndrawPalette extends React.Component<IllustrationProps> {}
   export class UndrawPassingBy extends React.Component<IllustrationProps> {}
   export class UndrawPayments extends React.Component<IllustrationProps> {}
   export class UndrawPedestrianCrossing extends React.Component<IllustrationProps> {}
   export class UndrawPenTool extends React.Component<IllustrationProps> {}
   export class UndrawPeopleSearch extends React.Component<IllustrationProps> {}
+  export class UndrawPersonalData extends React.Component<IllustrationProps> {}
   export class UndrawPersonalNotes extends React.Component<IllustrationProps> {}
   export class UndrawPersonalSettings extends React.Component<IllustrationProps> {}
   export class UndrawPersonalSite extends React.Component<IllustrationProps> {}
@@ -469,6 +490,7 @@ declare module 'react-undraw' {
   export class UndrawSelfie extends React.Component<IllustrationProps> {}
   export class UndrawSelfieTime extends React.Component<IllustrationProps> {}
   export class UndrawServer extends React.Component<IllustrationProps> {}
+  export class UndrawServerDown extends React.Component<IllustrationProps> {}
   export class UndrawServerStatus extends React.Component<IllustrationProps> {}
   export class UndrawSetup extends React.Component<IllustrationProps> {}
   export class UndrawSetupAnalytics extends React.Component<IllustrationProps> {}
@@ -519,6 +541,7 @@ declare module 'react-undraw' {
   export class UndrawTaken extends React.Component<IllustrationProps> {}
   export class UndrawTakingNotes extends React.Component<IllustrationProps> {}
   export class UndrawTarget extends React.Component<IllustrationProps> {}
+  export class UndrawTask extends React.Component<IllustrationProps> {}
   export class UndrawTasting extends React.Component<IllustrationProps> {}
   export class UndrawTeacher extends React.Component<IllustrationProps> {}
   export class UndrawTeaching extends React.Component<IllustrationProps> {}
@@ -585,6 +608,7 @@ declare module 'react-undraw' {
   export class UndrawWinterOlympics extends React.Component<IllustrationProps> {}
   export class UndrawWireframing extends React.Component<IllustrationProps> {}
   export class UndrawWishes extends React.Component<IllustrationProps> {}
+  export class UndrawWishlist extends React.Component<IllustrationProps> {}
   export class UndrawWitch extends React.Component<IllustrationProps> {}
   export class UndrawWoman extends React.Component<IllustrationProps> {}
   export class UndrawWomenDay extends React.Component<IllustrationProps> {}
@@ -596,6 +620,7 @@ declare module 'react-undraw' {
   export class UndrawWorkingLate extends React.Component<IllustrationProps> {}
   export class UndrawWorkingRemotely extends React.Component<IllustrationProps> {}
   export class UndrawWorkout extends React.Component<IllustrationProps> {}
+  export class UndrawWorld extends React.Component<IllustrationProps> {}
   export class UndrawXmasSurprise extends React.Component<IllustrationProps> {}
   export class UndrawYacht extends React.Component<IllustrationProps> {}
   export class UndrawYoungAndHappy extends React.Component<IllustrationProps> {}
