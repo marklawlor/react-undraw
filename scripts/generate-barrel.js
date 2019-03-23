@@ -1,14 +1,10 @@
-const EOL = require('os').EOL;
-const dashify = require('dashify');
+const { EOL } = require('os');
 const fs = require('fs-extra');
 const ora = require('ora');
 const pascalCase = require('pascal-case');
 const path = require('path');
 
-const illustrations = require('./illustrations.json');
-
-// execute
-generate();
+const illustrations = require('../illustrations.json');
 
 /**
  * Generate illustration barrel file.
@@ -26,9 +22,12 @@ function generate() {
 
   illustrations.forEach(item => {
     const component = prefix + pascalCase(item.name);
-    content += `export { default as ${component} } from './${component}';` + EOL;
+    content += `export { default as ${component} } from './${component}';${EOL}`;
   });
 
   fs.outputFileSync(dest, content);
   spinner.succeed('Successfully generated barrel!');
 }
+
+// execute
+generate();

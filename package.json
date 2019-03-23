@@ -30,15 +30,16 @@
     "eject": "react-scripts eject",
     "lint": "eslint src/**/*.js -c .eslintrc",
     "release": "standard-version",
-    "refresh": "npm run illustration:json && npm run download && npm run generate",
-    "illustration:json": "node ./scripts/illustrations-json.js",
-    "download": "node ./scripts/download.js",
+    "refresh": "npm run get && npm run generate && npm run format:all",
+    "get": "npm run get:json && npm run get:illustrations",
+    "get:illustrations": "node ./scripts/get-illustrations.js",
+    "get:json": "node ./scripts/get-json.js",
     "generate": "npm run generate:components && npm run generate:exports && npm run generate:mappings && npm run generate:types && npm run generate:readme",
+    "generate:barrel": "node ./scripts/generate-barrel.js",
     "generate:components": "node ./scripts/generate-components.js",
     "generate:exports": "node ./scripts/generate-exports.js",
     "generate:mappings": "node ./scripts/generate-mappings.js",
     "generate:readme": "node ./scripts/generate-readme.js",
-    "generate:barrel": "node ./scripts/generate-barrel.js",
     "generate:types": "node ./scripts/generate-types.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
@@ -46,8 +47,7 @@
     "lib": "npm run lib:clean && npm run lib:build",
     "lib:clean": "rimraf dist",
     "lib:build": "cross-env NODE_ENV=production babel src/lib --out-dir dist --copy-files",
-    "format:all": "prettier --write **/*.js",
-    "format:illustrations": "prettier --write src/lib/illustrations/*.js"
+    "format:all": "prettier --write **/*.js"
   },
   "husky": {
     "hooks": {

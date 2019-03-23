@@ -4,7 +4,7 @@ const pascalCase = require('pascal-case');
 const path = require('path');
 const svgr = require('@svgr/core').default;
 
-const illustrations = require('./illustrations.json');
+const illustrations = require('../illustrations.json');
 const template = require('./svgr-template');
 
 const replaceAttrValues = {
