@@ -60,7 +60,4 @@ npm install
 npm run build
 ```
 
-To refresh the generated components:
-
-- Update `./scripts/illustrations.json` with any new illustrations.
-- Run `npm run refresh` (from root) to generate files.
+To get the latest illustrations and generate all files, run `npm run refresh`.
