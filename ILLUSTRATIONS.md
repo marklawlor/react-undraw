@@ -2,7 +2,7 @@
 
 # Illustrations
 
-609 illustrations available.
+618 illustrations available.
 
 | Illustration              | Name                        | Component                          |
 | ------------------------- | --------------------------- | ---------------------------------- |
@@ -136,6 +136,7 @@
 | Couple                    | `couple`                    | `<UndrawCouple />`                 |
 | Create                    | `create`                    | `<UndrawCreate />`                 |
 | Creation process          | `creation-process`          | `<UndrawCreationProcess />`        |
+| Creative team             | `creative-team`             | `<UndrawCreativeTeam />`           |
 | Creative thinking         | `creative-thinking`         | `<UndrawCreativeThinking />`       |
 | Creative woman            | `creative-woman`            | `<UndrawCreativeWoman />`          |
 | Creativity                | `creativity`                | `<UndrawCreativity />`             |
@@ -175,6 +176,7 @@
 | Dog walking               | `dog-walking`               | `<UndrawDogWalking />`             |
 | Doll play                 | `doll-play`                 | `<UndrawDollPlay />`               |
 | Domain names              | `domain-names`              | `<UndrawDomainNames />`            |
+| Done                      | `done`                      | `<UndrawDone />`                   |
 | Download                  | `download`                  | `<UndrawDownload />`               |
 | Dreamer                   | `dreamer`                   | `<UndrawDreamer />`                |
 | Drone delivery            | `drone-delivery`            | `<UndrawDroneDelivery />`          |
@@ -183,6 +185,7 @@
 | Easter egg hunt           | `easter-egg-hunt`           | `<UndrawEasterEggHunt />`          |
 | Eating together           | `eating-together`           | `<UndrawEatingTogether />`         |
 | Electric car              | `electric-car`              | `<UndrawElectricCar />`            |
+| Elements                  | `elements`                  | `<UndrawElements />`               |
 | Email campaign            | `email-campaign`            | `<UndrawEmailCampaign />`          |
 | Email capture             | `email-capture`             | `<UndrawEmailCapture />`           |
 | Emails                    | `emails`                    | `<UndrawEmails />`                 |
@@ -207,6 +210,7 @@
 | Festivities               | `festivities`               | `<UndrawFestivities />`            |
 | File bundle               | `file-bundle`               | `<UndrawFileBundle />`             |
 | File searching            | `file-searching`            | `<UndrawFileSearching />`          |
+| Files sent                | `files-sent`                | `<UndrawFilesSent />`              |
 | Filing system             | `filing-system`             | `<UndrawFilingSystem />`           |
 | Filter                    | `filter`                    | `<UndrawFilter />`                 |
 | Finance                   | `finance`                   | `<UndrawFinance />`                |
@@ -301,6 +305,7 @@
 | Laravel and vue           | `laravel-and-vue`           | `<UndrawLaravelAndVue />`          |
 | Late at night             | `late-at-night`             | `<UndrawLateAtNight />`            |
 | Launching                 | `launching`                 | `<UndrawLaunching />`              |
+| Learning                  | `learning`                  | `<UndrawLearning />`               |
 | Lighthouse                | `lighthouse`                | `<UndrawLighthouse />`             |
 | Live collaboration        | `live-collaboration`        | `<UndrawLiveCollaboration />`      |
 | Loading                   | `loading`                   | `<UndrawLoading />`                |
@@ -368,6 +373,7 @@
 | Night calls               | `night-calls`               | `<UndrawNightCalls />`             |
 | Ninja                     | `ninja`                     | `<UndrawNinja />`                  |
 | No data                   | `no-data`                   | `<UndrawNoData />`                 |
+| Not found                 | `not-found`                 | `<UndrawNotFound />`               |
 | Note list                 | `note-list`                 | `<UndrawNoteList />`               |
 | Notebook                  | `notebook`                  | `<UndrawNotebook />`               |
 | Notes                     | `notes`                     | `<UndrawNotes />`                  |
@@ -504,6 +510,7 @@
 | Social update             | `social-update`             | `<UndrawSocialUpdate />`           |
 | Software engineer         | `software-engineer`         | `<UndrawSoftwareEngineer />`       |
 | Specs                     | `specs`                     | `<UndrawSpecs />`                  |
+| Speech to text            | `speech-to-text`            | `<UndrawSpeechToText />`           |
 | Spreadsheets              | `spreadsheets`              | `<UndrawSpreadsheets />`           |
 | Stability ball            | `stability-ball`            | `<UndrawStabilityBall />`          |
 | Starman                   | `starman`                   | `<UndrawStarman />`                |
@@ -517,6 +524,7 @@
 | Street food               | `street-food`               | `<UndrawStreetFood />`             |
 | Stripe payments           | `stripe-payments`           | `<UndrawStripePayments />`         |
 | Studying                  | `studying`                  | `<UndrawStudying />`               |
+| Subscriber                | `subscriber`                | `<UndrawSubscriber />`             |
 | Subway                    | `subway`                    | `<UndrawSubway />`                 |
 | Successful purchase       | `successful-purchase`       | `<UndrawSuccessfulPurchase />`     |
 | Sunny day                 | `sunny-day`                 | `<UndrawSunnyDay />`               |
@@ -543,6 +551,7 @@
 | Texting                   | `texting`                   | `<UndrawTexting />`                |
 | Thoughts                  | `thoughts`                  | `<UndrawThoughts />`               |
 | Through the desert        | `through-the-desert`        | `<UndrawThroughTheDesert />`       |
+| Throw down                | `throw-down`                | `<UndrawThrowDown />`              |
 | Time management           | `time-management`           | `<UndrawTimeManagement />`         |
 | Timeline                  | `timeline`                  | `<UndrawTimeline />`               |
 | To do                     | `to-do`                     | `<UndrawToDo />`                   |
