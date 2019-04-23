@@ -59,5 +59,3 @@ Undraw.setDefaultProps({ primaryColor: 'darkblue' });
 npm install
 npm run build
 ```
-
-To get the latest illustrations and generate all files, run `npm run refresh`.

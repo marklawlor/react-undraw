@@ -5,7 +5,7 @@ const ora = require('ora');
 const pascalCase = require('pascal-case');
 const path = require('path');
 
-const illustrations = require('../illustrations.json');
+const { illustrations } = require('./source');
 
 /**
  * Generate mapping file.

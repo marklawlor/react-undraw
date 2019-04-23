@@ -4,7 +4,7 @@ const pascalCase = require('pascal-case');
 const path = require('path');
 const svgr = require('@svgr/core').default;
 
-const illustrations = require('../illustrations.json');
+const { illustrations, svgPath } = require('./source');
 const template = require('./svgr-template');
 
 const replaceAttrValues = {
@@ -20,14 +20,13 @@ const svgProps = {
  */
 function generate() {
   const spinner = ora('Generating components ...').start();
-  const src = './svg';
   const dest = './src/lib/illustrations';
   const prefix = 'Undraw';
   const promises = [];
 
   illustrations.forEach(item => {
     const componentName = prefix + pascalCase(item.name);
-    const srcPath = path.join(src, item.svg);
+    const srcPath = path.join(svgPath, item.svg);
     const srcCode = fs.readFileSync(srcPath);
     const destPath = path.join(dest, `${componentName}.js`);
 

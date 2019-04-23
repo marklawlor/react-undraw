@@ -6,7 +6,7 @@ const pascalCase = require('pascal-case');
 const path = require('path');
 const table = require('markdown-table');
 
-const illustrations = require('../illustrations.json');
+const { illustrations } = require('./source');
 
 /**
  * Generate readme file.
