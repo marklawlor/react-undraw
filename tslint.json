@@ -1,0 +1,12 @@
+{
+  "extends": ["@justinlettau/tslint-config", "tslint-react", "tslint-config-prettier"],
+  "linterOptions": {
+    "exclude": ["src/lib/illustrations/*.tsx", "src/lib/illustration-map.ts"]
+  },
+  "rules": {
+    "object-literal-sort-keys": false
+  },
+  "jsRules": {
+    "object-literal-sort-keys": false
+  }
+}

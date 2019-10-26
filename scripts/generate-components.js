@@ -28,7 +28,7 @@ function generate() {
     const componentName = prefix + pascalCase(item.name);
     const srcPath = path.join(svgPath, item.svg);
     const srcCode = fs.readFileSync(srcPath);
-    const destPath = path.join(dest, `${componentName}.js`);
+    const destPath = path.join(dest, `${componentName}.tsx`);
 
     promises.push(
       svgr(
@@ -41,7 +41,7 @@ function generate() {
           template
         },
         { componentName }
-      ).then(js => fs.outputFile(destPath, js))
+      ).then(ts => fs.outputFile(destPath, ts))
     );
   });
 

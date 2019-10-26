@@ -10,7 +10,7 @@ function svgrTemplate(api, opts, state) {
     import PropTypes from 'prop-types';
     import defaultProps from '../default-props';
 
-    const ${componentName} = (_props) => {
+    const ${componentName} = (_props: any) => {
       const ${props} = Object.assign({}, _props);
       const primaryColor = ${props}.primaryColor || defaultProps.primaryColor;
       const style = Object.assign({ height: ${props}.height || defaultProps.height, width: '100%' }, ${props}.style);

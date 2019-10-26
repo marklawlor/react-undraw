@@ -11,4 +11,4 @@ const jsonPath = path.join(src, 'illustrations.json');
 const svgPath = path.join(src, 'svg');
 const illustrations = fs.readJSONSync(jsonPath);
 
-export { illustrations, svgPath };
+module.exports = { illustrations, svgPath };

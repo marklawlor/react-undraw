@@ -1,8 +1,0 @@
-{
-  "extends": "@justinlettau/eslint-config",
-  "parser": "babel-eslint",
-  "env": {
-    "browser": true,
-    "jest": true
-  }
-}

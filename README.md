@@ -30,6 +30,8 @@ import Undraw from 'react-undraw';
 Import only what you need:
 
 ```jsx
+import UndrawCoding from 'react-undraw/illustrations/UndrawCoding';
+// or
 import { UndrawCoding } from 'react-undraw';
 
 <UndrawCoding />;
@@ -48,9 +50,9 @@ See [ILLUSTRATIONS.md](./ILLUSTRATIONS.md) for a full list of supported illustra
 ## Override Default Props
 
 ```jsx
-import Undraw from 'react-undraw';
+import { defaultProps } from 'react-undraw';
 
-Undraw.setDefaultProps({ primaryColor: 'darkblue' });
+defaultProps.primaryColor: 'darkblue';
 ```
 
 # Development
