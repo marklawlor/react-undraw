@@ -48,26 +48,26 @@
     "react-dom": "^16.5.2"
   },
   "dependencies": {
-    "prop-types": "^15.7.2"
-  },
-  "devDependencies": {
-    "@justinlettau/renovate-config": "^0.1.2",
-    "@justinlettau/tslint-config": "^0.1.0",
+    "prop-types": "^15.7.2",
     "@svgr/core": "^5.3.0",
     "@svgr/plugin-jsx": "^5.3.0",
     "@svgr/plugin-prettier": "^5.3.0",
     "@svgr/plugin-svgo": "^5.3.0",
-    "@types/jest": "^24.0.20",
-    "@types/node": "^12.11.7",
-    "@types/react": "^16.9.27",
-    "@types/react-dom": "^16.9.5",
     "app-root-path": "^3.0.0",
     "del": "^5.1.0",
     "fs-extra": "^8.1.0",
     "glob": "^7.1.6",
+    "pascal-case": "^2.0.1"
+  },
+  "devDependencies": {
+    "@justinlettau/renovate-config": "^0.1.2",
+    "@justinlettau/tslint-config": "^0.1.0",
+    "@types/jest": "^24.0.20",
+    "@types/node": "^12.11.7",
+    "@types/react": "^16.9.27",
+    "@types/react-dom": "^16.9.5",
     "husky": "^3.0.9",
     "jest": "^25.2.4",
-    "pascal-case": "^2.0.1",
     "prettier": "^1.18.2",
     "pretty-quick": "^2.0.0",
     "react": "^16.13.1",
