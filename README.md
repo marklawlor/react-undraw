@@ -7,9 +7,22 @@
 
 React component for [unDraw illustrations](https://undraw.co/).
 
-# Demo
+> ⚠️ **The `master` branch is for v2 development**! For v1, please use the latest [v1 release](https://github.com/justinlettau/react-undraw/tree/v1.14.0).
 
-[https://justinlettau.github.io/react-undraw](https://justinlettau.github.io/react-undraw)
+# Table of Contents
+
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Illustrations](#illustrations)
+- [Development](#development)
+
+# Features
+
+- 🚀 Works with **any illustration** from unDraw.
+- 🎨 **Customize colors** with props.
+- 🎉 Written in **TypeScript**.
+- 🎁 **Smaller bundles** by only including what you need.
 
 # Installation
 
@@ -19,40 +32,50 @@ npm install react-undraw --save
 
 # Usage
 
-Import everything:
-
 ```jsx
 import Undraw from 'react-undraw';
+
+// optionally override default props
+Undraw.defaultProps.primaryColor = 'darkblue';
 
 <Undraw name="coding" />;
 ```
 
-Import only what you need:
-
-```jsx
-import { UndrawCoding } from 'react-undraw';
-// or
-import UndrawCoding from 'react-undraw/dist/illustrations/UndrawCoding';
-
-<UndrawCoding />;
-```
-
 Props:
 
-| Prop           | Type     | Description                    | Default   |
-| -------------- | -------- | ------------------------------ | --------- |
-| `name`         | `string` | Illustration name, kebab-case. | n/a       |
-| `primaryColor` | `string` | Illustration primary color.    | `#6c63ff` |
-| `height`       | `string` | Illustration height.           | `250px`   |
+| Prop           | Type     | Description                                 | Default   |
+| -------------- | -------- | ------------------------------------------- | --------- |
+| `name`         | `string` | Illustration file name (without extension). | n/a       |
+| `primaryColor` | `string` | Illustration primary color.                 | `#6c63ff` |
+| `height`       | `string` | Illustration height.                        | `250px`   |
 
-See [ILLUSTRATIONS.md](./ILLUSTRATIONS.md) for a full list of supported illustration names.
+# Illustrations
 
-## Override Default Props
+**Bring your own illustrations!** To comply with the updated unDraw [license](https://undraw.co/license), we can't
+bundle the illustrations with this package 😞 However, this means you can always use the latest illustrations! 😎
 
-```jsx
-import { defaultProps } from 'react-undraw';
+Here's what you need to do:
 
-defaultProps.primaryColor = 'darkblue';
+- Download any illustrations you want from [unDraw](https://undraw.co/illustrations).
+  - No need to change the color before download, use `primaryColor` prop instead.
+  - Optional: rename file to remove prefix/suffix (`undraw_barbecue_3x93.svg` => `barbecue.svg`).
+  - The `name` prop will need to match your file name.
+- Put SVG files in an `undraw` folder at the root of your project.
+- Add `react-undraw-cli` to your `build` and/or `start` script:
+  - `"prebuild": "react-undraw-cli"`
+  - or ... `"build": "react-undraw-cli && react-scripts build"`
+
+Example project structure:
+
+```
+package.json
+src/
+ ...
+undraw/
+  coding.svg
+  hologram.svg
+  ice_cream.svg
+  ...
 ```
 
 # Development
