@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0-beta.1](https://github.com/justinlettau/react-undraw/compare/v2.0.0-beta.0...v2.0.0-beta.1) (2020-03-31)
+
+
+### Bug Fixes
+
+* build issue ([a1b44c3](https://github.com/justinlettau/react-undraw/commit/a1b44c33b022aa833dd9335f341db3f95d2472ed))
+
 ## [2.0.0-beta.0](https://github.com/justinlettau/react-undraw/compare/v1.14.0...v2.0.0-beta.0) (2020-03-31)
 
 
