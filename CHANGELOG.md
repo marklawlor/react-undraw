@@ -1,6 +1,25 @@
-# Change Log
+# Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [2.0.0-beta.0](https://github.com/justinlettau/react-undraw/compare/v1.14.0...v2.0.0-beta.0) (2020-03-31)
+
+
+### ⚠ BREAKING CHANGES
+
+* Illustrations are no longer included! You must download SVG files from unDraw directly, and place the files in an `undraw` folder in the root of your project.
+* Remove `setDefaultProps` method. Use `defaultProps` instead.
+
+### Features
+
+* require illustration files ([8bb769c](https://github.com/justinlettau/react-undraw/commit/8bb769c55197fdddd86bf88d2a22706db9b419e1))
+* upgrade to TypeScript ([af00e0c](https://github.com/justinlettau/react-undraw/commit/af00e0cda3743c4c035a700f724a3d8cf518126d))
+
+
+### Bug Fixes
+
+* dependencies ([2bbed72](https://github.com/justinlettau/react-undraw/commit/2bbed7223a16f07fedd63d1c9eb989ef008f27c1))
+* readme ([22f45c6](https://github.com/justinlettau/react-undraw/commit/22f45c6fd4e0ce7aaf9878585cdbe2ff9d1ced92))
 
 # [1.14.0](https://github.com/justinlettau/react-undraw/compare/v1.13.0...v1.14.0) (2019-03-23)
 
