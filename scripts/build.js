@@ -1,13 +1,13 @@
+const appRoot = require('app-root-path');
 const del = require('del');
 const fs = require('fs-extra');
 const glob = require('glob');
-const pascal = require('pascal-case');
 const path = require('path');
-const appRoot = require('app-root-path');
 const svgr = require('@svgr/core').default;
 const util = require('util');
 const { EOL } = require('os');
 const { exec } = require('child_process');
+const { pascalCase } = require('pascal-case');
 
 (async () => {
   const root = path.join(__dirname, '../');
@@ -26,7 +26,7 @@ const { exec } = require('child_process');
 
   for (const file of files) {
     const filename = path.basename(file).split('.')[0];
-    const componentName = 'Undraw' + pascal(filename);
+    const componentName = 'Undraw' + pascalCase(filename);
     const src = fs.readFileSync(file);
     const dest = path.join(components, `${componentName}.tsx`);
 
@@ -36,12 +36,12 @@ const { exec } = require('child_process');
         icon: true,
         plugins: ['@svgr/plugin-svgo', '@svgr/plugin-jsx', '@svgr/plugin-prettier'],
         replaceAttrValues: {
-          '#6c63ff': '{primaryColor}'
+          '#6c63ff': '{primaryColor}',
         },
         svgProps: {
-          style: '{styleProps}'
+          style: '{styleProps}',
         },
-        template: svgrTemplate
+        template: svgrTemplate,
       },
       { componentName }
     );
