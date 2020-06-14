@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/justinlettau/react-undraw/compare/v2.0.0-beta.1...v2.0.0) (2020-06-14)
+
+
+### Bug Fixes
+
+* move types to dependencies ([9bd8fc5](https://github.com/justinlettau/react-undraw/commit/9bd8fc5025ad669e08fd31e856d4566e050e68c3)), closes [#39](https://github.com/justinlettau/react-undraw/issues/39)
+
 ## [2.0.0-beta.1](https://github.com/justinlettau/react-undraw/compare/v2.0.0-beta.0...v2.0.0-beta.1) (2020-03-31)
 
 
