@@ -7,8 +7,6 @@
 
 React component for [unDraw illustrations](https://undraw.co/).
 
-> ⚠️ **The `master` branch is for v2 development**! For v1, please use the latest [v1 release](https://github.com/justinlettau/react-undraw/tree/v1.14.0).
-
 # Table of Contents
 
 - [Features](#features)
