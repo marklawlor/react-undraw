@@ -16,6 +16,7 @@ const { pascalCase } = require('pascal-case');
   const pattern = path.join(appRoot.toString(), 'undraw', '**', '*.svg');
   const files = glob.sync(pattern);
   const imports = [];
+  const exports = [];
   const maps = [];
 
   console.log('Generating unDraw components ...');
@@ -50,6 +51,7 @@ const { pascalCase } = require('pascal-case');
     console.log(`Component built: "${componentName}"`);
 
     imports.push(`import ${componentName} from './${componentName}';`);
+    exports.push(`export { default as ${componentName} } from './${componentName}';`);
     maps.push(`'${filename}': ${componentName},`);
   }
 
@@ -58,6 +60,12 @@ const { pascalCase } = require('pascal-case');
 
   if (imports.length > 0) {
     content += imports.join(EOL);
+    content += EOL;
+    content += EOL;
+  }
+
+  if (exports.length > 0) {
+    content += exports.join(EOL);
     content += EOL;
     content += EOL;
   }
